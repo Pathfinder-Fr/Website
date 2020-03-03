@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<project>
+   <paths>
+      <left>D:\Dev\Perso\coldwire.net\Pathfinder-fr\YAF\yafsrc\YAF.Core\</left>
+      <right>D:\Dev\Perso\coldwire.net\Pathfinder-fr\BitBucket\Atomo\YAF.Core\</right>
+      <filter>*.cs; *.csproj; *.ascx; *.resx; *.sql; *.xml; *.aspx; packages.config</filter>
+      <subfolders>1</subfolders>
+      <left-readonly>0</left-readonly>
+      <right-readonly>0</right-readonly>
+   </paths>
+</project>

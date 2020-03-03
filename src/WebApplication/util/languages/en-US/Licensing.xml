@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+  <resource key="license_addonpack_notvalid_title">Your Addon Pack Product Key is not valid.</resource>
+  <resource key="license_addonpack_notvalid_message">A product key is required for the Addon Pack to continue functioning at the end of your 30-Day Trial Period.  Both Free and Sueetie Supporter product keys are available in the Sueetie Marketplace.</resource>
+
+  <resource key="license_addonpack_trialperiod_title">Sueetie Addon Pack Product Key Type: 30-Day Trial Period</resource>
+  <resource key="license_addonpack_trialperiod_message">We hope you are enjoying the Sueetie Addon Pack!  At the end of your 30-day trial period the Addon Pack will go dark unless you obtain a valid product key. Free and Sueetie Supporter product keys are available in the Sueetie Marketplace at Sueetie.com.</resource>
+
+  <resource key="license_addonpack_free_title">Sueetie Addon Pack Product Key Type: Free</resource>
+  <resource key="license_addonpack_free_message">Thank you for obtaining a Sueetie Addon Pack Product Key. The Free Product 1) restricts you from blocking more than 3 countries in the Site Access Control system, 2) limits you to 3 slideshows, 3) restricts Forum Answer tagging to Content Administrators, and 4) restricts Blog Thumbnails to the Post Attachment option.  For unlimited features and to help support ongoing Sueetie development, please consider acquiring a Sueetie Supporter product key in the &lt;a href='http://sueetie.com/marketplace'&gt;Sueetie Marketplace.&lt;/a&gt;</resource>
+
+  <resource key="license_addonpack_paid_title">Sueetie Addon Pack Product Key Type: {0}</resource>
+  <resource key="license_addonpack_paid_message">Shields at 100%. Phaser banks are fully charged and ready to fire. Thank you for supporting Sueetie!</resource>
+
+  <resource key="license_analytics_notvalid_title">Your Sueetie Analytics Product Key is not valid.</resource>
+  <resource key="license_analytics_notvalid_message">A product key is required for Sueetie Analytics to continue functioning at the end of your 30-Day Trial Period.  Both Free and Sueetie Supporter product keys are available in the Sueetie Marketplace.</resource>
+
+  <resource key="license_analytics_trialperiod_title">Sueetie Analytics Product Key Type: 30-Day Trial Period</resource>
+  <resource key="license_analytics_trialperiod_message">I hope you are enjoying Sueetie Analytics!  At the end of your 30-day trial period Analytics will go dark unless you obtain a valid license. Free and Sueetie Supporter product keys are available in the Sueetie Marketplace at Sueetie.com.</resource>
+
+  <resource key="license_analytics_free_title">Sueetie Analytics Product Key Type: Free</resource>
+  <resource key="license_analytics_free_message">Thank you for obtaining a Sueetie Analytics Product Key. The Free Product Key limites you to reporting for the last 24 hours and prior week only.  For full reporting functionality and to help support ongoing Sueetie development, please consider acquiring a Sueetie Supporter product key in the &lt;a href='http://sueetie.com/marketplace'&gt;Sueetie Marketplace.&lt;/a&gt;</resource>
+
+  <resource key="license_analytics_paid_title">Sueetie Analytics Product Key Type: {0}</resource>
+  <resource key="license_analytics_paid_message">Shields at 100%. Phaser banks are fully charged and ready to fire. Thank you for supporting Sueetie!</resource>
+
+  <resource key="license_marketplace_notvalid_title">Your Sueetie Marketplace Product Key is not valid.</resource>
+  <resource key="license_marketplace_notvalid_message">A product key is required for Sueetie Marketplace to continue functioning at the end of your 30-Day Trial Period.  Both Free and Sueetie Supporter product keys are available in the Sueetie Marketplace.</resource>
+
+  <resource key="license_marketplace_trialperiod_title">Sueetie Marketplace Product Key Type: 30-Day Trial Period</resource>
+  <resource key="license_marketplace_trialperiod_message">We hope you are enjoying Sueetie Marketplace!  At the end of your 30-day trial period Marketplace will go dark unless you obtain a valid product key. Free and Sueetie Supporter product keys are available in the Sueetie Marketplace at Sueetie.com.</resource>
+
+  <resource key="license_marketplace_free_title">Sueetie Marketplace Product Key Type: Free License</resource>
+  <resource key="license_marketplace_free_message">Thank you for obtaining a Sueetie Marketplace Product Key. The Free Product Key restricts you to displaying more than 5 products and 3 products per category.  For full reporting functionality and to help support ongoing Sueetie development, please consider acquiring a Sueetie Supporter product key in the &lt;a href='http://sueetie.com/marketplace'&gt;Sueetie Marketplace.&lt;/a&gt;</resource>
+
+  <resource key="license_marketplace_paid_title">Sueetie Marketplace Product Key Type: {0}</resource>
+  <resource key="license_marketplace_paid_message">Shields at 100%. Phaser banks are fully charged and ready to fire. Thank you for supporting Sueetie!</resource>
+
+  <resource key="license_visit_sueetiecom">
+    Visit &lt;a href='http://sueetie.com/wiki/triplescooplicenses.ashx'&gt;Sueetie Triple Scoop Product Keys&lt;/a&gt; in the Sueetie Wiki for more information.
+  </resource>
+
+  <resource key="addonpack_exceeded_countrylimit_title">Blocked Country Free Product Key limit exceeded</resource>
+  <resource key="addonpack_exceeded_countrylimit_message">Because the number of Blocked Countries exceeds the Free Product Key limit of 3, no countries are currently being blocked. Limit to 3 or less to restore functionality, or purchase a Sueetie Supporter product key for unlimited country blocking.</resource>
+  <resource key="addonpack_exceeded_countrylimit_checklist">Number of Blocked Countries exceeds the Free Product Key limit of 3. No countries are blocked when the limit is exceeded, and no processing of this form will occur until the number of blocked countries is reduced to 3 or less.  For unlimited country blocking and to support Sueetie development, acquire a Sueetie Supporter product key in the Sueetie Marketplace.</resource>
+
+  <resource key="analytics_report_limit">Analytics Reports are limited to last 24 hours and week only for the Free License.</resource>
+
+  	<resource key="addonpack_slideshows_exceeded_exception">Free AddonPack Product Key Use Exceeded in Slideshows. Please reduce number of active slideshows to 3 for continued use or support ongoing development by purchasing a Sueetie Supporter Product Key in the Sueetie Marketplace.</resource>
+  	<resource key="addonpack_mediasets_exceeded_exception">Free AddonPack Product Key Use Exceeded in Media Sets. Please reduce number of active media sets to 3 for continued use or support ongoing development by purchasing a Sueetie Supporter Product Key in the Sueetie Marketplace.</resource>
+
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<project>
+   <paths>
+      <left>C:\Projets\Perso\Pathfinder-fr\Screwturn\WebApplication\</left>
+      <right>C:\Projets\Perso\Pathfinder-fr\BitBucket\Atomo\WebApplication\Wiki\</right>
+      <filter>*.cs; *.csproj; *.aspx; *.ascx; *.config; *.asmx; *.css; *.js; *.htm; *.html; *.sql; *.xml; *.resx</filter>
+      <subfolders>1</subfolders>
+      <left-readonly>0</left-readonly>
+      <right-readonly>0</right-readonly>
+   </paths>
+</project>

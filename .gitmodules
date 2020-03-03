@@ -1,0 +1,3 @@
+[submodule "yafnet"]
+	path = ext/yafnet
+	url = https://github.com/Pathfinder-Fr/YAFNET

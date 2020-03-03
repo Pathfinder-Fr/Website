@@ -1,0 +1,44 @@
+﻿namespace ScrewTurn.Wiki.PluginFramework
+{
+    /// <summary>
+    ///     Contains information about a directory.
+    /// </summary>
+    /// <remarks>This class is only used for provider-host communication.</remarks>
+    public class StDirectoryInfo
+    {
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="T:StDirectoryInfo" /> class.
+        /// </summary>
+        /// <param name="fullPath">The full path of the directory, for example <b>/dir/sub/</b> or <b>/</b>.</param>
+        /// <param name="provider">The provider that handles the directory.</param>
+        public StDirectoryInfo(string fullPath, IFilesStorageProviderV30 provider)
+        {
+            FullPath = fullPath;
+            Provider = provider;
+        }
+
+        /// <summary>
+        ///     Gets the full path of the directory, for example <b>/dir/sub/</b> or <b>/</b>.
+        /// </summary>
+        public string FullPath { get; }
+
+        /// <summary>
+        ///     Gets the provider that handles the directory.
+        /// </summary>
+        public IFilesStorageProviderV30 Provider { get; }
+
+        /// <summary>
+        ///     Gets the directory of a file.
+        /// </summary>
+        /// <param name="filePath">The full file path, such as '/file.txt' or '/directory/sub/file.txt'.</param>
+        /// <returns>The directory, such as '/' or '/directory/sub/'.</returns>
+        public static string GetDirectory(string filePath)
+        {
+            if (!filePath.StartsWith("/")) filePath = "/" + filePath;
+
+            var lastIndex = filePath.LastIndexOf("/");
+            if (lastIndex == 0) return "/";
+            return filePath.Substring(0, lastIndex + 1);
+        }
+    }
+}

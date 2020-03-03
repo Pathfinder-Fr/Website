@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <!-- Utilities-->
+
+  <resource key="admin_contains">Contains</resource>
+  <resource key="admin_isequal">IsEqual</resource>
+
+  <!-- Admin Page Urls -->
+
+  <resource key="hlSettingsAddonPack">/admin/addonpack/SettingsAddonPack.aspx</resource>
+  <resource key="hlClientAccess">/admin/addonpack/siteaccesscontrol/default.aspx</resource>
+  <resource key="hlSlideShows">/admin/addonpack/slideshows/default.aspx</resource>
+  <resource key="hlBlogPostImages">/admin/addonpack/blogs/default.aspx</resource>
+  <resource key="hlForumAnswers">/admin/addonpack/forumanswers/default.aspx</resource>
+  <resource key="hlMediaSets">/admin/addonpack/mediasets/default.aspx</resource>
+
+  <!-- Blog List View Control -->
+  
+  <resource key="listview_blog_categorieslabel">Categories:</resource>
+  <resource key="listview_blog_categorylabel">Category:</resource>
+
+  <!-- Forum Answers-->
+
+  <resource key="answer_button_mark">Mark as Answer</resource>
+  <resource key="answer_button_undo">Undo as Answer</resource>
+  <resource key="answer_button_confirm">Confirm as Answer</resource>
+  <resource key="answer_button_unconfirm">Undo Confirm</resource>
+
+  <resource key="answer_button_mark_title">Mark this Post as an Answer</resource>
+  <resource key="answer_button_undo_title">Undo marking this Post as an Answer</resource>
+  <resource key="answer_button_confirm_title">Confirm that this Post is an Answer</resource>
+  <resource key="answer_button_unconfirm_title">Undo Confirming this Post an Answer</resource>
+
+</resources>

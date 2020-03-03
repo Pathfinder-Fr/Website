@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme2" runat="server" StyleSheet="sueetie.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="search.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+        <![endif]-->
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

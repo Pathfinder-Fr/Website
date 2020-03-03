@@ -1,0 +1,155 @@
+﻿body {
+}
+#FilteredUsersBody
+{
+    margin-left: 100px;
+    width: 500px;
+}
+#FilteredUrlsLeft, #PageRulesLeft
+{
+    float: left;
+    width: 500px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+#PageRulesLeft
+{
+    width: 500px;
+}
+#PageRulesTop table.agentTable td
+{
+    font-size: .8em;
+}
+#FilteredUrlsRight, #PageRulesRight
+{
+    float: left;
+    margin-left: 0px;
+}
+#PageRulesRight
+{
+    width: 500px;
+}
+#PageRulesBottom table.AgentsTable
+{
+    margin-right: auto;
+    width: 100%;
+}
+#PageRulesBottom table.AgentsTable td.rawUrls
+{
+    overflow: hidden;
+    width: 500px;
+}
+.UrlActivity table.AgentsTable, .AnalyticsReportPages table.AgentsTable
+{
+    width: 100%;
+}
+.UrlActivity table.AgentsTable td
+{
+    font-size: .9em;
+}
+.FilteredUrlMessage
+{
+    margin-left: 190px;
+    margin-top: 20px;
+}
+table.AgentsTable td img
+{
+    vertical-align: bottom;
+}
+.ReportTitleSelectArea
+{
+    width: 100%;
+    overflow: hidden;
+    font-size: 1em;
+}
+.ReportTitleSelectArea .Title{
+    color: #D50031;
+    font-size: 1.6em;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 27px;
+    float: left;
+}
+.ReportTitleSelectArea .SelectArea
+{
+    float: right;
+    text-align: right;
+    margin-top: 25px;
+}
+.ReportTitleSelectArea select
+{
+    padding: 2px;
+    font-size: 1.1em;
+}
+.ReportTitleSelectArea .SelectArea select.BigDropDown
+{
+    display: inline;
+}
+.AnalyticsReportPages .HeaderBox
+{
+    margin-top: 0px;
+}
+.TableTopSelectArea
+{
+    width: 100%;
+    margin-right: 0px;
+    text-align: right;
+    margin-top: 10px;
+    clear: left;
+}
+.TableTopSelectArea input
+{
+    vertical-align: middle;
+}
+.TableTop
+{
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+}
+.TableTopLeft
+{
+    width: 225px;
+    text-align: left;
+    margin-top: 10px;
+    float: left;
+}
+.TableTopLeft select
+{
+    vertical-align: middle;
+    padding: 3px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+}
+.TableTopRight {
+    float: right;
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.5;
+    margin-top: 15px;
+    text-align: right;
+    vertical-align: baseline;
+    width: 400px;
+}
+.dataTables_wrapper
+{
+    overflow: hidden;
+}
+
+.blogRssNotes
+{
+    clear: left;
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+    font-size: .8em;
+    font-family: Tahoma;
+    color: #dF0031;
+}
+.ReportReturnLink
+{
+    font-size: 1.1em;
+    margin-top: 18px;
+}

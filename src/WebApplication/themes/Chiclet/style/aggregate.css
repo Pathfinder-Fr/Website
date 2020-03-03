@@ -1,0 +1,166 @@
+﻿div.post .author
+{
+    color: #666666;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+div.post .author a.BlogTitle
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+a
+{
+    text-decoration: none;
+}
+
+div.post, .mceContentBody
+{
+    line-height: 17px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+div.posts .listtext
+{
+    padding-top: 16px;
+}
+#contentInner .aggregatemenu
+{
+    background-color: #f5f5f5;
+    border: solid 1px #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+#contentInner .aggregatemenu ul
+{
+    line-height: 4px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+}
+.blogs, .posts
+{
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#contentInner h3.listposttitle
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+#contentInner h3.listposttitle a
+{
+    text-decoration: none;
+}
+#contentInner h3.listposttitle a:hover, #contentInner h3.listposttitle a:active
+{
+    color: #999;
+    text-decoration: underline;
+}
+h2 a.taggedlink:link, h2 a.taggedlink:visited, h2.listblogtitle a.taggedlink:link, h2.listblogtitle a.taggedlink:visited
+{
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #D50031;
+    font-weight: normal;
+}
+h2 a.taggedlink:hover, h2 a.taggedlink:active, h2.listblogtitle a.taggedlink:hover, h2.listblogtitle a.taggedlink:active
+{
+    color: #000;
+}
+h2.listblogtitle a.taggedlink:link, h2.listblogtitle a.taggedlink:visited
+{
+    font-size: 22px;
+}
+h2.listblogtitle
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+h2.listblogtitle a.taggedlink:active, h2.listblogtitle a.taggedlink:hover
+{
+    color: #000;
+}
+.blogs .bloglistitem .MostRecentPost
+{
+    font-size: 16px;
+    color: #333;
+}
+.blogs .bloglistitem .MostRecentPost a:active, .blogs .bloglistitem .MostRecentPost a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.blogs .bloglistitem
+{
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: block;
+}
+.blogs .bloglistitem .author
+{
+    font-size: 12px;
+}
+.blogs .bloglistitem .author a:link, .blogs .bloglistitem .author a:visited
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+.blogs .bloglistitem .author a:active, .blogs .bloglistitem .author a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.blogs .bloglistitem a.BlogPostTitle
+{
+    text-decoration: none;
+}
+#BlogSideTitle a:active, #BlogSideTitle a:hover
+{
+    text-decoration: underline;
+}
+#blogblog, #blogbusiness, #blogroundup
+{
+    background-repeat: no-repeat;
+}
+.listpostblog, .listpostbusiness, .listpostroundup
+{
+    padding-left: 0px;
+}
+.sidebarRssImage
+{
+    margin-top: 26px;
+    text-align: right;
+    width: 206px;
+}
+.sidebarRssImage img
+{
+    border: none;
+}
+.sidebarRssImage a
+{
+}
+div.post .authorPubDate
+{
+    font-size: 12px;
+    overflow: hidden;
+    display: block;
+}
+div.post .authorPubDate a
+{
+    font-size: 12px;
+}

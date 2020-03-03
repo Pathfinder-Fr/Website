@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="BlogEngine.Themes.Chiclet.MobileSite" %>
+<%@ Register Src="~/themes/chiclet/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+</head>
+
+<body>
+  <form runat="server">
+  <a name="top"></a>
+  <div id="header">
+      <h3>Sueetie</h3>
+      <p>Online Community Software for Nice People</p>
+    </div>
+ <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+	  
+    <div id="content">
+    <asp:ContentPlaceHolder ID="cphNavigation" runat="server" Visible="false" /> 
+      <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+    </div>
+    
+    <div id="PoweredByOuter">
+    <div id="PoweredByInner">
+    <a href="http://www.dotnetblogengine.net/" target="_blank"><img src="/themes/chiclet/images/betran.png" /></a><br />
+	    <p>Powered by <a href="http://www.dotnetblogengine.net/" target="_blank">BlogEngine.NET</a> <br />Mobile Theme by <a href="http://dbvt.com/">Dave Burke</a></p>
+    </div>
+    </div>
+    <uc1:Footer ID="Footer1" runat="server" />
+  </form>
+</body>
+</html>

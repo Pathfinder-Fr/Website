@@ -1,0 +1,330 @@
+#ContentBodyRight #content
+{
+    margin-left: 18px;
+    margin-right: 0px;
+}
+#ContentBodyLeft #content
+{
+    margin-left: 0px;
+    margin-right: 18px;
+}
+#ContainerDivOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#ContainerDiv
+{
+    /*border: solid 2px #888888; */
+    margin: 18px auto;
+    padding: 0px;
+    width: 980px;
+    text-align: left;
+}
+.headerTitleButtons
+{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    
+}
+.headerTitleLeft
+{
+    float: left;
+    margin: 3px;
+}
+.headerButtonsRight
+{
+    float: right;
+    margin: 3px;    
+}
+.headerButtonsRight a
+{
+    color: #fff;
+}
+.headerLinksRight
+{
+    float: right;
+    margin-right: 6px;
+}
+.headerLinksRight a:link.HeaderLink, .headerLinksRight a:visited.HeaderLink
+{
+    color: #eee;
+    text-decoration: none;
+}
+.headerLinksRight a:hover.HeaderLink, .headerLinksRight a:active.HeaderLink
+{
+    color: #fff;
+    text-decoration: underline;
+}
+.yafnet .header1 a:link.yaflittlebutton, .yafnet .header1 a:visited.yaflittlebutton
+{
+    color: #fff;
+}
+.TopicListTitle
+{
+    line-height: 18px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.TopicListTitle a
+{
+    font-size: 16px;   
+}
+.TopicListBy
+{
+    line-height: 14px;
+    font-size: 11px;
+    padding-top: 6px;
+    display: block;
+    width: 100%;
+}
+.TopicListBy a, .TopicListLatestBy a
+{
+    font-weight: bold;
+}
+.TopicListForum a
+{
+    font-weight: normal;
+}
+.TopicListLatestBy
+{
+    display: block;
+}
+#ProfileArea
+{
+    overflow: hidden;
+    display: block;
+}
+#ProfileTable
+{
+    width: 600px;
+    display: block;
+    float: left;
+}
+#ProfileAvatar
+{
+    width: 220px;
+    background: none;
+    float: right;
+}
+#ProfileAvatar img.ProfileAvatarImage
+{
+    border: solid 2px #000;
+    height: 100px;
+    width: 100px;
+}
+#content
+{
+    width: 100%;
+    margin: 0px;
+}
+#bodyarea {
+padding:20px;
+width:920px;
+}
+#bodyinner
+{
+    margin-bottom: 30px;
+}
+.yafnet div.postdiv 
+{
+    width: 96%;
+}
+#content p
+{
+    line-height: normal;
+}
+div.yafnet
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+div#userMenu ul.menu
+{
+    margin-right: 0px;
+}
+.tagsArea
+{
+    margin-top: 0px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.tagsLabel
+{
+    margin-right: 0px;
+}
+.profileUpdateMsg {
+color:#D50031;
+font-family:Tahoma;
+font-size:1.5em;
+padding:6px;
+}
+.profileUpdateMsg strong
+{
+    font-weight: bold;
+}
+.yafnet .content .profileUpdateMsg a
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.guestUser, .memberUser
+{
+    font-weight: bold;
+}
+img.AvatarImage
+{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #ccc;
+}
+img.AvatarImageBig
+{
+    width: 150px;
+    border: 1px solid #ccc;
+}
+.yafnet .innercode
+{
+    margin-bottom: 0px;
+}
+.yafnet .code 
+{
+    margin-top: 15px;
+}
+.yafnet .innerquote
+{
+    margin-bottom: 0px;
+}
+.LicenseNoRecords
+{
+    
+}
+.yafnet #Licenses table.content
+{
+    margin: 30px auto;
+   font-size: 1.2em;
+   background-color: #f5f5f5;
+}
+.yafnet #Licenses
+{
+    width: 100%;
+    text-align: center;
+    min-height: 300px;
+}
+.yafnet #Licenses #LicensesInner
+{
+    width: 860px;
+    margin: 30px auto;
+}
+.LicenseListProduct
+{
+    font-size: 1.6em;
+    color: #D50031;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.yafnet #Licenses table.content
+{
+    margin-top: 0px;
+}
+.yafnet #Licenses table.content th 
+{
+    background-color: #ddd;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.yafnet #Licenses table.content td
+{
+    font-size: 1em;
+    text-align: left;
+}
+.yafnet #Licenses table.content td.licenseImage
+{
+    text-align: center;
+}
+.yafnet #Licenses table.content tr.alt
+{
+    background-color: #fff;
+}
+.yafnet #Licenses table.content tr.footerRow
+{
+    color: #d50031;
+}
+td.licenseImage 
+{
+    text-align: center;
+}
+tr.footerRow
+{
+    text-align: left;
+}
+.yafnet .outerMenuContainer {
+    background-color: #F4F4F4;
+    border: solid 1px #CCCCCC;
+    border-top-style: solid;
+    border-top-width: 1px;
+    float: left;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: right;
+    width: 100%;
+}
+.yafnet .menuContainer 
+{
+    float: none;
+    margin-right: 6px;
+}
+
+/* ANSWERS -------------------------------------------------- */
+
+.yafnet a.restoredLittleButton
+{
+    display: block;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+}
+.yafnet a.hideit
+{
+    display: none;
+}
+.yafnet table.answerTable, .yafnet table.answerTable td
+{
+    border: 1px solid #D6BDBD;
+    background-color: #F0E1E1;
+}
+.yafnet .answerTable .postPosted, .yafnet .answerTable .message, .yafnet .answerTable .postTop, .yafnet .answerTable .postInfoBottom
+{
+    background-color: #F0E1E1;
+}
+.yafnet .answerTable .postdiv
+{
+    background-image: url('/themes/lollipop/images/answerback.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #F0E1E1;
+}
+.yafnet table.postContainer_Alt.answerTable td
+{
+    background-color: #F0E1E1;
+}
+.yafnet table.answerTable tr.post_alt td.thanksBox
+{
+    background-color: #F0E1E1;
+}
+.yafnet table.answerTable td, .yafnet table.postContainer_Alt .answerTable td
+{
+    border: none;
+    background-color: #F0E1E1;
+}
+.yafnet table.answerTable tr.postsep td
+{
+    background-color: #F0E1E1;
+}

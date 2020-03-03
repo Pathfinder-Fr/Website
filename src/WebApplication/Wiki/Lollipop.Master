@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="ScrewTurn.Wiki.MasterPage"
+    CodeBehind="MasterPage.master.cs" %>
+
+<%@ Register TagPrefix="uc" TagName="UserMenu" Src="~/themes/lollipop/menus/UserMenu.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id="Title1" runat="server">Title</title>
+
+</head>
+<body>
+    <form runat="server" id="FrmMaster">
+    <div id="pageouter">
+        <div id="pageinner">
+            <div id="topouter">
+                <div id="topstrip">
+                    <div id="topstripinner">
+                        <asp:ContentPlaceHolder ID="phSiteMenu" runat="server">
+                            <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div id="bodyouter">
+                <div id="bodyinner">
+                    <div id="homePageLink">
+                        <a href="/default.aspx" title="" class="logoLink">
+                            <img src="/images/shared/sueetie/logo.png" alt="" /></a>
+                    </div>
+                    <div id="bodyarea">
+                        <div id="userMenu">
+                            <uc:UserMenu ID="UserMenu1" runat="server" />
+                        </div>
+                        <asp:Literal ID="lblStrings" runat="server" EnableViewState="false" />
+
+                        <script type="text/javascript">
+		<!--
+                            function __GetServerElementById(id) {
+                                return document.getElementById(__BaseName + id);
+                            }
+                            function __RequestConfirm() {
+                                return confirm(__ConfirmMessage);
+                            }
+		// -->
+                        </script>
+
+                        <div id="content">
+                            <div id="MainHeaderDiv">
+                                <div id="NavLinks">
+                                    <asp:Literal ID="lblSidebarDiv" runat="server" EnableViewState="false" />
+                                </div>
+                                <div id="NamespaceSelectDiv">
+                                    <asp:Literal ID="lblHeaderDiv" runat="server" EnableViewState="false" />
+                                </div>
+                            </div>
+                            <br />
+                            <asp:Literal ID="lblPageHeaderDiv" runat="server" EnableViewState="false" />
+                            <asp:ContentPlaceHolder ID="CphMaster" runat="server" />
+                            <asp:Literal ID="lblPageFooterDiv" runat="server" EnableViewState="false" />
+                            <div id="MainFooterDiv">
+                                <a href="http://www.screwturn.eu">
+                                    <img src="Images/PoweredBy.png" border="0" /></a>
+                            </div>
+                            <asp:Literal ID="lblFooterDiv" runat="server" EnableViewState="false" />
+                        </div>
+                    </div>
+                    <div id="footerouter">
+                        <div id="footerinner">
+                            <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+                            <br />
+                            <div id="sueetielogo">
+                                <SUEETIE:SueetieLogo ID="SueetieLogo1" runat="server" ShowText="True" LogoFont="White" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

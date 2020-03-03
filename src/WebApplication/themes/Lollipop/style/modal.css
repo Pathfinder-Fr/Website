@@ -1,0 +1,95 @@
+﻿#basic-modal-content
+{
+    display: none;
+}
+#simplemodal-overlay
+{
+    background-color: #999;
+    cursor: wait;
+}
+#simplemodal-data
+{
+    overflow: hidden;
+}
+#simplemodal-container
+{
+    background-color: #FFFFFF;
+    border: 2px solid #444444;
+    color: #000000;
+    min-height: 400px;
+    padding: 12px;
+    width: 600px;
+    overflow: visible;
+}
+#simplemodal-container code
+{
+    background: #141414;
+    border-left: 3px solid #65B43D;
+    color: #bbb;
+    display: block;
+    margin-bottom: 12px;
+    padding: 4px 6px 6px;
+}
+#simplemodal-container a
+{
+    color: #ddd;
+    outline: none;
+}
+#simplemodal-container a.modalCloseImg
+{
+    background: url(/themes/lollipop/images/x.png) no-repeat;
+    width: 25px;
+    height: 29px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    cursor: pointer;
+}
+#simplemodal-container #basic-modal-content
+{
+    padding: 8px;
+}
+#simplemodal-container .simplemodal-wrap
+{
+height: 420px;
+}
+.InnerModal {
+background-color:#F4F4F4;
+border:1px solid #CCCCCC;
+height:333px;
+margin-top:3px;
+overflow-y:scroll;
+padding:12px;
+width:95%;
+}
+.ModalCloseArea
+{
+    margin-top: 7px;
+    display: block;
+    height: 28px;
+    padding-right: 0;
+    text-align: right;
+    width: 100%;
+}
+.ModalCloseArea input.simplemodal-close
+{
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    font-size: 11px;
+    margin-right: 3px;
+    padding: 5px 9px;
+    text-decoration: none;
+    outline: 0;
+}
+.ModalCloseArea input.simplemodal-close:hover
+{
+    background-color: #ddd;
+    text-decoration: underline;
+}
+.ModalCloseArea input.simplemodal-close a
+{
+    outline: 0;
+}

@@ -1,0 +1,15 @@
+﻿/*  */
+.display_left { float: left; margin-right: 20px; }
+.display_right { margin-left: 156px; }
+
+h3.ProductTitle { background: transparent url(theme/content-heading.png) no-repeat left top; padding-left: 26px; color: #4b3124; font-size: 16pt; }
+    h3.ProductTitle a { text-decoration: none; color: #4b3124; }
+
+#ad_details h4 { border: 1px solid #e7dfc6; background-color: #f3efe2; padding: 4px; font-weight: normal; }
+#ad_details h5 { font-size: 1.2em; }
+
+table.ItemDetail { width: auto; }
+
+/* Categories Browser */
+.pnlCategoryBrowser { }
+.category_list_title { font-size: 1.4em; margin-top: 20px; }

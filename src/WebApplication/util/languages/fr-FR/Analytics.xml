@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <!-- Utilities-->
+
+  <resource key="admin_contains">Contains</resource>
+  <resource key="admin_isequal">IsEqual</resource>
+
+  <resource key="home_page">Home Page</resource>
+
+  <!--<resource key="yaf_im_email">Member Email</resource>
+  <resource key="yaf_pmessage">Member Personal Message</resource>
+  <resource key="yaf_profile">Member Profile Page</resource>
+  <resource key="yaf_cp_profile">Member Dashboard</resource>
+  <resource key="yaf_members">Members</resource>
+  <resource key="yaf_mytopics">Discussions - My Topics</resource>
+  <resource key="yaf_myalbums">Member Albums</resource>
+  <resource key="yaf_search">Discussions - Search</resource>
+  <resource key="yaf_help_index">Discussions - Help</resource>
+  <resource key="yaf_cp_pm">Member Conversations</resource>
+  <resource key="wiki_page_rss">Wiki Page RSS</resource>
+  <resource key="wiki_allpages">Wiki - All Pages</resource>-->
+
+  <!-- Wiki -->
+  <resource key="wiki_title_prefix_rss">Wiki RSS: </resource>
+
+  <!-- Admin Page Urls -->
+  <resource key="hlViewsAllPages">/admin/analytics/reports/views/ViewsAllPages.aspx</resource>
+  <resource key="hlViewsAllMembers">/admin/analytics/reports/views/ViewsAllMembers.aspx</resource>
+  <resource key="hlViewsTopMembers">/admin/analytics/reports/views/ViewsTopMembers.aspx</resource>
+  <resource key="hlBlogRss">/admin/analytics/reports/blogs/BlogRss.aspx</resource>
+  <resource key="hlFilterUsers">/admin/analytics/maintenance/FilterUsers.aspx</resource>
+  <resource key="hlFilterUrls">/admin/analytics/maintenance/FilterUrls.aspx</resource>
+  <resource key="hlPageRules">/admin/analytics/maintenance/PageRules.aspx</resource>
+  <resource key="hlRemoveRefreshes">/admin/analytics/maintenance/RemoveRefreshes.aspx</resource>
+  <resource key="hlSettingsAnalytics">/admin/analytics/SettingsAnalytics.aspx</resource>
+  <resource key="hlTagClicks">/admin/analytics/reports/search/tagclicks.aspx</resource>
+  <resource key="hlSearchTerms">/admin/analytics/reports/search/searchterms.aspx</resource>
+
+</resources>

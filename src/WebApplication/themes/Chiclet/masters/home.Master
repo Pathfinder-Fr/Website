@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <meta name="description" content="Sueetie Open Source Online Community" />
+    <meta name="keywords" content="Open Source Online Communities" />
+    <meta name="verify-v1" content="YourGoogleVerificationCode" />
+         <SUEETIE:SueetieTheme ID="SueetieTheme1" StyleSheet="shared.css" runat="server" />
+        <SUEETIE:SueetieTheme ID="SueetieTheme5" StyleSheet="home.css" runat="server" />
+        <SUEETIE:SueetieTheme ID="SueetieTheme6" StyleSheet="jquery-ui-1.7.2.custom.css"
+            runat="server" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <script type="text/javascript" src="/scripts/jquery.js"></script>
+        <script type="text/javascript" src="/scripts/jquery-ui-1.7.2.custom.min.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+
+                // Tabs
+                $('#tabs').tabs();
+
+            });
+        </script>
+</asp:Content>
+
+<asp:Content ID="ContentA" ContentPlaceHolderID="cpHeaderInner" runat="server">
+    <div id="header">
+      <h3>Sueetie</h3>
+      <p>Online Community Software for Nice People</p>
+    </div>
+<SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>
+

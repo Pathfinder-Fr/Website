@@ -1,0 +1,11 @@
+- [forum] Dropper l'index IX_yaf_activeuser_userid
+
+- [forum] mettre à jour la proc stoc sueetie
+
+- [wiki] Copier le plugin pf membership
+
+- [wiki] Copier la config du plugin pf membership
+
+- [wiki] Passer le groupe utilisateurs par défaut sur "Registered"
+
+- [wiki] Ajouter les droits du groupe "Users" au groupe "Registered"

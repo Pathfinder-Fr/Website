@@ -1,0 +1,540 @@
+﻿/* CONTENT ELEMENTS */
+
+
+.posts
+{
+}
+div.post
+{
+    margin: 3px 3px 11px 3px;
+    background-color: #fff;
+    border: solid 1px #D50031;
+    padding: 14px 14px 6px 14px;
+    background-image: url(/themes/chiclet/images/wire_bg.png);
+    background-repeat: repeat-x;
+}
+div.post a:link, div.post a:visited
+{
+    color: #D50031;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.post a:hover, div.post a:active
+{
+    text-decoration: underline;
+}
+.titlelogo
+{
+    background-image: url("/themes/chiclet/images/titlelogoback.png");
+    background-position: 0 13px;
+    background-repeat: no-repeat;
+    line-height: 36px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 38px;
+}
+.titlelogo H2
+{
+    margin-top: 12px;
+}
+#content .postheader {
+color:#D50031;
+font-size:0.9em;
+font-weight:lighter;
+letter-spacing:-0.03em;
+line-height:1em;
+text-decoration:none;
+}
+#content .postheader:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+#content .AuthorDate
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+#content .author
+{
+    color: Gray;
+}
+
+#content .pubDate
+{
+    color: #D50031;
+    float: right;
+    font-family: tahoma;
+    font-weight: normal;
+}
+#content .entry
+{
+    clear: both;
+    display: block;
+    font-family: tahoma;
+    margin-bottom: 13px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 13px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: normal;
+}
+#content .postfooter
+{
+    border-bottom-color: #DDDDDD;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-top-color: #DDDDDD;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    font-size: 0.85em;
+    line-height: normal;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 7px;
+}
+#content .postfooter span
+{
+    font-weight: bold;
+}
+#postnavigation
+{
+    height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: Gray;
+}
+
+
+/* POST ELEMENTS */
+
+#relatedPosts a
+{
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.comment a
+{
+    color: #D50031;
+}
+.comment a:hover, .comment a:active
+{
+    color: #000;
+}
+
+.comment
+{
+    border-top: 1px dashed #DDDDDD;
+    border-bottom: 1px dashed #DDDDDD;
+    padding: 10px 15px 35px 15px;
+    margin-bottom: 10px;
+}
+
+.comment .date
+{
+    text-align: right;
+    margin: 0;
+    padding: 3px 0px;
+}
+.comment .author
+{
+    margin: 0;
+    text-align: left;
+    padding-top: 3px;
+    margin: 10px 0px 10px 0px;
+}
+
+.self
+{
+    background-color: #fbfbfb;
+}
+
+.comment .gravatar
+{
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+
+.comment .gravatar img
+{
+    height: 80px;
+}
+
+.comment .content
+{
+    min-height: 85px;
+    margin: 5px 0 0 5px;
+}
+.commentForm
+{
+    padding: 5px;
+    line-height: normal;
+}
+
+.commentForm label
+{
+    float: left;
+    display: block;
+    width: 80px;
+}
+
+.commentForm input
+{
+    width: 255px;
+}
+.commentForm input.SendButtonBigText
+{
+    width: auto;
+}
+.commentForm textarea
+{
+    width: 100%;
+    height: 150px;
+}
+.commentForm textarea
+{
+    font-size: 1.2em;
+    font-family: Arial;
+}
+
+#commentPreview
+{
+    display: none;
+    clear: both;
+    min-height: 150px;
+}
+
+
+.commentForm textarea
+{
+    width: 96%;
+    height: 180px;
+    border: 1px solid silver;
+    padding: 12px;
+}
+
+#commentMenu
+{
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+#commentMenu li
+{
+    float: left;
+    border: 1px solid silver;
+    border-bottom: transparent;
+    margin: 0;
+    list-style: none;
+    margin-right: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    background: #eee;
+}
+
+#commentMenu li.selected
+{
+    background: white;
+    border-bottom: 1px solid white;
+}
+
+.commentForm .bbcode
+{
+    font-size: 10px;
+    float: right;
+    position: relative;
+    top: 20px;
+    padding: 3px;
+}
+
+.bbcode a
+{
+    margin: 1px;
+    padding: 1px 3px 1px 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #D50031;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.ButtonBigText:hover, input.ButtonBigText:hover, input.SendButtonBigText:hover
+{
+    background-color: #DDDDDD;
+    color: #333333;
+    text-decoration: underline;
+}
+.SendButtonBigText a:link, .SendButtonBigText a:visted
+{
+    border: none;
+}
+.ButtonBigText, input.ButtonBigText, .SendButtonBigText, input.SendButtonBigText
+{
+    background-color: #EEEEEE;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: -moz-inline-box;
+    font-family: Arial,Helvetica;
+    font-size: 18px;
+    padding: 10px;
+    white-space: nowrap;
+}
+.SearchButtonBigText
+{
+    padding: 2px;
+    background-color: #EEEEEE;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: -moz-inline-box;
+    font-family: Arial,Helvetica;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+/*----------------------------
+					Archive
+----------------------------*/
+
+#archive
+{
+    padding: 10px;
+}
+
+#archive h1
+{
+    margin: 0;
+    padding-bottom: 9px;
+}
+
+#archive h2
+{
+    border-bottom: 1px solid silver;
+    padding-bottom: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#archive h2 img
+{
+    margin-right: 3px;
+}
+
+#archive ul
+{
+    list-style-type: square;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#archive ul li
+{
+    margin-right: 20px;
+}
+
+#archive table
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#archive table td, #archive table th
+{
+    text-align: left;
+}
+
+#archive table td
+{
+    text-align: left;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 2px 0;
+}
+
+#archive .comments
+{
+    text-align: center;
+    display: none;
+}
+
+#archive .rating
+{
+    text-align: center;
+    display: none;
+}
+
+/*----------------------------
+				Contact page
+----------------------------*/
+
+#contact
+{
+    background: white;
+    padding: 10px;
+}
+
+#contact h1
+{
+    margin-top: 0;
+}
+
+#contact label
+{
+    display: block;
+    padding-top: 5px;
+}
+
+#contact input.field
+{
+    width: 200px;
+}
+
+#contact textarea
+{
+    display: block;
+    overflow: auto;
+    width: 75%;
+    height: 150px;
+    margin: 0;
+}
+
+/*----------------------------
+				Search page
+----------------------------*/
+
+.searchresult
+{
+    margin-bottom: 20px;
+}
+
+.searchresult a
+{
+    font-weight: bold;
+}
+
+.searchresult span.text
+{
+    clear: both;
+    display: block;
+    margin: 3px 0;
+}
+
+.searchresult span.type
+{
+    display: block;
+}
+
+.searchresult span.url
+{
+    color: Gray;
+}
+
+.searchpage ul.paging
+{
+    list-style-type: none;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.searchpage ul.paging li
+{
+    display: inline;
+    border: 1px solid gray;
+    background: #f1f1f1;
+    margin-right: 5px;
+}
+
+.searchpage ul.paging li a
+{
+    padding: 5px 8px;
+}
+
+.searchpage ul.paging li.active
+{
+    background: #f1f1f1;
+    border: 1px solid black;
+}
+
+/*----------------------------
+			Syntax highlighter
+----------------------------*/
+
+.code
+{
+    font-size: 12px;
+    color: black;
+    font-family: Consolas, "Courier New" , Courier, Monospace;
+    background-color: #F1F1F1;
+    line-height: normal;
+}
+
+.code p
+{
+    padding: 5px;
+}
+
+.code .rem
+{
+    color: #008000;
+}
+
+.code .kwrd
+{
+    color: #0000ff;
+}
+
+.code .str
+{
+    color: #006080;
+}
+
+.code .op
+{
+    color: #0000c0;
+}
+
+.code .preproc
+{
+    color: #0000ff;
+}
+
+.code .asp
+{
+    background-color: #ffff00;
+}
+
+.code .html
+{
+    color: #800000;
+}
+
+.code .attr
+{
+    color: #ff0000;
+}
+
+.code .alt
+{
+    background-color: #f4f4f4;
+}
+
+.code .lnum
+{
+    color: #606060;
+}

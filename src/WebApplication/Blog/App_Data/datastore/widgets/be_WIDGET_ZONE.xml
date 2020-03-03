@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widgets>
+  <widget id="fb38ecdd-5813-4d10-8c5f-8d901c7c731e" title="Recherche" showTitle="True">Search</widget>
+  <widget id="f3f65f28-8110-4eff-89ea-5428bc86c823" title="Autres Blogs" showTitle="True">Blogroll</widget>
+  <widget id="c001d004-3887-46eb-b26f-71d74b71eed2" title="@Twitter" showTitle="True">Twitter</widget>
+  <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Administration" showTitle="True">Administration</widget>
+</widgets>

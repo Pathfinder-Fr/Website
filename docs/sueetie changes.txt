@@ -1,0 +1,19 @@
+# ScrewTurnWiki.Core
+
+## UsersStorageProvider.cs
+	
+	NEW: public UserInfo[] GetUsers(bool refreshCache) { ... }
+
+Sueetie Modified - Forcing a usersCache refresh for new users
+
+	MODIFIED: public UserInfo TryManualLogin(string username, string password) { ... }
+
+Sueetie Modified - Changed test of username to lowercase()
+
+## Tools.cs
+
+	NEW: public static string GetIncludes(string nspace, string themeOverride) { ... }
+
+Ajout d'une surcharge avec un ThemeOverride
+
+Suppression `result.Append(GetJavaScriptIncludes());`

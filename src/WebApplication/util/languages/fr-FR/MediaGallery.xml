@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+    <resource key="list_createdon">Created on</resource>
+    <resource key="list_createdby">by</resource>
+
+    <resource key="process_updates">Apply Updates</resource>
+
+</root>

@@ -1,0 +1,8 @@
+﻿@import url(nosidebar.css);
+
+#contact, #contact input, #contact textarea { font-size: 11pt; }
+
+#contact label { display: block; float: left; width: 140px; padding-top: 3px; }
+#contact input, #contact textarea { display: block; padding: 3px; border: 1px solid #4B3124; background-color: #f6f4e1; }
+#contact textarea { width: 600px; height: 400px; }
+#contact input.send { border: 1px solid #4B3124; background-color: #73351e; color: #fff; margin: 0 auto; padding: 6px 12px; }

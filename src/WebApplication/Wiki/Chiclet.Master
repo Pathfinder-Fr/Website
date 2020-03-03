@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="ScrewTurn.Wiki.MasterPage"
+    CodeBehind="MasterPage.master.cs" %>
+
+<%@ Register Src="~/themes/Chiclet/menus/UserMenu.ascx" TagName="UserMenu" TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id="Title1" runat="server">Title</title>
+</head>
+<body>
+    <form runat="server" id="FrmMaster">
+    <div id="header">
+        <h3>
+            Sueetie</h3>
+        <p>
+            Online Community Software for Nice People</p>
+    </div>
+    <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+    <asp:Literal ID="lblStrings" runat="server" EnableViewState="false" />
+
+    <script type="text/javascript">
+		<!--
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+		// -->
+    </script>
+
+    <div id="content">
+        <div id="contentInner">
+            <div id="MainHeaderDiv">
+                <div id="NavLinks">
+                    <asp:Literal ID="lblSidebarDiv" runat="server" EnableViewState="false" Visible="false" />
+                </div>
+                <div id="NamespaceSelectDiv">
+                    <asp:Literal ID="lblHeaderDiv" runat="server" EnableViewState="false" />
+                </div>
+            </div>
+            <br />
+            <asp:Literal ID="lblPageHeaderDiv" runat="server" EnableViewState="false" />
+            <asp:ContentPlaceHolder ID="CphMaster" runat="server" />
+            <asp:Literal ID="lblPageFooterDiv" runat="server" EnableViewState="false" />
+            <div id="MainFooterDiv">
+                <a href="http://www.screwturn.eu">
+                    <img src="Images/PoweredBy.png" border="0" /></a>
+            </div>
+            <div id="bodyareabottom">
+                <asp:Literal ID="lblFooterDiv" runat="server" EnableViewState="false" />
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    <uc:UserMenu ID="UserMenu1" runat="server" />
+    <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+        <div id="sueetieFooterLogo">
+            <SUEETIE:SueetieLogo ID="SueetieLogo1" runat="server" LogoFont="White" ShowText="True" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

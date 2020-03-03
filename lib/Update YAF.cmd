@@ -1,0 +1,1 @@
+robocopy ..\..\..\yafnet\yafsrc\YetAnotherForum.NET\bin YAF Autofac.* Autofac.Configuration.* CookComputing.XmlRpcV2.* Intelligencia.UrlRewriter.* Moq.* nStuff.UpdateControls.* RssToolkit.* YAF.*.* FarsiLibrary.* ServiceStack.* Omu.* /TEE /LOG:"Update YAF.log"

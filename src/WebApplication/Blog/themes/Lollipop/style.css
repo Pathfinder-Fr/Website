@@ -1,0 +1,1082 @@
+﻿h1
+{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+h2
+{
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: -.5px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #5C80B1;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+img
+{
+	border: none;
+}
+
+
+.loginbox
+{
+	margin: 0 auto;
+}
+
+#postnavigation
+{
+	margin-bottom: 45px;
+	text-align: center;
+	color: Gray;
+	background: white;
+	border: 1px solid silver;
+	padding: 3px;
+	font-size: 12px;
+}
+
+/*----------------------------
+					 Header
+----------------------------*/
+
+#header
+{
+	text-align: right;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#header h1
+{
+	font-family: Arial;
+	font-size: 80px;
+	font-weight: bold;
+	margin: 0px;
+	letter-spacing: 8px;
+}
+
+#header h2
+{
+	font-weight: normal;
+	letter-spacing: 4px;
+	color: silver;
+	margin: 0px;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*----------------------------
+					 Blogroll
+----------------------------*/
+
+#blogroll ul
+{
+	list-style-type: none;
+	margin: 0 0 3px 0;
+	padding: 0px;
+}
+
+#blogroll ul li ul li a
+{
+	margin-left: 25px;
+	color: #666666;
+}
+
+#blogroll ul li a img
+{
+	border: none;
+	margin-right: 3px;
+}
+
+/*----------------------------
+					 Posts
+----------------------------*/
+
+div.post, .mceContentBody
+{
+	margin-bottom: 20px;
+	line-height: 17px;
+	overflow: hidden;
+}
+div.post h1, .mceContentBody h1
+{
+}
+
+div.post .author
+{
+	color: #666666;
+	font-size: 10px;
+	float: left;
+	text-transform: capitalize;
+}
+
+div.post .postbody
+{
+	margin-right: 20px;
+}
+
+div.post .postbody h2
+{
+	margin-bottom: 16px;
+}
+
+div.post .postbody h3
+{
+	font-size: 11px;
+	margin-bottom: -10px;
+	padding: 0;
+}
+
+.postfooter
+{
+	text-align: right;
+	border-top: 1px dashed silver;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	font-size: 11px;
+	width: 100%;
+}
+
+div.post .bottom
+{
+	margin-bottom: 45px;
+}
+#content div.post .listbottom
+{
+	margin-bottom: 25px;
+	display: block;
+
+}
+#content div.post .listbottom p.tags, #content div.post .listbottom p.categories
+{
+    	font-size: 12px;
+	font-family: Tahoma;
+	color: #D50031;
+}
+#content div.post .listbottom p.categories
+{
+    font-size: 14px;
+}
+div.post .tags a
+{
+    text-decoration: underline;
+}
+div.post .tags a:hover
+{
+    color: #000;
+}
+div.post .categories
+{
+	margin-bottom: 5px;
+	float: right;
+}
+
+div.post .tags
+{
+	float: left;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+
+div.post .postbody a[href^="http:"]
+{
+	background: url(../../pics/remote.gif) right top no-repeat;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+/*----------------------------
+			Related Posts
+----------------------------*/
+
+#relatedPosts div
+{
+	background: white;
+	padding: 5px 10px 10px 10px;
+	border: 1px solid silver;
+}
+
+#relatedPosts h1
+{
+	margin: 0 0 10px 0;
+}
+
+#relatedPosts a {
+display:block;
+margin-bottom:3px;
+margin-top:13px;
+}
+
+#relatedPosts span
+{
+	color: #666666;
+	text-indent: 10px;
+	font-size: 10px;
+}
+
+/*----------------------------
+				Recent posts
+----------------------------*/
+
+ul.recentPosts li
+{
+	padding-bottom: 10px;
+}
+
+ul.recentPosts li a
+{
+	font-weight: bold;
+}
+
+ul.recentPosts li span
+{
+	display: block;
+	text-indent: 10px;
+	text-transform: none;
+}
+
+/*----------------------------
+			Recent comments
+----------------------------*/
+
+ul.recentComments li
+{
+	padding-bottom: 10px;
+	text-transform: none;
+}
+
+ul.recentComments li a.postTitle
+{
+	font-weight: bold;
+}
+
+/*----------------------------
+			Social bookmarks
+----------------------------*/
+
+
+
+/*----------------------------
+					Comments
+----------------------------*/
+
+.comment
+{
+    clear: left;
+	border: 1px solid silver;
+	background-color: white;
+	padding: 3px 10px;
+	margin-bottom: 20px;
+}
+
+.comment .date
+{
+	font-size: 10px;
+	color: #666666;
+	text-align: right;
+	margin: 0;
+	padding: 3px 0px;
+	border-bottom: 1px dashed silver;
+}
+
+.comment .author
+{
+	margin: 0 0 10px 0;
+	padding: 3px 0px;
+	border-top: 1px dashed silver;
+}
+
+.self
+{
+	border: 1px solid #ddd;
+	background-color: #eeeeee;
+}
+
+.comment .gravatar {
+	float: left;
+	clear: both;
+	margin: 5px 10px 5px 0;
+}
+
+.comment .gravatar img.BlogAvatar {
+	height: 80px;
+	width: 80px;
+	border: solid 1px #ddd;
+}
+.comment .gravatar img.BlogAvatar:hover {
+	border: solid 1px #CB0644;
+}
+.comment .content
+{
+	min-height: 85px;
+	margin: 5px;
+	margin-left: 90px;
+}
+
+.comment cite
+{
+	font-family: Monospace;
+	font-style: normal;
+}
+
+.comment img.flag
+{
+	position: relative;
+	top: 2px;
+}
+
+.commentFields
+{
+	padding-top: 30px;
+	float: right;
+	width: 100%;
+}
+.commentForm
+{
+	padding: 5px;
+	float: left;
+	width: 670px;
+}
+.commentForm p
+{
+	margin: 8px;
+}
+.commentForm label
+{
+	float: left;
+	display: block;
+	width: 80px;
+	margin-top: 4px;
+}
+
+.commentForm input
+{
+	width: 300px;
+	border: solid 1px #ddd;
+	padding: 2px;
+	font-size: 14px;
+	background-color: #fff;
+	margin-bottom: 8px;
+}
+.commentForm input#btnSaveAjax
+{
+    width: 150px;
+}
+.commentForm input:hover
+{
+	background-color: #eee;
+	border: solid 1px #ddd;	
+}
+.commentForm textarea
+{
+	width: 100%;
+	height: 150px;
+	border: 1px solid silver;
+}
+
+#commentMenu
+{
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+#commentMenu li
+{
+	float: left;
+	border: 1px solid silver;
+	border-bottom: transparent;
+	margin: 0;
+	list-style: none;
+	margin-right: 5px;
+	padding: 3px 8px;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+	background: #eee;
+}
+
+#commentMenu li.selected
+{
+	background: white;
+	border-bottom: 1px solid white;
+}
+
+#commentPreview
+{
+	display: none;
+	clear: both;
+	min-height: 150px;
+}
+
+.success
+{
+	color: #cb0644;
+	font-weight: bold;
+}
+
+.commentForm .bbcode
+{
+	font-size: 10px;
+	float: right;
+	position: relative;
+	top: 20px;
+	padding: 3px;
+}
+
+.bbcode a
+{
+	margin: 1px;
+	padding: 1px 3px 1px 3px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+/*----------------------------
+					Archive
+----------------------------*/
+
+#archive
+{
+	border: 1px solid silver;
+	padding: 10px;
+	font-size: 80%;
+}
+
+#archive h1
+{
+	margin: 0;
+	border-bottom: 1px dashed silver;
+	padding-bottom: 9px;
+}
+
+#archive h2
+{
+	border-bottom: 1px solid silver;
+	padding-bottom: 4px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+#archive h2 img
+{
+	margin-right: 3px;
+}
+
+#archive ul
+{
+	list-style-type: square;
+	margin: 0 10px;
+	padding: 20px 0px 0px 20px;
+}
+
+#archive ul li
+{
+	margin-right: 20px;
+	line-height: 18px;
+}
+
+#archive table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#archive table td, #archive table th
+{
+	text-align: left;
+}
+
+#archive table td
+{
+	text-align: left;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 2px 0;
+	font-size: 12px;
+}
+
+#archive .date
+{
+	width: 90px;
+}
+
+#archive .comments
+{
+	width: 70px;
+	text-align: center;
+}
+
+#archive .rating
+{
+	width: 70px;
+	text-align: center;
+}
+
+/*----------------------------
+					 Search
+----------------------------*/
+
+#searchbox {
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#searchbox input
+{
+	font-size: 12px;
+}
+
+#searchbox #searchbutton
+{
+	margin-left: 0px;
+	margin-top: 3px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+#searchbox #searchfield
+{
+	width: 180px;
+}
+
+/*----------------------------
+			Search on search
+----------------------------*/
+
+#searchonsearch
+{
+	background: white;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	border: 1px solid silver;
+}
+
+#searchonsearch h3
+{
+	margin: 3px;
+	font-size: 13px;
+}
+
+#searchonsearch ol li
+{
+	margin: 2px 0;
+}
+
+/*----------------------------
+				Month list
+----------------------------*/
+
+ul#monthList
+{
+	font-weight: bold;
+}
+
+ul#monthList ul li
+{
+	margin-left: 20px;
+	font-weight: normal;
+}
+
+ul#monthList li.year
+{
+	cursor: pointer;
+}
+
+ul#monthList ul
+{
+	display: none;
+}
+
+ul#monthList ul.open
+{
+	display: block;
+}
+
+/*----------------------------
+				 Tag cloud
+----------------------------*/
+
+.tagcloud
+{
+	margin-bottom: 10px;
+	white-space: normal;
+}
+
+.tagcloud li
+{
+	display: inline;
+}
+
+.tagcloud a
+{
+	margin-right: 3px;
+	display: inline;
+}
+
+.tagcloud a.biggest
+{
+	font-size: 19px;
+}
+
+.tagcloud a.big
+{
+	font-size: 17px;
+}
+
+.tagcloud a.medium
+{
+	font-size: 14px;
+}
+
+.tagcloud a.small
+{
+	font-size: 12px;
+}
+
+.tagcloud a.smallest
+{
+	font-size: 10px;
+}
+
+/*----------------------------
+					 Page
+----------------------------*/
+
+#page
+{
+	border: 1px solid silver;
+	padding: 3px 10px;
+	margin-bottom: 20px;
+	background-color: white;
+	line-height: 17px;
+}
+
+#page h1
+{
+	margin: 3px 0 10px 0;
+}
+
+#page #admin
+{
+	border-top: 1px solid silver;
+	margin-top: 10px;
+	padding: 5px 0;
+}
+
+/*----------------------------
+					 Calendar
+----------------------------*/
+
+#calendarContainer
+{
+	text-transform: capitalize;
+	margin: 0 auto;
+}
+
+.calendar
+{
+	border: none;
+	margin: 0 auto;
+}
+
+.calendar .weekend
+{
+	background-color: #F1F1F1;
+}
+
+.calendar .other
+{
+	color: silver;
+}
+
+.calendar a.exist
+{
+	display: block;
+	font-weight: bold;
+	background-color: #F1F1F1;
+}
+
+.calendar td
+{
+	vertical-align: top;
+	background: white;
+}
+
+/*----------------------------
+					Star rater
+----------------------------*/
+
+.rating
+{
+	margin-bottom: 10px;
+}
+
+.rating p
+{
+	display: inline;
+	position: relative;
+	top: 14px;
+	left: 55px;
+}
+
+.star-rating
+{
+	position: relative;
+	width: 125px;
+	height: 25px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+.star-rating li
+{
+	display: inline;
+}
+
+.star-rating a, .star-rating .current-rating
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -1000em;
+	height: 25px;
+	line-height: 25px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+}
+
+.star-rating a:hover, .star-rating a:active, .star-rating a:focus
+{
+	background-position: left bottom;
+}
+
+.star-rating a.one-star
+{
+	width: 20%;
+	z-index: 6;
+}
+
+.star-rating a.two-stars
+{
+	width: 40%;
+	z-index: 5;
+}
+
+.star-rating a.three-stars
+{
+	width: 60%;
+	z-index: 4;
+}
+.star-rating a.four-stars
+{
+	width: 80%;
+	z-index: 3;
+}
+.star-rating a.five-stars
+{
+	width: 100%;
+	z-index: 2;
+}
+.star-rating .current-rating
+{
+	z-index: 1;
+	background-position: left center;
+}
+
+/* smaller star */
+.small-star
+{
+	width: 50px;
+	height: 10px;
+}
+.small-star, .small-star a:hover, .small-star a:active, .small-star a:focus, .small-star .current-rating
+{
+	background-image: url(../../pics/star_small.gif);
+	line-height: 10px;
+	height: 10px;
+}
+
+/*----------------------------
+				Search page
+----------------------------*/
+
+#searchpage
+{
+	margin-bottom: 30px;
+}
+
+#searchpage input#q
+{
+	width: 300px;
+}
+
+#searchpage input#comment
+{
+	clear: both;
+}
+
+.searchresult
+{
+	margin-bottom: 30px;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.searchresult a
+{
+	font-weight: bold;
+}
+
+.searchresult span.postbody
+{
+	clear: both;
+	display: block;
+	margin: 3px 0;
+}
+
+.searchresult span.type
+{
+	display: block;
+}
+
+.searchresult span.url
+{
+	color: Gray;
+}
+
+.searchpage ul.paging
+{
+	list-style-type: none;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+
+.searchpage ul.paging li
+{
+	display: inline;
+	border: 1px solid gray;
+	background: #f1f1f1;
+	margin-right: 5px;
+}
+
+.searchpage ul.paging li a
+{
+	padding: 5px 8px;
+}
+
+.searchpage ul.paging li.active
+{
+	background: #f1f1f1;
+	border: 1px solid black;
+}
+
+/*----------------------------
+				Contact page
+----------------------------*/
+
+#contact
+{
+	padding: 10px;
+	border: 1px solid silver;
+}
+
+#contact h1
+{
+	font-family:  Arial;
+	font-size: 24px;
+	letter-spacing: -1px;
+	color: #D50031;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+#contact label
+{
+	display: block;
+	padding-top: 5px;
+}
+
+#contact input.field
+{
+	width: 200px;
+}
+
+#contact textarea
+{
+	display: block;
+	overflow: auto;
+	width: 75%;
+	height: 150px;
+	margin: 0;
+}
+
+/*----------------------------
+			Syntax highlighter
+----------------------------*/
+
+.code
+{
+	font-size: 12px;
+	color: black;
+	font-family: Consolas, "Courier New" , Courier, Monospace;
+	background-color: #F1F1F1;
+	line-height: normal;
+}
+
+.code p
+{
+	padding: 5px;
+}
+
+.code .rem
+{
+	color: #008000;
+}
+
+.code .kwrd
+{
+	color: #0000ff;
+}
+
+.code .str
+{
+	color: #006080;
+}
+
+.code .op
+{
+	color: #0000c0;
+}
+
+.code .preproc
+{
+	color: #0000ff;
+}
+
+.code .asp
+{
+	background-color: #ffff00;
+}
+
+.code .html
+{
+	color: #800000;
+}
+
+.code .attr
+{
+	color: #ff0000;
+}
+
+.code .alt
+{
+	background-color: #f4f4f4;
+}
+
+.code .lnum
+{
+	color: #606060;
+}
+
+/*----------------------------
+					XFN tags
+----------------------------*/
+
+div.post .postbody a[rel]
+{
+	padding-right: 11px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+div.post .postbody a[rel="me"]
+{
+	background-image: url('../../pics/xfn/me.gif');
+}
+
+/*-------- [ These should cascade to pick the correct icon for the contact ]--*/
+
+/*-------- [ Normal contacts ]--*/
+div.post .postbody a[rel~="contact"], div.post .postbody a[rel~="acquaintance"], div.post .postbody a[rel~="friend"]
+{
+	background-image: url('../../pics/xfn/contact.gif');
+}
+/*-------- [ Normal contacts youve met ]--*/
+div.post .postbody a[rel~="contact"][rel~="met"], div.post .postbody a[rel~="acquaintance"][rel~="met"], div.post .postbody a[rel~="friend"][rel~="met"]
+{
+	background-image: url('../../pics/xfn/contactMet.gif');
+}
+
+/*-------- [ Colleague and co worker icon more important than contact ]--*/
+div.post .postbody a[rel~="colleague"], div.post .postbody a[rel~="co-worker"]
+{
+	background-image: url('../../pics/xfn/colleague.gif');
+}
+/*-------- [ Colleague and co worker icon when met ]--*/
+div.post .postbody a[rel~="colleague"][rel~="met"], div.post .postbody a[rel~="co-worker"][rel~="met"]
+{
+	background-image: url('../../pics/xfn/colleagueMet.gif');
+}
+
+/*-------- [ Sweethearts are more important than work!!! ]--*/
+div.post .postbody a[rel~="muse"], div.post .postbody a[rel~="crush"], div.post .postbody a[rel~="date"], a[rel~="sweetheart"]
+{
+	background-image: url('../../pics/xfn/sweet.gif');
+}
+/*-------- [ ...and if youve met them thats even better ]--*/
+div.post .postbody a[rel~="muse"][rel~="met"], div.post .postbody a[rel~="crush"][rel~="met"], div.post .postbody a[rel~="date"][rel~="met"], div.post .postbody a[rel~="sweetheart"][rel~="met"]
+{
+	background-image: url('../../pics/xfn/sweetMet.gif');
+}
+.CommentsClosed
+{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+#content p#addcomment, #content #relatedPosts p, #content p#comment, h3#comment
+{
+    margin-left: 0px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+h3#comment
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.CommentsClosed
+{
+    display: block;
+    width: 100%;
+    margin-top: 26px;
+    color: #999;
+}
+div.text p img
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

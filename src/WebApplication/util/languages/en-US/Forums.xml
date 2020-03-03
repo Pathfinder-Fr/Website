@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+  <resource key="dummy">something</resource>
+  <resource key="tags_instructions">Forum tags are assigned by topic. After entering your message you can add tags at any time using the tag editor located at the start of the discussion thread</resource>
+  <resource key="tags_instructions_label">Tags:</resource>
+
+  <resource key="profilemenu_licenses">View Purchases</resource>
+  <resource key="licenses_analytics_norecords">You currently have no Sueetie Analytics Product Keys</resource>
+  <resource key="licenses_addonpack_norecords">You currently have no Sueetie Addon Pack Product Keys</resource>
+  <resource key="licenses_marketplace_norecords">You currently have no Sueetie Marketplace Product Keys</resource>
+  	<resource key="licenses_purchases_nopurchases">You haven't made any Purchases</resource>
+
+</root>

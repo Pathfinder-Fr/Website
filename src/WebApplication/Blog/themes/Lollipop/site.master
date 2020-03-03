@@ -1,0 +1,135 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="BlogEngine.Themes.Lollipop.Site" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+<%@ Import Namespace="Sueetie.Blog" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head runat="server">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+</head>
+<body>
+    <form runat="Server" class="body">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="false">
+        <Scripts />
+        <Services>
+            <asp:ServiceReference Path="/util/services/SueetieService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <div id="pageouter">
+        <div id="pageinner">
+            <div id="topouter">
+                <div id="topstrip">
+                    <div id="topstripinner">
+                        <asp:ContentPlaceHolder ID="phSiteMenu" runat="server">
+                            <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div id="bodyouter">
+                <div id="bodyinner">
+                    <div id="homePageLink">
+                        <a href="/default.aspx" title="" class="logoLink">
+                            <img src="/images/shared/sueetie/logo.png" alt="" /></a>
+                    </div>
+                    <div id="bodyarea">
+                        <div id="userMenu">
+                            <div class="pagetoplinks">
+                                <ul class="menu">
+                                    <SUEETIE:UserRolePlaceHolder ID="UserRolePlaceHolder1" Role="Registered" runat="server">
+                                        <TrueContentTemplate>
+                                            <li>
+                                                <SUEETIE:InboxLink ID="InboxLink1" runat="server" />
+                                            </li>
+                                        </TrueContentTemplate>
+                                    </SUEETIE:UserRolePlaceHolder>
+                                    <li>
+                                        <SUEETIE:UserRolePlaceHolder ID="UserRolePlaceHolder2" Role="Registered" runat="server">
+                                            <TrueContentTemplate>
+                                                <SUEETIE:SueetieLink ID="SueetieLink2" runat="server" UrlName="members_logout" TextKey="link_logout" />
+                                            </TrueContentTemplate>
+                                            <FalseContentTemplate>
+                                                <SUEETIE:SueetieLink ID="SueetieLink1" runat="server" UrlName="members_login" TextKey="link_login" />
+                                            </FalseContentTemplate>
+                                        </SUEETIE:UserRolePlaceHolder>
+                                    </li>
+                                    <SUEETIE:UserRolePlaceHolder ID="UserRolePlaceHolder3" Role="NonMember" runat="server">
+                                        <TrueContentTemplate>
+                                            <li>
+                                                <SUEETIE:SueetieLink ID="SueetieLink2" runat="server" UrlName="members_register"
+                                                    TextKey="link_register" />
+                                            </li>
+                                        </TrueContentTemplate>
+                                    </SUEETIE:UserRolePlaceHolder>
+                                    <li runat="server" id="BlogAdminLI">
+                                        <asp:HyperLink ID="BlogAdminLink" runat="server" Text="Blog Admin" /></li>
+                                    <li>
+                                        <asp:HyperLink runat="server" ID="UserLink" />
+                                    </li>
+                                    <li class="UserMenuAvatar">
+                                        <SUEETIE:UserAvatar ID="UserAvatar1" runat="server" CssClass="UserMenuAvatar" Height="28"
+                                            Width="28" BorderWidth="1" UseCachedAvatarRoot="false" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <asp:ContentPlaceHolder ID="cphGroupMenu" runat="server" />
+                        <div id="sidepanel">
+                            <div id="BlogSideTitle">
+                                <SUEETIE:SueetieLink ID="SueetieLink1" runat="server" UrlName="blog_home" TextKey="BlogTitle" />
+                            </div>
+                            <div id="about">
+                                Welcome to the Community Blog, where we provide you with the latest news and insider
+                                info about our Online Community</div>
+                            <div class="links">
+                                <ul>
+                                    <li><a id="A1" href="~/" runat="server" rel="home">Recent Posts </a></li>
+                                    <li><a id="A2" href="~/archive.aspx" runat="server">Blog Archives </a></li>
+                                    <li><a href="<%=Utils.FeedUrl %>" class="feed">Subscribe</a></li>
+                                    <li><a href="/blog/search.aspx">Search</a></li>
+                                </ul>
+                            </div>
+                            <div class="categorylinks">
+                                <blog:CategoryList ID="CategoryList1" runat="Server" />
+                            </div>
+                             <blog:SearchBox ID="CategoryList2" runat="Server" />
+
+                        </div>
+                        <div id="content">
+                            <div id="menu">
+                                <a href="/blog/default.aspx" class="apmlfilter">Sueetie News</a>
+                                <ul>
+                                    <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home">Recent Posts</a></li>
+                                    <li><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx">
+                                        <%=Resources.labels.archive %></a></li>
+                                    <li><a href="<%=Utils.FeedUrl %>" class="feed">
+                                        <img src="<%=Utils.AbsoluteWebRoot %>pics/rssButton.gif" alt="Feed" /><%=Resources.labels.subscribe %></a></li>
+                                    <li><a runat="server" id="aLogin" /></li>
+                                </ul>
+                            </div>
+                            <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+                            <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                            <p class="PoweredByTag">
+                                Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a>
+                                <%=BlogSettings.Instance.Version() %><br />
+                                Theme by <a href="http://dbvt.com">Dave Burke</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="footerouter">
+                        <div id="footerinner">
+                            <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+                            <br />
+                            <div id="sueetielogo">
+                                <SUEETIE:SueetieLogo ID="SueetieLogo1" runat="server" ShowText="True" LogoFont="White" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

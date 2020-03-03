@@ -1,0 +1,654 @@
+body
+{
+}
+
+a, a:visited
+{
+    color: #D50031;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover
+{
+    color: #111111;
+    text-decoration: underline;
+}
+
+/* Home Bottom ---------------------------------------------------------------------------------------- */
+
+#homebottom
+{
+    width: 990px;
+    margin: 0px auto 0px auto;
+    text-align: left;
+    overflow: hidden;
+}
+#homebottomouter
+{
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    background-repeat: repeat-x;
+}
+#homebottom img
+{
+    border: 0px;
+}
+
+.aboutSueetieLeft
+{
+    float: left;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin-left: 60px;
+    margin-top: 0;
+    text-align: right;
+    width: 405px;
+}
+
+.RecentActivityArea
+{
+    margin: 0px auto;
+    margin-top: 0px;
+    padding: 0px;
+    background: none;
+    border: transparent;
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin-right: 75px;
+    margin-top: 0px;
+    width: 410px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.recentActivity
+{
+    width: 400px;
+    float: right;
+}
+/*
+------------------------------------------------------------------------
+SIDEBAR AREAS
+------------------------------------------------------------------------
+*/
+
+.RecentActivityArea .sidebarHeader
+{
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-width: 1px;
+    padding: 7px 9px 6px;
+    color: #314251;
+    font-size: 123.1%;
+    font-weight: bold;
+    padding-bottom: 8px;
+    background-image: url(/themes/lollipop/images/sidebarheaderback.png);
+    background-repeat: repeat-x;
+}
+.BlogViewItem
+{
+}
+.ViewItem
+{
+    width: 360px;
+    line-height: 1.2;
+}
+.TopicViewItem
+{
+    display: block;
+    overflow: visible;
+}
+
+.ViewItemThumbnail
+{
+    float: left;
+    width: 50px;
+    height: 60px;
+}
+.ViewItemThumbnailImage
+{
+    border: solid 1px #999;
+}
+.ViewItemThumbnailImage:hover
+{
+    border: solid 1px #B2161B;
+}
+.RecentActivityAreaTitle
+{
+    font-size: 21px;
+    margin-left: 0px;
+    margin-bottom: 22px;
+}
+.ViewItemDescription
+{
+line-height:1.2;
+margin-bottom:5px;
+margin-top:11px;
+font-size: .9em;
+}
+.aboutSueetieInner .ViewItemDescription, .recentBlogPosts .ViewItemDescription, .recentTopics .ViewItemDescription
+{
+    font-size: .9em;
+    font-weight: lighter;
+    padding-left: 2px;
+    margin-top: 7px;
+}
+
+.aboutSueetieInner .ViewItemAuthorDate, .recentBlogPosts .ViewItemAuthorDate, .recentTopics .ViewItemAuthorDate, .recentBlogPosts .ViewItemBlog
+{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-bottom: 16px;
+}
+.recentTopics .ViewItemDescription
+{
+    padding-left: 0px;
+    margin-left: 55px;
+}
+.recentTopics .ViewItemAuthorDate
+{
+    margin-left: 55px;
+    font-weight: normal;
+}
+.recentTopics .ViewItemAuthorDate a
+{
+    font-weight: bold;
+}
+.ClearBoth
+{
+    clear: both;
+}
+
+.RecentThumbnail
+{
+    float: left;
+    margin: 7px;
+}
+#homebottom .RecentThumbnail img
+{
+    width: 90px;
+    height: 67px;
+    border: solid 1px #DF0031;
+}
+#homebottom .RecentThumbnail img:hover
+{
+    border-color: #000;
+}
+.recentPhotosArea
+{
+    width: 400px;
+    display: block;
+}
+#tabs-4
+{
+}
+.ViewItemTitle, .ViewItemTitleblog
+{
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 25px auto 5px auto;
+}
+.ViewItemTitleblog
+{
+    background-repeat: no-repeat;
+    min-height: 24px;
+    background-position: 0px 2px;
+}
+.ViewItemAuthorDate
+{
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #D50031;
+    font-weight: normal;
+    margin-top: 4px;
+}
+.ViewItemBlog
+{
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+.ViewItemBlog a
+{
+    font-weight: bold;
+}
+.ViewItemAuthorDate a:link, .ViewItemAuthorDate a:visited
+{
+    color: #D50031;
+    text-decoration: underline;
+}
+.ViewItemAuthorDate a:active, .ViewItemAuthorDate a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.recentPosts, .recentUserLog, .recentTopics
+{
+    margin-bottom: 30px;
+}
+.recentTopics
+{
+    margin-top: 40px;
+}
+.footerVisualSVN
+{
+    margin-bottom: 36px;
+    display: block;
+    color: #D50031;
+    font-size: 11px;
+}
+.footerVisualSVN p
+{
+    padding-bottom: 10px;
+}
+.footerVisualSVN img
+{
+    border: none;
+    margin-left: -22px;
+}
+.recentWikiPages
+{
+    overflow: visible;
+    display: block;
+    margin-bottom: 30px;
+}
+.recentWikiPages .ViewItemDescription
+{
+    font-size: .9em;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.ViewItemWikiKeywordCat
+{
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #D50031;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-left: 2px;
+}
+.ViewItemWikiKeywordCat a, .ViewItemWikiKeywordCat a:visited
+{
+    text-decoration: underline;
+}
+.ViewItemWikiKeywordCat a:hover, .ViewItemWikiKeywordCat a:hover
+{
+    color: #000;
+}
+
+.ViewItemWikiKeywordCat span
+{
+    color: #000;
+    font-weight: lighter;
+}
+.recentWikiPages .ViewItemAuthorDate
+{
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.recentWikiPages .ViewItemAuthorDate a
+{
+    font-weight: bold;
+}
+.recentUserLog .ViewSubHeader
+{
+    display: block;
+    font-size: 1.1em;
+    width: 100%;
+    margin: 25px auto 15px auto;
+    letter-spacing: -.01em;
+}
+.recentUserLog a.ActivityUser
+{
+    text-decoration: underline;
+}
+.recentUserLog a.ActivityUser:hover
+{
+    color: #000;
+}
+.recentUserLog .members, .recentUserLog .media, .recentUserLog .mediaupload, .recentUserLog .forum, .recentUserLog .blog, .recentUserLog .blogcomment, 
+.recentUserLog .wiki, .recentUserLog .marketplace, .recentUserLog .newuser, .recentUserLog .business, .recentUserLog .roundup, .recentUserLog .classifieds,
+.recentUserLog .cms, .recentUserLog .calendarevent
+{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 4px;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+    background-image: url(/themes/lollipop/images/dots.png);
+    padding-left: 22px;
+    font-size: .9em;
+}
+
+/*
+------------------------------------------------------------------------
+MENUS
+------------------------------------------------------------------------
+*/
+#hometopstripinner .menu
+{
+    float: right;
+    margin: 2px 0px 0px 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-family: Tahoma;
+}
+#hometopstripinner .menu li
+{
+    margin: 44px auto;
+}
+#hometopstripinner .menu li.spacer
+{
+    width: 12px;
+}
+#hometopstripinner .menu li
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+#hometopstripinner .menu li a, #hometopstripinner .menu li a:visited
+{
+    color: #eee;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+#hometopstripinner .menu li a:hover, #hometopstripinner .menu li a:active
+{
+    text-decoration: underline;
+    color: #fff;
+}
+.WelcomeMessage
+{
+    display: block;
+    margin-bottom: 30px;
+    height: 60px;
+    text-align: right;
+    overflow: visible;
+}
+.WelcomeMessage img
+{
+    margin-left: 0px;
+}
+.WelcomeMessage .WelcomeText
+{
+    margin-right: 7px;
+    color: #D50031;
+    font-size: 18px;
+    line-height: 16px;
+    vertical-align: bottom;
+    letter-spacing: -0.025em;
+}
+#homebottom .AvatarImage img
+{
+    border: 1px solid #DF0031;
+    height: 60px;
+    margin: 1;
+    width: 60px;
+}
+#homebottom .AvatarImage img:hover
+{
+    border: 1px solid #ccc;
+}
+#download
+{
+    display: block;
+    margin: 7px 0px 35px auto;
+}
+#download a:hover
+{
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+h3.Opening
+{
+display:block;
+font-size:1.55em;
+font-weight:lighter;
+letter-spacing:-0.03em;
+margin-bottom:35px;
+overflow-x:hidden;
+overflow-y:hidden;
+}
+p.OpeningEnd
+{
+    margin-top: 18px;
+}
+p.OpeningEnd a
+{
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+#homebottomlinks
+{
+    background-image: url(/themes/lollipop/images/bodyarea.png);
+    background-repeat: repeat-y;
+    margin: 0px;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+}
+#homebottomlinks a
+{
+    margin: 0 5px;
+}
+.HomeNavLinks a, .HomeNavLinksBottom a
+{
+    background-image: url(/themes/lollipop/images/greydotblock.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    font-family: Lucida Sans;
+    padding-right: 9px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.HomeNavLinks a.last, .HomeNavLinksBottom a.last
+{
+    background-image: none;
+    padding-right: 0;
+}
+a.pagelink
+{
+    color: #D50031;
+    font-weight: normal;
+}
+.HomeNavLinks, .HomeNavLinksBottom
+{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 36px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.HomeNavLinksBottom
+{
+    margin: 11px auto 51px auto;
+}
+a.pagelink:hover, a.pagelink:active
+{
+    text-decoration: underline;
+}
+.ViewAllLink
+{
+    border-top: 1px dashed #999999;
+    height: 35px;
+    margin-left: 1px;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+.ViewAllLink a
+{
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-right: 3px;
+}
+.ViewAllLink .raq
+{
+    color: #b2161b;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-right: 0;
+    text-decoration: none;
+}
+.rssTag
+{
+    text-align: right;
+    font-size: 12px;
+}
+.rssTag span
+{
+    color: #333333;
+    vertical-align: top;
+}
+.rssTag img
+{
+    border: none;
+}
+.IceCreamText a
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.IceCreamText img
+{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.IceCreamText h2
+{
+    color: #D50031;
+    font-size: 1.4em;
+    letter-spacing: -0.04em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+}
+/*----------------------------
+				 Tag cloud
+----------------------------*/
+
+.tagCloudOuterArea
+{
+    width: 100%;
+    min-height: 400px;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: -2em;
+}
+.tagCloudArea
+{
+    min-height: 400px;
+    width: 700px;
+    margin: 60px auto 40px auto;
+}
+
+.ulTags, #ulTags
+{
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+.ulTags li, #ulTags li
+{
+    display: inline;
+    border-bottom: none;
+    line-height: 28px;
+}
+
+.ulTags a, #ulTags a
+{
+    margin-right: 4px;
+    display: inline;
+    padding: 8px 2px;
+    overflow: hidden;
+}
+
+.ulTags li a:hover, #ulTags li a:hover
+{
+    color: #111;
+    background: none;
+}
+
+.ulTags a.biggest, #ulTags a.biggest
+{
+    font-size: 2.2em;
+    padding: 5px;
+}
+
+.ulTags a.big, #ulTags a.big
+{
+    font-size: 1.8em;
+}
+
+.ulTags a.medium, #ulTags a.medium
+{
+    font-size: 1.4em;
+}
+
+.ulTags a.small, #ulTags a.small
+{
+    font-size: 1.1em;
+}
+
+.ulTags a.smallest, #ulTags a.smallest
+{
+    font-size: .8em;
+}
+#tagCloudLinks
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 10pt;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 3px;
+}
+a.tagBlogLink, a.tagForumLink, a.tagMediaLink, a.tagWikiLink, a.tagCMSLink, a.tagAllLink
+{
+}
+a.tagBlogLink.current, a.tagForumLink.current, a.tagMediaLink.current, a.tagWikiLink.current, a.tagCMSLink.current, a.tagAllLink.current
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.aboutSueetieArea p
+{
+    font-size: .9em;
+}
+#content
+{
+    width: 960px;
+    margin: 0px;
+}
+#sidepanel
+{
+    display: none;
+}

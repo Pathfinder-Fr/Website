@@ -1,0 +1,240 @@
+﻿body {
+}
+.CountryCheckBox td
+{
+    width: 275px;
+}
+.CountryCheckBox tr
+{
+    height: 25px;
+}
+.CountryCheckBox td label
+{
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+.CountryButton, .CountryCheckBox
+{
+    margin-left: 75px;
+}
+.AddActivitiesForm .ActivityGridButton {
+    margin-left: 190px;
+    margin-top: 9px;
+}
+.ResultsMessage a
+{
+    color: #555;
+    text-decoration: underline;
+}
+.ResultsMessage a:hover
+{
+    color: #000;
+}
+table.countryTable
+{
+    margin-left: 75px;
+    width: 760px;
+}
+td.gridCommandColumn {
+    padding-left: 8px;
+    text-align: center;
+    width: 90px;
+}
+td.lastUpdateColumn 
+{
+    width: 160px;
+    text-align: center;
+}
+td.countryCodeColumn
+{
+    width: 120px;
+    text-align: center;
+}
+td.rangesCodeColumn
+{
+    text-align: center;
+}
+.CellIpMessage
+{
+    margin-left: 0px;
+    padding-top: 20px;
+    width: 400px;
+}
+table#AgentsTable, table.AgentsTable
+{
+    width: 500px;
+    border: 1px solid #ccc;
+}
+.AgentsTableArea
+{
+}
+#AgentsLeft, #RangesLeft
+{
+    float: left;
+    width: 580px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+#AgentsLeft
+{
+    width: 520px;
+}
+#AgentsRight, #RangesRight
+{
+    float: left;
+    margin-left: 0px;
+}
+.AgentsTableMessage, .RangesTableMessage
+{
+    clear: both;
+    display: block;
+    margin-top: 40px;
+    font-size: .8em;
+    font-family: Tahoma;
+    color: #D50031;
+    width: 100%;
+    text-align: right;
+}
+table.rangesTable
+{
+    margin-left: 0px;
+    font-size: .9em;
+}
+table.rangesTable td
+{
+    padding: 6px 2px;
+}
+li.spaceafter
+{
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+.CheckAgentMessage
+{
+    width: 100%;
+    margin-left: 165px;
+    margin-top: 30px;
+}
+.AgentsTable a
+{
+    color: #D50031;
+    font-weight: bold;
+}
+#RangesLeft .AddActivitiesForm td.AddActivitiesLabel
+{
+    width: 120px;  
+}
+#RangesLeft .AddActivitiesForm .ActivityGridButton
+{
+    margin-left: 130px;
+}
+table.rangesTable a.ActivityGridButton:link, a.ActivityGridButton:visited
+{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+table.rangesTable td.gridCommandColumn
+{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.refreshPageLink {
+    font-family: Tahoma;
+    font-size: 0.8em;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+.refreshPageLink a
+{
+    color: #d50031;
+}
+.UserAgentRequests table#UserAgentTable
+{
+    width: 100%;
+}
+td.textboxLabel
+{
+    vertical-align: top;
+}
+table.SlideshowGrid
+{
+    width: 800px;
+    margin-top: 25px;
+}
+table.SlideshowGrid td
+{
+    border: 1px solid #ccc;
+}
+table.SlideshowGrid td.ButtonColumn
+{
+    width: 110px;
+}
+table.SlideshowGrid td.ImageDescription
+{
+    width: 300px;
+}
+table.SlideshowGrid td.SlideshowImage
+{
+    width: 210px;
+}
+table.SlideshowGrid textarea
+{
+    width: 280px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #000;
+    height: 115px;
+} 
+table.SlideshowGrid input.DisplayOrder
+{
+    padding: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 30px;
+    background-color: #f4f4f4;
+}
+table.SlideshowGrid td.SlideshowImage
+{
+    text-align: center;
+}
+table.SlideshowGrid td.SlideshowImage img
+{
+    border: 1px solid #999;
+}
+h3.slideshow
+{
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.mediasetarea {margin-top: 20px; text-align: center;}
+#gallery { float: left; width: 70%; min-height: 12em; } * html #gallery { height: 12em; } /* IE6 */
+.gallery.custom-state-active { background: #eee; }
+.gallery li { float: left; width: 96px; padding: 0.4em; margin: 0 0.4em 0.4em 0; text-align: center; }
+.gallery li h5 { margin: 0 0 0.4em; cursor: move; }
+.gallery li a { float: right; }
+.gallery li a.ui-icon-zoomin { float: left; }
+.gallery li img { width: 100%; cursor: move; }
+#trash { float: right; width: 27%; min-height: 18em; padding: 1%;} * html #trash { height: 18em; } /* IE6 */
+#trash h4 { line-height: 16px; margin: 0 0 0.4em; }
+#trash h4 .ui-icon { float: left; }
+#trash .gallery h5 { display: none; }
+.ui-dialog
+{
+    text-align: center;
+}
+#initTrash li.initMedia
+{
+    width: 48px;
+    height: 56px;
+}
+img.mediaSetThumb
+{
+    height: 85px;
+    width: 110px;
+}
+#initTrash img.initImg
+{
+    height: 36px;
+}

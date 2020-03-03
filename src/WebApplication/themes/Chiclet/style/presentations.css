@@ -1,0 +1,117 @@
+﻿
+#mainContent
+{
+    width: 720px;
+    margin: 0px 0 0 0;
+    padding-left: 10px;
+    height: auto;
+    float: left;
+}
+
+#sideBar
+{
+    width: 210px;
+    height: auto;
+    margin: 10px 0 0 30px;
+    float: left;
+}
+#sideBar h2
+{
+    width: 120px;
+    border-bottom: 1px solid #d2d1cd;
+    padding: 10px 0px 5px 0px;
+    margin-bottom: 10px;
+}
+#sideBar p
+{
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 20px 0 10px 0;
+    width: 120px;
+    text-align: right;
+    color: #666;
+}
+
+#sideBar a img
+{
+    border: none;
+}
+h2
+{
+    color: #60B8A8;
+    font-size: 21px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+#contentInner ul li
+{
+    list-style-image: url(/images/utils/greendot.png);
+    padding-left: 0px;
+}
+#contentInner p
+{
+    line-height: inherit;
+    padding: 0px;
+}
+.PresentationThanks
+{
+    margin-top: 20px;
+}
+ol.innerLI
+{
+    margin: 10px auto 20px 0px;
+    display: block;
+}
+#mainContent
+{
+    height: 650px;
+}
+a.bigun, a.medun
+{
+    display: block;
+    font-size: 21px;
+    margin: 30px auto;
+}
+a.medun
+{
+    font-size: 18px;
+}
+a:active, a:focus
+{
+    outline: none;
+}
+.PresentationTitle
+{
+    color: #60B8A8;
+    font-size: 26px;
+    letter-spacing: -.06em;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#contentInner ul li.nodot
+{
+    list-style-type: none;
+    list-style-image: none;
+}
+#contentInner ul li.spacetop
+{
+    margin-top: 20px;
+}
+#contentInner ul li a.externallink
+{
+    background-image: url("/Images/ExternalLink.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 14px;
+    font-size: 18px;
+}
+#contentInner ul li.nodot p
+{
+    margin-bottom: 12px;
+}
+#contentInner ul li.nodot ol li
+{
+    margin-bottom: 12px;
+}

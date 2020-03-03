@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:georss="http://www.georss.org/georss" xmlns:twitter="http://api.twitter.com">
+  <channel>
+    <title>Twitter / PathfinderFR</title>
+    <link>http://twitter.com/PathfinderFR</link>
+    <atom:link type="application/rss+xml" href="http://twitter.com/statuses/user_timeline/189564250.rss" rel="self" />
+    <description>Twitter updates from Pathfinder-FR / PathfinderFR.</description>
+    <language>en-us</language>
+    <ttl>40</ttl>
+    <item>
+      <title>PathfinderFR: La seconde partie de l'histoire courte "Gardien des marais" est disponible sur Pathfinder-FR (wiki Golarion, section "histoire courtes").</title>
+      <description>PathfinderFR: La seconde partie de l'histoire courte "Gardien des marais" est disponible sur Pathfinder-FR (wiki Golarion, section "histoire courtes").</description>
+      <pubDate>Wed, 22 Sep 2010 13:45:29 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/25212480450</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/25212480450</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: La nouvelle classe de base de magus est disponible en version de playtest (VO chez Paizo, VF sur les aides de jeu du wiki Pathfinder-RPG) !</title>
+      <description>PathfinderFR: La nouvelle classe de base de magus est disponible en version de playtest (VO chez Paizo, VF sur les aides de jeu du wiki Pathfinder-RPG) !</description>
+      <pubDate>Mon, 20 Sep 2010 19:19:18 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/25050990319</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/25050990319</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Les noms et les logos des gammes Pathfinder en VF ont changé. Plus d'information sur http://www.black-book-editions.fr/?actu_id=195</title>
+      <description>PathfinderFR: Les noms et les logos des gammes Pathfinder en VF ont changé. Plus d'information sur http://www.black-book-editions.fr/?actu_id=195</description>
+      <pubDate>Sat, 18 Sep 2010 18:36:11 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24871093775</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24871093775</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Nouvelle version 1.3 du gestionnaire de cartes de sorts. http://bit.ly/cQ3PI3</title>
+      <description>PathfinderFR: Nouvelle version 1.3 du gestionnaire de cartes de sorts. http://bit.ly/cQ3PI3</description>
+      <pubDate>Fri, 17 Sep 2010 13:50:20 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24759344698</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24759344698</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Le playtest de l'Ultimate Magic (de la nouvelle classe combinant magie et combat ?) commence lundi prochain ! Restez attentifs !</title>
+      <description>PathfinderFR: Le playtest de l'Ultimate Magic (de la nouvelle classe combinant magie et combat ?) commence lundi prochain ! Restez attentifs !</description>
+      <pubDate>Fri, 17 Sep 2010 11:21:51 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24749407909</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24749407909</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Le premier chapitre du "Gardien des marais" (par Amber E. Scott) est disponible dans les "histoires courtes" du wiki Golarion.</title>
+      <description>PathfinderFR: Le premier chapitre du "Gardien des marais" (par Amber E. Scott) est disponible dans les "histoires courtes" du wiki Golarion.</description>
+      <pubDate>Wed, 15 Sep 2010 14:02:42 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24572302886</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24572302886</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Un nouveau scénario (niveau 1) par Yaourth, la tour de Krag Farok, est disponible sur la page des aventures de fans (wiki Aventures).</title>
+      <description>PathfinderFR: Un nouveau scénario (niveau 1) par Yaourth, la tour de Krag Farok, est disponible sur la page des aventures de fans (wiki Aventures).</description>
+      <pubDate>Sun, 12 Sep 2010 12:37:50 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24280098304</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24280098304</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+    <item>
+      <title>PathfinderFR: Pathfinder-FR arrive sur Twitter ! Les news du site et des gammes Pathfinder au jour le jour !</title>
+      <description>PathfinderFR: Pathfinder-FR arrive sur Twitter ! Les news du site et des gammes Pathfinder au jour le jour !</description>
+      <pubDate>Sat, 11 Sep 2010 17:21:10 +0000</pubDate>
+      <guid>http://twitter.com/PathfinderFR/statuses/24211856339</guid>
+      <link>http://twitter.com/PathfinderFR/statuses/24211856339</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<%@ Import Namespace="Sueetie.Commerce" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="marketplace.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme2" runat="server" StyleSheet="custom.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+        <![endif]-->
+    <script type='text/javascript' src='/scripts/jquery.js'></script>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+    <h4>
+        Marketplace Links</h4>
+    <div class="links">
+        <ul>
+            <li><a href="default.aspx">Marketplace Home</a></li>
+            <li><a href="browse.aspx">All Products</a></li>
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="cphLowerSideBar" runat="server">
+
+        <div class="cartImageArea">
+        <a target="_self" href='<%= Payments.ShoppingCartLink() %>'>
+            <img src="/themes/lollipop/images/marketplace/cart.png" alt="View your Shopping Cart" /></a>
+        </div>
+        <%--<uc1:FeaturedAd ID="FeaturedAd" runat="server" />--%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <div class="marketplace">
+        <div id="BodyTitleArea">
+            Sueetie Marketplace
+        </div>
+        <table class="content" id="yafheader" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td class="menulinks" valign="middle" align="left">
+                        <asp:ContentPlaceHolder ID="NavBar" runat="server" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+    </div>
+</asp:Content>

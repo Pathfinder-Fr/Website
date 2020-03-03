@@ -1,0 +1,193 @@
+﻿.GalleryAdminText
+{
+    margin-top: 44px;
+    margin-bottom: 30px;
+}
+#content
+{
+    width: 100%;
+    margin: 0px;
+}
+#bodyarea
+{
+    width: 920px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#bodyareabottom
+{
+    text-align: center;
+}
+#content p
+{
+    font-family: Arial;
+    font-size: inherit;
+    line-height: inherit;
+    padding-bottom: 0px;
+}
+#divMoViewOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#divMoView
+{
+    width: 680px;
+    margin: 0px auto;
+}
+div#userMenu ul.menu
+{
+    margin-right: 0px;
+}
+#content p.albumtitle
+{
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-width: 1px;
+    padding: 7px 9px 6px;
+    color: #314251;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    background-image: url(/themes/lollipop/images/albumtitleback.png);
+    background-repeat: repeat-x;
+}
+#content .gsp_ns .albumHeaderStats
+{
+    float: right;
+    font-weight: bold;
+    font-size: 11px;
+    color: #666;
+}
+#divMoViewOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#divMoView
+{
+    width: 680px;
+    margin: 0px auto;
+}
+.gsp_listcontainer
+{
+    margin: 50px auto 30px 70px;
+}
+.ListItem
+{
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.ListThumbnail, .ListThumbnailImage
+{
+    float: left;
+    overflow: hidden;
+}
+.ListThumbnailImage img
+{
+    padding: 2px;
+    border: solid 1px #df0031;
+}
+.ListDescription
+{
+    margin-left: 210px;
+}
+.DocListDescription
+{
+    margin-left: 160px;
+}
+.ListItemTitle
+{
+    font-size: 1.6em;
+    font-weight: lighter;
+    letter-spacing: -.04em;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.ListItemTitle a:link, .ListItemTitle a:visited
+{
+    text-decoration: none;
+}
+.ListItemTitle a:active, .ListItemTitle a:hover
+{
+    color: #666;
+    text-decoration: underline;
+}
+.ListItemDescription
+{
+    font-family: arial;
+    font-size: 1.13em;
+    margin-bottom: 11px;
+    width: 100%;
+}
+.ListItemAuthorDate
+{
+    color: #000;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+}
+.ListItemAuthorDate a
+{
+    font-weight: bold;
+}
+.ListItemTitle input, .ListItemDescription textarea
+{
+    width: 625px;
+    padding: 2px;
+    font-size: 1em;
+    font-weight: lighter;
+    border: solid 1px #ccc;
+}
+.ListItemDescription textarea
+{
+    font-family: Arial;
+}
+
+/*---------------------------- Tags ----------------------------*/
+.mediaTagsArea
+{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.tagsLabel
+{
+    margin-right: 3px;
+}
+input.tagsEditBox
+{
+    width: 685px;
+}
+.tagsEditArea
+{
+    font-size: 1.2em;
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 700px;
+}
+.calendarArea
+{
+    margin-top: 8px;
+}
+.ListItemDescription textarea.calendarEditDescriptionTextArea
+{
+    width: 645px;
+}
+.calendarRepeatDateLabel
+{
+    margin-left: 22px;
+}
+.gsp_ns div.album
+{
+}
+#content p.gsp_bannertext
+{
+    font-size: 1.6em;
+}

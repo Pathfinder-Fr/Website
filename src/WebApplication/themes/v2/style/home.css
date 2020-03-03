@@ -1,0 +1,18 @@
+@import url(contenteditor.css);
+
+#content table td { vertical-align: top; }
+
+.ViewSubHeader { font-weight: bold; padding: .4em; }
+.ViewItem, .WikiViewItem { padding: .5em 0; }
+.ViewItemTitle { font-size: 11pt; font-weight: bold; }
+    .ViewItemTitle a { text-decoration: none; }
+.ViewItemDescription { margin-left: 12px; }
+.ViewItemAuthorDate { color: #666; font-style: italic; }
+
+#sidebar .ViewItem { margin: 2px 0 2px 1px; padding: 0 0 0 17px; min-height: 18px; background: transparent none no-repeat left center; }
+#sidebar .ViewItem.Wiki, #sidebar .ViewItem.wiki { background-image: url(theme/sueetie/wiki.png); }
+#sidebar .ViewItem.Blog { background-image: url(theme/sueetie/blog.png); }
+#sidebar .ViewItem.na { background-image: url(theme/sueetie/na.png); }
+#sidebar .ViewItem.Forum, #sidebar .ViewItem.forum { background-image: url(theme/sueetie/forum.png); }
+#sidebar .ViewItem.blogcomment { background-image: url(theme/sueetie/blogcomment.png); }
+#sidebar .ViewItem.newuser { background-image: url(theme/sueetie/user.png); }

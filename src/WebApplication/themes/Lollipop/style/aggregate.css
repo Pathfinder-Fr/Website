@@ -1,0 +1,146 @@
+﻿div.post .author
+{
+    color: #666666;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+div.post .author a.BlogTitle
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+a
+{
+    text-decoration: none;
+}
+
+div.post, .mceContentBody
+{
+    line-height: 17px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+div.posts .listtext
+{
+    padding-top: 16px;
+}
+.aggregatemenu
+{
+    margin-bottom: 20px;
+}
+.blogs
+{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+h2 a.taggedlink:link, h2 a.taggedlink:visited, h2.listblogtitle a.taggedlink:link, h2.listblogtitle a.taggedlink:visited
+{
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #D50031;
+    font-weight: normal;
+}
+h2 a.taggedlink:hover, h2 a.taggedlink:active, h2.listblogtitle a.taggedlink:hover, h2.listblogtitle a.taggedlink:active
+{
+    color: #000;
+}
+h2.listblogtitle a.taggedlink:link, h2.listblogtitle a.taggedlink:visited
+{
+    font-size: 22px;
+}
+h2.listblogtitle
+{
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+h2.listblogtitle a.taggedlink:active, h2.listblogtitle a.taggedlink:hover
+{
+    color: #000;
+}
+.blogs .bloglistitem .MostRecentPost
+{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.blogs .bloglistitem .MostRecentPost a:active, .blogs .bloglistitem .MostRecentPost a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.blogs .bloglistitem
+{
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: block;
+}
+.blogs .bloglistitem .author
+{
+    font-size: 11px;
+}
+.blogs .bloglistitem .author a:link, .blogs .bloglistitem .author a:visited
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+.blogs .bloglistitem .author a:active, .blogs .bloglistitem .author a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.blogs .bloglistitem a.BlogPostTitle
+{
+    text-decoration: none;
+}
+#BlogSideTitle a:active, #BlogSideTitle a:hover
+{
+    text-decoration: underline;
+}
+#blogblog, #blogbusiness, #blogroundup
+{
+    padding-left: 60px;
+    background-repeat: no-repeat;
+}
+#blogblog, .listpostblog
+{
+    background-image: url(/themes/lollipop/images/blogs/news48.png);
+    background-position: 0px 4px;
+}
+#blogbusiness, .listpostbusiness
+{
+    background-image: url(/themes/lollipop/images/blogs/business48.png);
+    background-position: 0px 4px;
+}
+#blogroundup, .listpostroundup
+{
+    background-image: url(/themes/lollipop/images/blogs/roundup48.png);
+    background-position: 0px 4px;
+}
+.listpostblog, .listpostbusiness, .listpostroundup
+{
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    height: 60px;
+}
+.sidebarRssImage
+{
+    margin-top: 26px;
+    text-align: right;
+    width: 206px;
+}
+.sidebarRssImage img
+{
+   border: none;
+}
+.sidebarRssImage a
+{
+    
+}
+.postTagsArea {
+font-size:0.9em;
+margin-top:6px;
+}
+.postTagsArea span.tagsLabel
+{
+}

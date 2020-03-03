@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD3EAF7D-B964-4BAF-BE4D-E2844B4C7A33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GalleryServerPro.Business</RootNamespace>
+    <AssemblyName>GalleryServerPro.Business</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalleryServerPro.Business.Interfaces, Version=2.4.6.17060, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\GSP246\GalleryServerPro.Business.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="GalleryServerPro.ErrorHandler, Version=2.4.6.17073, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\GSP246\GalleryServerPro.ErrorHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="GalleryServerPro.ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GalleryServerPro.Provider, Version=2.4.6.17067, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\GSP246\GalleryServerPro.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.RegularExpressions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Album.cs" />
+    <Compile Include="AlbumDeleteBehavior.cs" />
+    <Compile Include="AlbumDeleteValidator.cs" />
+    <Compile Include="AlbumSaveBehavior.cs" />
+    <Compile Include="AppSetting.cs" />
+    <Compile Include="Audio.cs" />
+    <Compile Include="BackupFile.cs" />
+    <Compile Include="BrowserTemplate.cs" />
+    <Compile Include="BrowserTemplateCollection.cs" />
+    <Compile Include="MetadataDefinitionCollection.cs" />
+    <Compile Include="GalleryControlSettings.cs" />
+    <Compile Include="GalleryControlSettingsCollection.cs" />
+    <Compile Include="ImageMagick.cs" />
+    <Compile Include="FFmpeg.cs" />
+    <Compile Include="License.cs" />
+    <Compile Include="MetadataDefinition.cs" />
+    <Compile Include="VideoThumbnailCreator.cs" />
+    <Compile Include="MimeTypeCollection.cs" />
+    <Compile Include="UserGalleryProfileCollection.cs" />
+    <Compile Include="GallerySettingsCollection.cs" />
+    <Compile Include="GalleryCollection.cs" />
+    <Compile Include="GallerySettings.cs" />
+    <Compile Include="ExternalThumbnailCreator.cs" />
+    <Compile Include="Declarations.cs" />
+    <Compile Include="ExternalMediaObject.cs" />
+    <Compile Include="Gallery.cs" />
+    <Compile Include="GalleryServerRoleCollection.cs" />
+    <Compile Include="DisplayObject.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Fraction.cs" />
+    <Compile Include="GalleryObjectCollection.cs" />
+    <Compile Include="GalleryObjectMetadataItemCollection.cs" />
+    <Compile Include="GalleryServerRole.cs" />
+    <Compile Include="GenericMediaObject.cs" />
+    <Compile Include="GenericThumbnailCreator.cs" />
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HelperFunctions.cs" />
+    <Compile Include="HtmlValidator.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="ImageOptimizedCreator.cs" />
+    <Compile Include="GalleryObjectMetadataItem.cs" />
+    <Compile Include="ImageOriginalCreator.cs" />
+    <Compile Include="IntegerCollection.cs" />
+    <Compile Include="MediaObjectDeleteBehavior.cs" />
+    <Compile Include="MediaObjectHashKeys.cs" />
+    <Compile Include="MediaObjectMetadataExtractor.cs" />
+    <Compile Include="MediaObjectSaveBehavior.cs" />
+    <Compile Include="GalleryObject.cs" />
+    <Compile Include="ImageThumbnailCreator.cs" />
+    <Compile Include="UserAccount.cs" />
+    <Compile Include="MetadataItem.cs" />
+    <Compile Include="MimeType.cs" />
+    <Compile Include="NullObjects\NullDisplayObject.cs" />
+    <Compile Include="NullObjects\NullDisplayObjectCreator.cs" />
+    <Compile Include="NullObjects\NullGalleryObject.cs" />
+    <Compile Include="NullObjects\NullMimeType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityManager.cs" />
+    <Compile Include="SynchronizationManager.cs" />
+    <Compile Include="SynchronizationStatus.cs" />
+    <Compile Include="UserAccountCollection.cs" />
+    <Compile Include="UserGalleryProfile.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="Video.cs" />
+    <Compile Include="Watermark.cs" />
+    <Compile Include="ZipUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sueetie.Core\Sueetie.Core.csproj">
+      <Project>{A839E4E2-D8E4-4381-9CF3-0D267053E957}</Project>
+      <Name>Sueetie.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagrams\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagrams\GalleryObjectMetadata.cd" />
+    <None Include="Resources\GenericThumbnailImage_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_Doc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_PowerPoint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_Excel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_PDF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_Audio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_Video.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericThumbnailImage_Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assemblies\GalleryServerPro.ICSharpCode.SharpZipLib.dll" />
+    <Content Include="assemblies\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="assemblies\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <None Include="Resources\GSP_Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <!-- Home Page -->
+
+  <resource key="metatag_description">Sueetie Online Community</resource>
+  <resource key="metatag_keywords">.NET, Open Source, Sueetie, Online Community Software, Windows, Social Networking</resource>
+  <resource key="metatag_author">Your Name</resource>
+  <resource key="metatag_verify-v1">YourGoogleWebmasterVerificationCode</resource>
+
+  <!-- Links -->
+  <resource key="menutab_blogs">Blogs</resource>
+  <resource key="menutab_blog">Blog</resource>
+  <resource key="menutab_admin">Admin</resource>
+  <resource key="menutab_groups">Groups</resource>
+  <resource key="menutab_forums">Forums</resource>
+  <resource key="menutab_media">Media Gallery</resource>
+  <resource key="menutab_wiki">Wiki</resource>
+  <resource key="menutab_search">Search</resource>
+  <resource key="menutab_contact_us">Contact Us</resource>
+  <resource key="menutab_marketplace">Marketplace</resource>
+  <resource key="menutab_calendar">Calendars</resource>
+  <resource key="menutab_cms">CMS</resource>
+
+  <resource key="link_login">Sign in</resource>
+  <resource key="link_logout">Sign out</resource>
+  <resource key="link_greetings_member">Welcome, {0}!</resource>
+  <resource key="link_greetings_anonymous">Welcome, Guest!</resource>
+  <resource key="link_register">Join</resource>
+  <resource key="link_conversations">Conversations</resource>
+
+
+  <!-- User Activity Log -->
+
+  <resource key="activity_is_now_following">{0} is now following {1}</resource>
+  <resource key="activity_blogged">{0} blogged {1} {2} {3}</resource>
+  <resource key="activity_in_the">in the</resource>
+  <resource key="activity_commented_on">{0} commented on {1} {2} {3}</resource>
+  <resource key="activity_posted">{0} posted {1} {2} {3}</resource>
+  <resource key="activity_in">in</resource>
+  <resource key="activity_replied_to">{0} replied to {1} {2} {3}</resource>
+  <resource key="activity_created">{0} created {1} {2} {3}</resource>
+  <resource key="activity_updated">{0} updated {1} {2} {3}</resource>
+  <resource key="activity_created_a_new">{0} created a new {1} {2} {3} {4} {5}</resource>
+  <resource key="activity_named">named</resource>
+  <resource key="activity_added_new">{0} added new {1} {2} {3} {4} {5}</resource>
+  <resource key="activity_to">to</resource>
+  <resource key="activity_posted_a_new_ad_titled">{0} posted a new classified ad titled {1} {2} {3}</resource>
+  <resource key="activity_added_a_new_product_item">{0} listed the new product {1} {2} {3}</resource>
+  <resource key="activity_became_a_new_member">{0} became a new community member. Welcome!</resource>
+  <resource key="activity_user_registered">{0} registered for site membership</resource>
+  <resource key="activity_user_loggedin">{0} logged in</resource>
+  <resource key="activity_updated_a_cms_page">{0} updated the content page {1} {2} {3}</resource>
+  <resource key="activity_created_a_cms_page">{0} created a new content page titled {1} {2} {3}</resource>
+  <resource key="activity_new_calendar_event">{0} scheduled {1} {2} {3}</resource>
+  <resource key="activity_new_wiki_message">{0} added {1} {2} {3} {4} {5}</resource>
+  <resource key="activity_a_new_message">a new discussion message</resource>
+  <resource key="activity_to">to</resource>
+  <resource key="activity_marked_as_answer">{0} marked message in {1} {2} {3} {4} {5}</resource>
+  <resource key="activity_as_an_answer">as an answer</resource>
+  <resource key="activity_by">by</resource>
+
+  <!-- Registration and Login Processes -->
+
+  <resource key="welcome_back">Welcome back, {0}{1} </resource>
+  <resource key="welcome_exclamation">!</resource>
+  <resource key="activate_title">Account Activation</resource>
+  <resource key="activate_thankyou">Thank you for activating your account. Please &lt;a href='Login.aspx'&gt; login here.&lt;/a&gt;</resource>
+  <resource key="activate_problem"> We're sorry, for some reason we cannot activate your account.&lt;/p&gt;&lt;p style='margin: 20px;'&gt;Please use the &lt;a href='/blog/contact.aspx'&gt;contact form&lt;/a&gt; to help us figure out what's going on.</resource>
+  <resource key="forgot_password_title">Forgot Password</resource>
+  <resource key="forgot_password_enterusername">Please enter your Sueetie.com username below to receive your password.</resource>
+  <resource key="forgot_password_emailsubject">Your Sueetie.com Account Information</resource>
+
+  <resource key="forgot_username_question">Forgot Username?</resource>
+  <resource key="forgot_username_title">Forgot your Username</resource>
+  <resource key="forgot_username_sent_msg">Your account information has been sent to &lt;strong&gt;{0}.&lt;/strong&gt; The password was reset to enable you to log into Sueetie.com temporarily.  You can change your password after logging in with the new password.</resource>
+  <resource key="forgot_username_notindatabase">We're sorry.  That email address is not in our database. Please try again.</resource>
+  <resource key="forgot_username_empty_email">Please enter your email address</resource>
+  <resource key="forgot_username_enter_email">Please enter your email address below to receive your username and reset password.</resource>
+  <resource key="forgot_username_success">Your account information has been sent to your email address on file.  Please check your inbox in a few moments.</resource>
+  <resource key="forgot_username_couldnotfind">Could not locate your account.  Please try again.</resource>
+  <resource key="forgot_username_user_services">{0} User Services</resource>
+  <resource key="forgot_username_your_accountinfo">Your {0} Account Information</resource>
+  <resource key="forgot_username_as_requested">As requested, your {0} Account Information is below:</resource>
+  <resource key="forgot_username_your_username">Your Account Username: {0}</resource>
+  <resource key="forgot_username_your_password">Temporary Password: {0}</resource>
+  <resource key="forgot_username_homepage_link">{0} Home Page</resource>
+
+  <resource key="members_sign_in_title">Sign In</resource>
+  <resource key="forgot_password_question">Forgot your Password?</resource>
+  <resource key="members_create_account">Become a Member</resource>
+  <resource key="login_password_label">Password:</resource>
+  <resource key="login_username_label">Username:</resource>
+  <resource key="login_failed_msg">We're sorry, login was unsuccessful.  Please try again.  Remember, passwords are case-sensitive.&lt;br /&gt;&lt;br /&gt;If you have not yet created a Sueetie.com site account, you can &lt;a href='{0}'&gt;create one here.&lt;/a&gt;</resource>
+  <resource key="login_remember_my_account">Remember my Account</resource>
+
+  <resource key="accountinfo_password_changed">Your password has been updated.</resource>
+  <resource key="accountinfo_password_exceeded_attempts">
+    We're sorry.  You've exceeded the number of attempts to login and your account has been locked out.  Please &lt;a href='mailto:{0}'&gt;email us&lt;/a&gt; to get immediate assistance.
+  </resource>
+  <resource key="accountinfo_password_current_incorrect">The current password entered was not correct.  To retrieve your current password, please sign out and use our password retrieval services.</resource>
+  <resource key="accountinfo_clear_avatar_button">Clear Photo</resource>
+  <resource key="accountinfo_profile_updated">Profile updated successfully!  Due to caching, changes will not display immediately.</resource>
+
+  <resource key="memberprofile_title">Sueetie Member Profile: </resource>
+
+  <resource key="register_title">Register</resource>
+  <resource key="register_form_description">
+    Please fill in the information below to create your account. To reduce bogus accounts
+    created for spam purposes &lt;strong&gt;we require email verification.&lt;/strong&gt; Upon registering
+    below you will be sent an email containing a link back to the site at which point
+    you will instantly become a Sueetie Community Member.
+  </resource>
+  <resource key="register_username_label">Username:</resource>
+  <resource key="register_password_label">Password:</resource>
+  <resource key="register_email_label">Email:</resource>
+  <resource key="register_displayname_label">Display Name:</resource>
+  <resource key="register_timezone_label">Time Zone:</resource>
+  <resource key="register_subscribe_label">Subscribe to Monthly Newsletter</resource>
+  <resource key="register_createuserbutton_text">Create Account!</resource>
+  <resource key="register_validator_displayname">&lt;br&gt;Display Name must contain at least 2 characters. Spaces okay. Letters only.</resource>
+  <resource key="register_validator_password">&lt;br&gt;Password must contain at least 6 characters of both letters and numbers. No spaces. Special characters okay. Maximum 18 characters. Ex: !1something</resource>
+  <resource key="register_validator_username">&lt;br&gt;Username must contain at least 4 characters.  No spaces. Letters and numbers only.</resource>
+  <resource key="register_validator_email">&lt;br&gt;Email does not comform to established patterns. Please contact us if a valid email address.</resource>
+  <resource key="register_exists_email">&lt;br&gt;Email address is already in use. &lt;a href='ForgotPassword.aspx'&gt;Forgot your Account Information?&lt;/a&gt;</resource>
+  <resource key="register_exists_email_long">Email address already exists.  Do you have a {0} account?  If so, please &lt;a href=&quot;{1}&quot;&gt;login here.&lt;/a&gt;</resource>
+  <resource key="register_exists_username_long">Username already exists.  Do you have a {0} account?  If so, please &lt;a href=&quot;{1}&quot;&gt;login here.&lt;/a&gt;</resource>
+  <resource key="register_exists_displayname">Display Name already exists.  Sorry.  Please choose another.</resource>
+
+  <resource key="register_emailvalidation_subject">Please validate your {0} account information</resource>
+  <resource key="register_emailvalidation_firstline">To activate your {0} account please visit the following link:</resource>
+  <resource key="register_emailvalidation_yourusername">Your Username is:</resource>
+  <resource key="register_emailvalidation_yourpassword">Your Password is:</resource>
+  <resource key="register_emailtoadmin_subject">New Site User for Approval</resource>
+  <resource key="register_emailtoadmin_firstline">Please go to the Site Administrative Membership area to approve or disapprove the following user:</resource>
+  <resource key="register_emailtoadmin_admin"> Admin</resource>
+  <resource key="register_bannedattempt_subject">Banned User Registration Attempt</resource>
+  <resource key="register_bannedattempt_firstline">An attempt to register a new site account was made with the following IP and user account info:</resource>
+  <resource key="register_bannedattempt_ipaddress">IP Address:</resource>
+  <resource key="register_bannedattempt_user">User:</resource>
+
+
+  <!-- Administrative Approval Email -->
+
+  <resource key="approval_email_subject">Welcome to the Sueetie Online Community!</resource>
+  <resource key="approval_email_firstline">Your Sueetie Account has been approved!  Please use your new account information below to begin participating in the community.</resource>
+  <resource key="approval_email_username">Username: </resource>
+  <resource key="approval_email_password">Password: </resource>
+  <resource key="approval_email_homepage">Sueetie Home Page</resource>
+
+
+  <!-- Links and Menu Items -->
+
+  <resource key="menu_dashboard">Dashboard</resource>
+
+  <!-- Demo String -->
+
+  <resource key="demo_string">Some rockin' text</resource>
+
+  <!-- Message Page  -->
+
+  <resource key="msg_not_a_good_thing">Something happened...and not a good something.  We'll be expanding our message services to provide more details on the situation, but for now please accept our apologies and enjoy a link to the &lt;a href='/default.aspx'&gt;Sueetie Home Page. &lt;/a &gt;</resource>
+  <resource key="msgtitle_unknown_user">Unknown User</resource>
+  <resource key="msg_unknown_user">You've been directed to the profile page of a user who is not a member of the online community, and thus has no community profile</resource>
+  <resource key="msgtitle_wikiaccess_denied">Access Denied</resource>
+  <resource key="msg_wikiaccess_denied">We're sorry, but you do not have access to this Wiki page.  If you think you require access, please contact the &lt;a href='mailto:admin@sueetie.com'&gt;Wiki Administrator.&lt;/a&gt;  Return to the &lt;a href='/wiki/default.aspx'&gt;Wiki Main Page.&lt;/a&gt;</resource>
+  <resource key="msgtitle_logged_out">Logged Out</resource>
+  <resource key="msg_logged_out">You have successfully logged out. &lt;a href='login.aspx'&gt;Click here&lt;/a&gt; to log back in.</resource>
+  <resource key="msgtitle_registrations_currently_closed">Registrations Are Currently Closed</resource>
+  <resource key="msg_registrations_currently_closed">We're sorry, but we are not supporting new member accounts at the moment.  Please subscribe to the site blog for notification of when we have re-enabled new membership. Thanks!</resource>
+  <resource key="msgtitle_chat_members_only">Community Chat is for Members Only</resource>
+  <resource key="msg_chat_members_only">We're sorry, but Community Chat is only available to members only.  Please &lt;a href='login.aspx'&gt;login&lt;/a&gt; or &lt;a href='register.aspx'&gt;register&lt;/a&gt; to join in!</resource>
+  <resource key="msgtitle_registration_email_sent">One more click remains!</resource>
+  <resource key="msg_registration_email_sent">You should be receiving an email in a few moments with a link back to the site which will complete your registration process.</resource>
+  <resource key="msgtitle_account_approval_sent">Account Approval Process Initiated!</resource>
+  <resource key="msg_account_approval_sent">The site administrator has been notified of your account request. When approved you will receive an email with a link back to the site where you can login and join the community.  Thank you.</resource>
+  <resource key="msgtitle_account_banned_registration">Something terrible happened.</resource>
+  <resource key="msg_account_banned_registration">There has been some sort of problem creating your account. We apologize for the snafu and ask that you use the contact form to let us know about it.  Thanks much!</resource>
+  <resource key="msgtitle_account_banned_login">The hatch, it just blew!</resource>
+  <resource key="msg_account_banned_login">Some sort of computer glitch occurred when you logged into the community with your account. We apologize for the snafu and ask that you use the contact form to let us know about it.  Thanks much!</resource>
+  <resource key="msgtitle_user_not_authorized">Not Authorized</resource>
+  <resource key="msg_user_not_authorized">We're sorry, but you are not authorized to view this page. Please contact us if you feel this message is in error.</resource>
+  <resource key="message_site_message">Site Message</resource>
+
+
+  <!-- Forums-->
+
+  <resource key="ForumTitle">Sueetie Forums</resource>
+
+  <!-- Blogs -->
+
+  <resource key="BlogTitle">Blog</resource>
+
+  <!-- Controls -->
+
+  <resource key="greeting_shared">Welcome, {0}!</resource>
+  <resource key="content_save">Save</resource>
+  <resource key="content_cancel">Cancel</resource>
+  <resource key="content_pagelist">Other CMS Pages</resource>
+
+  <!-- Generic strings -->
+
+  <resource key="guest">Guest</resource>
+
+  <!-- Tags -->
+
+  <resource key="tags_label">Tags:</resource>
+  <resource key="no_tags_entered">no tags entered...</resource>
+  <resource key="no_tags">no tags for this item</resource>
+  <resource key="no_tags_blogpost">no tags for this post</resource>
+  <resource key="tags_forumtopic_label">Topic Tags:</resource>
+  <resource key="tags_button_add">Add</resource>
+  <resource key="tags_button_cancel">Cancel</resource>
+  <resource key="no_tags_notpublished">Tags will appear when post is published</resource>
+
+
+  <!-- Calendars -->
+
+  <resource key="click_for_more">Click for More</resource>
+  <resource key="calendar_editnotes">&lt;strong&gt;Enter Event Title and Date.&lt;/strong&gt;  All other fields optional.  Multi-day events are all-day events. Repeating events are weekly.</resource>
+  <resource key="calendar_label_repeatdate">End Repeat Date</resource>
+  <resource key="calendar_label_startendtime">Start/End Times - (Ex: 1:00 PM)</resource>
+  <resource key="calendar_button_add">Process</resource>
+  <resource key="calendar_button_cancel">Cancel</resource>
+  <resource key="calendar_button_delete">Delete</resource>
+  <resource key="calendar_label_startdate">Start/End Dates (mm/dd/yyyy)</resource>
+
+  <resource key="member_profileupdate_msg">&lt;strong&gt;Please Note:&lt;/strong&gt; Your profile updates may require a few minutes to take affect.</resource>
+  <resource key="member_avatarupdate_msg">&lt;strong&gt;Please Note:&lt;/strong&gt; New avatar may require a few minutes to display above and elsewhere throughout the community.</resource>
+
+  <resource key="calendar_updated_success">Calendar Event was Successfully Updated!</resource>
+  <resource key="calendar_created_success">Calendar Event was Successfully Created!</resource>
+
+  <!-- Date Spans and Report Resources -->
+
+  <resource key="dayspan_na">Unknown</resource>
+  <resource key="dayspan_day">24 Hours</resource>
+  <resource key="dayspan_week">7 Days</resource>
+  <resource key="dayspan_month">30 Days</resource>
+  <resource key="dayspan_quarter">90 Days</resource>
+  <resource key="dayspan_year">Year</resource>
+
+  <!-- Content Page Utilities-->
+
+  <resource key="modal_contentpage_log">Log Update</resource>
+
+</resources>

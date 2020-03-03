@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="search.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+        <![endif]-->
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="ContentA" ContentPlaceHolderID="cpHeaderInner" runat="server">
+    <div id="headerInnerSearch">
+        <h1 id="logoHolder">
+            Dave Burke : Freelance .NET Web Developer specializing in Online Communities</h1>
+       <SUEETIE:SiteMenu runat="server" />
+    </div>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

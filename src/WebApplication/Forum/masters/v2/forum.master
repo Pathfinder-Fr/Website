@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Sueetie.Core.SueetieBaseMasterPage" %>
+
+<%@ Register TagPrefix="uc" TagName="UserMenu" Src="~/themes/v2/menus/UserMenu.ascx" %>
+<%@ import namespace="Sueetie.Core" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<asp:contentplaceholder runat="server" id="cphHeader">   
+<head id="YafHead" runat="server">
+    <meta id="YafMetaScriptingLanguage" http-equiv="Content-Script-Type" runat="server" name="scriptlanguage" content="text/javascript" />
+    <meta id="YafMetaStyles" http-equiv="Content-Style-Type" runat="server" name="styles" content="text/css" />
+    <meta id="YafMetaDescription" runat="server" name="description" content="Forum de la communauté francophone Pathfinder JdR" />
+    <meta id="YafMetaKeywords" runat="server" name="keywords" content="Pathfinder, Golarion, Jeu de rôle, Open Gaming License, Donjons et Dragons, Communauté, JdR, Rpg, Paizo" />
+    <title></title>
+    </head>
+    </asp:contentplaceholder>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel"> 
+            <uc:UserMenu ID="UserMenu1" runat="server" />
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>
+            <SUEETIE:SiteMenu runat="server" />
+                </div>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+            <SUEETIE:FooterMenu runat="server" />
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a>, <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p><a href="http://yetanotherforum.net"><img src="/images/yafsmall.jpg" border="0" /></a></p>
+                <p><SUEETIE:SueetieLogo runat="server" ShowText="True" LogoFont="White" /></p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

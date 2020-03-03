@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <resource key="page_title_separator">: </resource>
+  <resource key="home_page">Online Community Software for Nice People</resource>
+
+  <!--  Administration -->
+
+  <resource key="admin_default">Administration</resource>
+  <resource key="admin_site_generalsettings">General Site Settings</resource>
+  <resource key="admin_addons_default">Sueetie Addons</resource>
+  <resource key="admin_content_search">Sueet Addons - Search</resource>
+  <resource key="admin_content_calendardefault">Sueet Addons - Event Calendar</resource>
+  <resource key="admin_content_calendaredit">Sueet Addons - Event Calendar - Create and Edit Calendars</resource>
+  <resource key="admin_content_calendarscheduler">Sueet Addons - Event Calendar - Event Scheduler</resource>
+  <resource key="admin_applications_default">Application Management Area</resource>
+  <resource key="admin_applications_applications">Applications</resource>
+  <resource key="admin_applications_blogadmin">Add Blog Administrator</resource>
+  <resource key="admin_applications_blogedit">Edit Blogs</resource>
+  <resource key="admin_applications_blogs">Manage Blogs</resource>
+  <resource key="admin_applications_groups">Manage Groups</resource>
+  <resource key="admin_applications_media">Media Management</resource>
+  <resource key="admin_applications_mediaalbums">Manage Media Albums</resource>
+  <resource key="admin_applications_mediagalleries">Manage Media Galleries</resource>
+  <resource key="admin_applications_wikis">Manage Wikis</resource>
+  <resource key="admin_applications_wikiusers">Manage Wiki Users</resource>
+  <resource key="admin_content_default">Manage Site Content</resource>
+  <resource key="admin_content_contentparts">Content Parts</resource>
+  <resource key="admin_content_contentgroups">Content Pages - Groups</resource>
+  <resource key="admin_content_contentpages">Content Pages</resource>
+  <resource key="admin_content_activitylogging">Logged Activity Categories</resource>
+  <resource key="admin_addons_slideshowimages">Slideshow Images</resource>
+  <resource key="admin_addons_slideshows">Manage Slideshows</resource>
+  <resource key="admin_reports_default">Reports</resource>
+  <resource key="admin_reports_backgroundtasks">Background Tasks</resource>
+  <resource key="admin_reports_downloaddetails">Download Details</resource>
+  <resource key="admin_reports_downloads">Downloads</resource>
+  <resource key="admin_reports_eventlogs">Eventlogs</resource>
+  <resource key="admin_reports_useractivities">User Activities Report</resource>
+  <resource key="admin_reports_subscribers">Newsletter Subscribers</resource>
+  <resource key="admin_site_default">Site Settings</resource>
+  <resource key="admin_site_emailsettings">Email Settings</resource>
+  <resource key="admin_site_seo">SEO Settings</resource>
+  <resource key="admin_site_themes">Site Themes</resource>
+  <resource key="admin_site_licenses">Product Licenses</resource>
+  <resource key="admin_site_restartapp">Restart Sueetie</resource>
+  <resource key="admin_users_add">Add Users</resource>
+  <resource key="admin_users_approve">Approve Users</resource>
+  <resource key="admin_users_bannedips">Banned IPs</resource>
+  <resource key="admin_users_default">User Management</resource>
+  <resource key="admin_users_inactive">Inactive Users</resource>
+  <resource key="admin_users_lockedout">Locked-out Users</resource>
+  <resource key="admin_users_online">Users Currently Online</resource>
+  <resource key="admin_users_new">Newest Users</resource>
+  <resource key="admin_users_registered">Registered Users</resource>
+  <resource key="admin_users_roleadmin">Manage Roles</resource>
+  <resource key="admin_users_search">Search Users</resource>
+  <resource key="admin_users_edit">Edit Users</resource>
+  <resource key="admin_users_byrole">Users by Role</resource>
+
+  <!-- Calendars -->
+  <resource key="sueetie_community_calendar">Sueetie Community Calendar</resource>
+
+  <!-- Search -->
+
+  <resource key="search_default">Site Search</resource>
+
+  <!-- Blogs -->
+
+  <resource key="blogs_default">Site Blogs</resource>
+
+  <!-- Groups -->
+
+  <resource key="groups_default">Sueetie Groups</resource>
+  <resource key="group_demo_default">Public Demo Group Home</resource>
+
+  <!-- Membership -->
+
+  <resource key="members_activate_account">Activate Account</resource>
+  <resource key="members_forgot_password">Forgot Password</resource>
+  <resource key="members_forgot_username">Forgot Username</resource>
+  <resource key="members_login">Login</resource>
+  <resource key="members_logout">Logout</resource>
+  <resource key="members_message">Site Message</resource>
+  <resource key="members_myaccountinfo">My Account Info</resource>
+  <resource key="members_profile">Member Profile</resource>
+  <resource key="members_register">Register</resource>
+  <resource key="members_welcome">Welcome to the Sueetie Online Community</resource>
+
+  <!-- Marketplace -->
+
+  <resource key="marketplace_showproduct">Sueetie Marketplace - Show Product</resource>
+
+  <!-- Content -->
+
+  <resource key="content_default">CMS: Welcome Page</resource>
+  <resource key="content_contentgroups">CMS: Content Page Groups</resource>
+  <resource key="content_tools">CMS: Management Tools</resource>
+  <resource key="content_navigation">CMS: Automated Navigation</resource>
+  <resource key="content_editing">CMS: Editing Content Pages</resource>
+
+  <!-- Sueetie Addons -->
+
+  <resource key="admin_addons_blockbycountry">Addons: Site Access Control - Block By Country</resource>
+  <resource key="admin_addons_addiprange">Addons: Site Access Control - Add IP Range</resource>
+  <resource key="admin_addons_clientaccess">Addons: Site Access Control - Contents</resource>
+  <resource key="admin_addons_updateipranges">Addons: Site Access Control - Update IP Ranges</resource>
+  <resource key="admin_addons_blockedcountries">Addons: Site Access Control - Manage Blocked Countries</resource>
+  <resource key="admin_addons_manualipranges">Addons: Site Access Control - Manage IP Ranges</resource>
+  <resource key="admin_addons_checkip">Addons: Site Access Control - Check IP Status</resource>
+  <resource key="admin_addons_blockedagents">Addons: Site Access Control - Block by Agent</resource>
+  <resource key="admin_addons_checkagent">Addons: Site Access Control - Check Agent Status</resource>
+  <resource key="admin_addons_settingsaddonpack">Addons: Settings</resource>
+  <resource key="admin_addons_remoteippages">Addons: Site Access for Remote IP</resource>
+  <resource key="admin_addons_agentpages">Addons: Site Access for User Agent</resource>
+  <resource key="admin_addons_recentaccessreport">Addons: Recent Access Activity Report</resource>
+  <resource key="admin_addons_truncaterequests">Addons: Truncate RequestLog User Agent Table</resource>
+  <resource key="admin_addons_blogpostimages">Addons: Blog Post Image Settings</resource>
+  <resource key="admin_addons_forumanswers">Addons: Forum Answers</resource>
+  <resource key="admin_addons_mediasetedit">Addons: Edit Media Sets</resource>
+  <resource key="admin_addons_mediasetgroupedit">Addons: Edit Media Set Groups</resource>
+  <resource key="admin_addons_mediasetobjects">Addons: Edit Media Set Objects</resource>
+  <resource key="admin_addons_mediasetdefault">Addons: Media Set Menu</resource>
+
+  <!-- Sueetie Analytics -->
+
+  <resource key="admin_analytics_filterurls">Sueetie Analytics - Filter Urls</resource>
+  <resource key="admin_analytics_default">Sueetie Analytics</resource>
+  <resource key="admin_analytics_filterusers">Sueetie Analytics - Filter Users</resource>
+  <resource key="admin_analytics_filteredurlactivity">Sueetie Analytics - Filtered Url Activity</resource>
+  <resource key="admin_analytics_reportallpages">Sueetie Analytics - Reports - All Pages</resource>
+  <resource key="admin_analytics_reportforpage">Sueetie Analytics - Reports - Page</resource>
+  <resource key="admin_analytics_settings">Sueetie Analytics - Settings</resource>
+  <resource key="admin_analytics_reportbyapplication">Sueetie Analytics - Reports - By Application</resource>
+  <resource key="admin_analytics_reportallmembers">Sueetie Analytics - Reports - All Members</resource>
+  <resource key="admin_analytics_reporttopmembers">Sueetie Analytics - Reports - Most Active Members</resource>
+  <resource key="admin_analytics_reportformember">Sueetie Analytics - Reports - Member</resource>
+  <resource key="admin_analytics_maintenance">Sueetie Analytics - Data Maintenance and Configuration</resource>
+  <resource key="admin_analytics_reports">Sueetie Analytics - Reports</resource>
+  <resource key="admin_analytics_removerefreshes">Sueetie Analytics - Remove Refreshed Request Entries</resource>
+  <resource key="admin_analytics_blogrss">Sueetie Analytics - Blog Rss Subscription and Reach</resource>
+  <resource key="admin_analytics_blogrssview">Sueetie Analytics - Blog Rss Post Views</resource>
+  <resource key="admin_analytics_tagclicks">Sueetie Analytics - Tag Activity</resource>
+  <resource key="admin_analytics_tagclickviews">Sueetie Analytics - Tag Activity Details View</resource>
+  <resource key="admin_analytics_searchterms">Sueetie Analytics - Search Activity</resource>
+  <resource key="admin_analytics_searchtermsapp">Sueetie Analytics - Search Activity by Application</resource>
+  <resource key="admin_analytics_searchtermsuser">Sueetie Analytics - Search Activity for User</resource>
+
+  <resource key="admin_marketplace_default">Sueetie Marketplace</resource>
+  <resource key="admin_marketplace_manageproducts">Sueetie Marketplace - Manage Products</resource>
+  <resource key="admin_marketplace_managecategories">Sueetie Marketplace - Manage Categories</resource>
+  <resource key="admin_marketplace_settings">Sueetie Marketplace - Settings</resource>
+  <resource key="admin_marketplace_newproduct">Sueetie Marketplace - Add New Product</resource>
+  <resource key="admin_marketplace_photos">Sueetie Marketplace - Manage Photos</resource>
+  <resource key="admin_marketplace_editproduct">Sueetie Marketplace - Update Product</resource>
+  <resource key="admin_marketplace_paymentservices">Sueetie Marketplace - Payment Services</resource>
+  <resource key="admin_marketplace_paypalstandard">Sueetie Marketplace - PayPal Standard Configuration</resource>
+  <resource key="admin_marketplace_productkey">Sueetie Marketplace - Create Member Product Key</resource>
+  <resource key="admin_marketplace_activityreport">Sueetie Marketplace - Recent Activity Report</resource>
+
+  	<resource key="addons_pages_mediasetpage">Sueetie Addons: Media Set Demo</resource>
+
+</resources>

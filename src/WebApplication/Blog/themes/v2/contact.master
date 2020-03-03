@@ -1,0 +1,78 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="contact.master.cs" Inherits="BlogEngine.Themes.vTwo.contact" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+<%@ Import Namespace="Sueetie.Core" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <form runat="Server" class="body">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="false">
+        <Scripts>
+            <asp:ScriptReference Path="/scripts/jquery.js" />
+            <asp:ScriptReference Path="/scripts/sueetie.js" />
+        </Scripts>
+        <Services>
+            <asp:ServiceReference Path="/util/services/SueetieService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">  
+                        <asp:HyperLink ID="AvatarLink" runat="server" />
+                        <ul>
+                            <li runat="server" id="UserLI"><asp:HyperLink ID="UserLink" runat="server" /></li>
+                            <li runat="server" id="InboxLI"><SUEETIE:InboxLink ID="InboxLink1" runat="server" /></li>
+                            <li><asp:LoginStatus ID="LoginStatus1" runat="Server" LoginText="Sign in" LogoutText="Sign out" EnableViewState="false" /></li>
+                            <li runat="server" id="RegisterLI"><asp:HyperLink ID="RegisterLink" runat="server" Text="Register" NavigateUrl="/members/register.aspx" /></li>
+                            <li runat="server" id="BlogAdminLI"><asp:HyperLink ID="BlogAdminLink" runat="server" Text="Blog Admin" /></li>
+                        </ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>    
+                     <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" HighlightTab="BlogTab" />
+                </div>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            <p>Retrouvez ici les dernières actualités relatives à Pathfinder (gammes en anglais ou en français) ou au site Pathfinder-FR.</p>
+                            <a href="<%=Utils.AbsoluteWebRoot %>archive.aspx" class="archive"><%=Resources.labels.archive %></a>
+                            <h4>Recherche</h4>
+                            <blog:WidgetZone runat="server" ID="rightzone" />
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">            
+                                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <ul>
+                    <li><a href="/Default.aspx">Accueil</a></li>
+                    <li><a href="/Blog">Le Blog</a></li>
+                    <li><a href="/Wiki">Les Wikis</a></li>
+                    <li><a href="/Forum">Le Forum</a></li>
+                    <li><a href="/Blog/Contact.aspx">Nous contacter</a></li>
+                </ul>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a>, <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p><a href="http://www.dotnetblogengine.net/" target="_blank"><img src="/images/shared/sueetie/be.png" style="background-color: #fff; border:solid 1px #666" /></a>
+                <p><SUEETIE:SueetieLogo ID="SueetieTag1" runat="server" ShowText="True" LogoFont="White" /></p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

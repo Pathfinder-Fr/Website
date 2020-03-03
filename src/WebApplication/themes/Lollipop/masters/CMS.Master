@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" EnableViewState="false" %>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <script type='text/javascript' src='/scripts/jquery.js'></script>
+    <script type='text/javascript' src='/scripts/SimpleDatePicker.js'></script>
+    <script type='text/javascript' src='/scripts/jquery.alerts.js'></script>
+    <script type='text/javascript' src='/scripts/sueetie.js'></script>
+    <script type='text/javascript' src='/scripts/tags.js'></script>
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme2" runat="server" StyleSheet="sueetie.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="custom.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+        <![endif]-->
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="phSiteMenu" runat="server">
+    <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" HighlightTab="CMSTab" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ScriptManager ID="SM1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="~/util/services/SueetieService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

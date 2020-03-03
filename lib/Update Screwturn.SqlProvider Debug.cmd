@@ -1,0 +1,1 @@
+robocopy ..\..\..\ScrewturnWiki\WebApplication\public\Plugins ..\WebApplication\Wiki\public\Plugins SqlServerProviders.* /log:"Update Screwturn.SqlProvider Debug.log"

@@ -1,0 +1,86 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" href="/util/rss/blogs.aspx" title="Recent Blog Posts (RSS)" />
+    <link rel="alternate" type="application/atom+xml" href="/util/rss/blogs.aspx?type=ATOM" title="Recent Blog Posts (ATOM)" />
+    <link rel="alternate" type="application/rss+xml" href="/util/rss/siteactivity.aspx" title="Recent Site Activity (RSS)" />
+    <link rel="alternate" type="application/atom+xml" href="/util/rss/siteactivity.aspx?type=ATOM" title="Recent Site Activity (ATOM)" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme2" runat="server" StyleSheet="home.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="jquery-ui-1.7.2.custom.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme4" runat="server" StyleSheet="custom.css" />
+    <!--[if IE]> <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" /> <![endif]-->
+    <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#tabs').tabs();
+        });
+
+        function pageLoad() {
+            (function ($) {
+                $.fn.loadTagCloud = function (inputDataArray) {
+                    var input = new Sys.StringBuilder("");
+                    $.each(inputDataArray, function (index, inputData) {
+                        input.append("<li><a href='/search/default.aspx?srch=Tags:" + inputData.TagPlus + "' class='" + inputData.WeightedClass + "'>" + inputData.Tag + "</a></li>");
+                    });
+                    this.html(input.toString());
+                    return this;
+                }
+                populateTags('0');
+                $("a.tagAllLink").addClass("current");
+
+            })(jQuery);
+        }
+
+        function populateTags(applicationTypeID) {
+
+            $("#tagCloudLinks a").each(
+                function () {
+                    if ($(this).hasClass("current") == true) {
+                        $(this).removeClass("current");
+                    }
+                });
+
+            switch (applicationTypeID) {
+                case '0':
+                    $("a.tagAllLink").addClass("current");
+                    break;
+                case '1':
+                    $("a.tagBlogLink").addClass("current");
+                    break;
+                case '2':
+                    $("a.tagForumLink").addClass("current");
+                    break;
+                case '3':
+                    $("a.tagWikiLink").addClass("current");
+                    break;
+                case '4':
+                    $("a.tagMediaLink").addClass("current");
+                    break;
+                case '7':
+                    $("a.tagCMSLink").addClass("current");
+                    break;
+                default:
+                    break;
+            }
+
+            Sueetie.Web.SueetieService.GetCloudTags(applicationTypeID, getTagsComplete);
+        }
+
+        function getTagsComplete(result) {
+            $("#ulTags").loadTagCloud(result);
+        }
+
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

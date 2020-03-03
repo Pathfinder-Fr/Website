@@ -1,0 +1,920 @@
+
+.date, commentDate, .listdate
+{
+	font-size: 11px;
+	font-family: helvetica;
+	color: #D40016;
+}
+#contentInner #commentlist p
+{
+    padding: 5px;
+    line-height: 100%;
+}
+#contentInner p.date, #contentInner p.listdate
+{
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+#contentInner p.commentDate
+{
+    margin-bottom: 0px;
+}
+.file
+{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #D50031;
+}
+.file A:Link, .file A:Visited
+{
+}
+.file A:Active, .file A:Hover
+{
+	color: #999;
+}
+#contentInner p.date A:Link, #contentInner p.date A:Visited, #contentInner p.commentDate A:Link, #contentInner p.commentDate A:Visited,
+#contentInner p.listdate A:Link, #contentInner p.listdate A:Visited
+{
+	color: #D40016;
+}
+#contentInner p.date A:Active, #contentInner p.date A:Hover, #contentInner p.commentDate A:Active, #contentInner p.commentDate A:Hover,
+#contentInner p.listdate A:Active, #contentInner p.listdate A:Hover
+{
+	color: #999;
+}
+#mainContent img
+{
+
+}
+#mainContent img.ImgFullName
+{
+	margin-top: 20px;
+	border: none;
+	margin-bottom: 0px;
+}
+#mainContent h2.title
+{
+	font-size: 1.6em;
+	letter-spacing: -.04em;
+	font-weight: 500;
+}
+#mainContent h2.title a:link, #mainContent h2.title a:visited
+{
+	text-decoration: none;
+}
+#mainContent h2.title a:active, #mainContent h2.title a:hover
+{
+	text-decoration: underline;
+	color: #999;
+}
+#mainContent h2.listtitle
+{
+	font-size: 1.6em;
+	letter-spacing: -.04em;
+	font-weight: 500;
+}
+#mainContent h2.listtitle a:link, #mainContent h2.listtitle a:visited
+{
+	text-decoration: none;
+}
+#mainContent h2.listtitle a:active, #mainContent h2.listtitle a:hover
+{
+	text-decoration: underline;
+	color: #999;
+}
+hr
+{
+	border: 0;
+	width: 80%;
+	color: #D40016;
+	background-color: #e5e3df;
+	height: 1px;
+	margin: 5px auto 20px auto;
+	padding: 0;
+	text-align: center;
+}
+
+
+/* Header
+------------------------------------------------------------------*/
+
+#headerOuter
+{
+	width: 100%;
+	height: 229px;
+	position: relative;
+	background: transparent url(/images/header_bg.jpg) repeat-x 0 0;
+	background-color: #000;
+}
+#headerInner
+{
+	position: relative;
+	width: 1080px;
+	height: 229px;
+	margin: 0px auto;
+}
+
+h1#logoHolder
+{
+	width: 1000px;
+	height: 174px;
+	top: 0px;
+	left: 30px;
+}
+
+body#bodyHome h1#logoHolder
+{
+	background: transparent url(/images/titlebar_home.jpg) no-repeat 0 0;
+}
+body#bodyServices h1#logoHolder
+{
+	background: transparent url(/images/titlebar_services.jpg) no-repeat 0 0;
+}
+body#bodyBlog h1#logoHolder
+{
+	background: transparent url(/images/titlebar_blog.jpg) no-repeat 0 0;
+}
+body#bodyContact h1#logoHolder
+{
+	background: transparent url(/images/titlebar_contact.jpg) no-repeat 0 0;
+}
+
+/* Content body
+------------------------------------------------------------------*/
+
+#contentOuter
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #ffffff;
+	min-height: 350px;
+}
+
+#contentInner ul {
+line-height: 55%;
+margin-right:0;
+margin-top:0;
+}
+#contentInner ul a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+}
+#contentInner li
+{
+	padding-left: 5px;
+}
+#contentInner a
+{
+	color: #D50031;
+	text-decoration: underline;
+}
+#contentInner a:hover
+{
+	color: #999;
+}
+
+.comment .author
+{
+	margin-top: 40px;
+	font-weight: bold;
+	color: #D50031;
+}
+
+.links, .categorylinks
+{
+	width: 280px;
+	background-image: url(/images/block.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin-bottom: 30px;
+	margin-left: -80px;
+	padding: 10px 10px 5px 0px;
+	overflow: visible;
+}
+.categorylinks
+{
+padding: 30px 10px 5px 0px;
+}
+.TDLabel
+{
+	margin-left: 0px;
+}
+.TRCommon
+{
+	height: 28px;
+}
+.TRThin
+{
+	height: 10px;
+}
+.TRLast
+{
+	height: 35px;
+	padding-bottom: 12px;
+}
+.TableCommon input, .TableCommon select
+{
+	font-size: 14px;
+}
+input, textarea
+{
+	font-size: 14px;
+	font-family: Arial;
+}
+.ErrorMessage
+{
+	font-size: 12px;
+	font-family: helvetica;
+	color: #FF0000;
+	padding-left: 5px;
+}
+#mainContent
+{
+	width: 630px;
+	margin: 20px 0 0 0;
+	padding-left: 10px;
+	height: auto;
+	float: left;
+	font-size: 1.0em;
+}
+#mainUtilContent
+{
+	width: 630px;
+	margin: 0px 0 0 0;
+	padding-left: 10px;
+	height: auto;
+	float: left;
+	font-size: 1.1em;
+}
+#mainSearchContent
+{
+	width: 970px;
+	text-align: center;
+	min-height: 260px;
+}
+#mainUtilContent img
+{
+	border: none;
+}
+#TalkIcon
+{
+	margin: 23px 0px 20px 0px;
+	font-size: 1.2em;
+	letter-spacing: 0px;
+}
+#TalkIcon img, #mainContent img.commentFlag
+{
+    margin-bottom: 0px;
+}
+
+.CommentTxt
+{
+    width: 255px;
+}
+.commentForm img
+#SignLink
+{
+	width: 200px;
+	text-align: right;
+}
+#sideBar
+{
+	width: 260px;
+	height: auto;
+	margin: 10px 0 0 30px;
+	float: left;
+}
+#sideBar h2
+{
+	font-size: 1.3em;
+	color: #D50031;
+	width: 280px;
+	text-align: right;
+	padding: 10px 0px 5px 0px;
+	margin-bottom: 12px;
+}
+#sideBar p
+{
+	font-size: 1em;
+	line-height: 1.3em;
+	padding: 20px 0 10px 0;
+	width: 280px;
+	text-align: right;
+	color: #666;
+}
+
+.links li
+{
+	display: block;
+	padding: 0px 17px 0px 20px;
+	background-image: url(/images/faviconTag.jpg);
+	background-repeat: no-repeat;
+	background-position: 242px 5px;
+	list-style-type: none;
+	text-align: right;
+}
+#mainContent img.PostRssImage
+{
+	margin-bottom: 0px;
+}
+#rssBigIcon, #twitterIcon
+{
+	width: 205px;
+	text-align: right;
+	padding: 60px 0px 0px 0px;
+}
+#twitterIcon
+{
+    padding: 10px 15px 0px 0px;
+}
+#rssBigIcon img, #twitterIcon img
+{
+	border: none;
+}
+.rssButton
+{
+	margin-bottom: -2px;
+	padding-left: 4px;
+}
+img.rssButton
+{
+	border: none;
+}
+.listButton
+{
+	margin-bottom: -2px;
+	padding-left: 4px;
+}
+img.listButton
+{
+	border: none;
+}
+.categorylinks li
+{
+	display: block;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+	text-align: right;
+}
+#sideBar img.ImgNoBorder
+{
+	padding-top: 15px;
+	border: none;
+}
+
+#sideBar A:Link, #sideBar A:Visited
+{
+	text-decoration: none;
+	color: #D50031;
+}
+#sideBar A:Active, #sideBar A:Hover
+{
+	text-decoration: underline;
+	color: #999;
+}
+
+.ButtonBigText:hover, input.ButtonBigText:hover, input.SendButtonBigText:hover
+{
+	background-color: #DDDDDD;
+	color: #333333;
+	text-decoration: underline;
+}
+.SendButtonBigText a:link, .SendButtonBigText a:visted
+{
+	border: none;
+}
+.ButtonBigText, input.ButtonBigText, .SendButtonBigText, input.SendButtonBigText
+{
+	background-color: #EEEEEE;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+	display: -moz-inline-box;
+	font-family: Arial,Helvetica;
+	font-size: 18px;
+	padding: 10px;
+	white-space: nowrap;
+}
+.SearchButtonBigText
+{
+	padding: 2px;
+	background-color: #EEEEEE;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+	display: -moz-inline-box;
+	font-family: Arial,Helvetica;
+	font-size: 18px;
+	white-space: nowrap;
+}
+input.SearchBoxBig, input.LoginBoxBig
+{
+	height: 23px;
+	font-size: 18px;
+	width: 224px;
+	margin: auto 12px auto 5px;
+}
+.SearchCheckbox
+{
+	margin: 15px auto 15px 0px;
+	font-size: 14px;
+}
+#searchbox
+{
+	padding-top: 30px;
+}
+#ContactTitle
+{
+	padding-bottom: 28px;
+}
+#SearchTitle
+{
+	padding-bottom: 10px;
+	margin-left: 280px;
+}
+#LoginTitle
+{
+	margin-left: 10px;
+	padding-bottom: 20px;
+}
+#ArchiveTitle
+{
+	margin-top: -10px;
+}
+.SearchTitleText
+{
+font-size:1.6em;
+font-weight:500;
+letter-spacing:-0.06em;
+color: #D50031;
+line-height: 55px;
+}
+#404Title
+{
+
+}
+#contentInner .archivelinks li
+{
+	background-image: url(/images/faviconTag.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	text-align: left;
+	font-size: 14px;
+	font-family: Arial;
+	padding-left: 20px;
+	margin: 0px;
+	line-height: 20px;
+}
+#contentInner .archivelinks ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 20px auto 20px 0px;
+}
+#contentInner .archivelinks h2
+{
+	font-size: 21px;
+	font-weight: lighter;
+	margin: 45px auto 25px 0px;
+}
+#contentInner .archivelinks img
+{
+	border: none;
+	margin-bottom: 0px;
+}
+table.archiveTable
+{
+	text-align: left;
+	width: 670px;
+}
+table.archiveTable th
+{
+	padding-bottom: 15px;
+}
+td.archiveDate
+{
+	width: 90px;
+	font-size: 14px;
+	color: #D40016;
+	vertical-align: top;
+	white-space: nowrap;
+}
+td.archiveTitle
+{
+	width: 400px;
+	margin-right: 0px;
+	font-size: 14px;	
+	white-space: nowrap;
+}
+#contentInner td.archiveTitle a:link, #contentInner td.archiveTitle a:visited
+{
+	text-decoration: none;
+}
+#contentInner td.archiveTitle a:hover, #contentInner td.archiveTitle a:active
+{
+	text-decoration: underline;
+}
+
+td.archiveComments
+{
+	text-align: center;
+	font-size: 14px;
+	vertical-align: top;
+	width: 60px;
+}
+td.archiveBackToTop 
+{
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+#contentInner td.archiveBackToTop a:link, #contentInner td.archiveBackToTop a:visited
+{
+	font-size: 12px;
+	color: #D40016;
+}
+#contentInner td.archiveBackToTop a:hover, #contentInner td.archiveBackToTop a:active
+{
+	color: #999;
+	text-decoration: underline;
+}
+
+.bits
+{
+	padding-top: 0px;
+	text-align: left;
+}
+
+.bits li
+{
+	list-style-image: url(/images/square.jpg);
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.bits H2, h3.relatedPostsH3, h3.commentsH3
+{
+	margin: 30px 0 10px 0;
+	padding: 10 10 0 inherit;
+	font-size: 22px;
+	font-weight: normal;
+	color: #D50031;
+}
+h3.commentsH3
+{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.bitbloglist
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.bitforumlist
+{
+	margin-top: 30px;
+}
+#relatedPosts a:link, #relatedPosts a:visited, #relatedPosts a:hover, #relatedPosts a:active
+{
+	margin-top: 8px;
+	margin-left: 0px;
+	margin-bottom: 6px;
+	font-size: 1.1em;
+	color: #D50031;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: normal;
+}
+.relatedPostExcerpts
+{
+	font-size: 12px;
+	margin:  0px auto 12px 0px;
+	clear: left;
+	font-family: helvetica;
+	line-height: normal;
+} 
+#relatedPosts
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.searchResult
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.searchContent
+{
+	margin-top: 6px;
+	margin-bottom: 0px;
+}
+.searchResult a
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+.searchCategory
+{
+	font-size: 12px;
+	color: #D50031;	
+}
+#contentInner .searchpage ul {
+ list-style-type: none;
+ margin:0px;
+ margin-bottom: 20px;
+ padding:0px;
+}
+
+#contentInner .searchpage ul li{
+ display: inline;
+ border: 1px solid gray; 
+ background: #f1f1f1;
+ margin-right: 5px;
+}
+
+#contentInner .searchpage ul li a{
+	 margin: 5px 5px 5px 5px;
+}
+
+#contentInner .searchpage ul li.active{
+ background: #EDE6D7;
+}
+#Pager
+{
+text-align: left;
+margin-top: 40px;
+}
+#BeLogo
+{
+	text-align: center;
+	width: 100%;
+	margin-top: 25px;
+	font-size: 11px;
+	font-family: helvetica;
+	font-weight: bold;
+	color: #666;
+}
+#BeLogo p
+{
+    padding: 20px 0;
+}
+#BeLogo a
+{
+    color: #D50031;
+}
+#BeLogo a:hover
+{
+    color: #999;
+}
+#BeLogo img
+{
+    border: none;
+}
+#postPagingOuter
+{
+	width: 400px;
+	text-align: center;
+}
+#postPaging
+{
+	width: 230px;
+}
+.ImageBlock
+{
+	visibility: hidden;
+}
+.GalleryBlock
+{
+	margin: 10px auto 10px 0px;
+}
+#contentInner .imageblock IMG, #contentInner .GalleryBlock IMG
+{
+	border: solid 1px #D50031;
+}
+.stylinLinks
+{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #D50031;
+}
+#contentInner .stylinCategoryLink a:link, #contentInner .stylinCategoryLink a:visited
+{
+
+}
+#contentInner .stylinCategoryLink a:hover, #contentInner .stylinCategoryLink a:active
+{
+
+}
+.communityLinks
+{
+	margin: 15px auto 5px 0px;
+}
+
+/*----------------------------
+					Comments
+----------------------------*/
+
+.comment {
+	border: 1px solid silver;
+	background-color: white;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.comment .date, .comment .commentDate{
+	font-size: 10px;
+	color: #666666;
+	text-align: right;
+	margin: 0;
+	padding: 3px 0px;
+	border-bottom: 1px dashed silver;
+}
+
+.comment .author {
+	margin: 0;
+	padding: 3px 0px;
+	border-top: 1px dashed silver;
+	font-size: 11px;
+}
+
+#addcomment, #comment
+{
+	font-size: 15px;
+	letter-spacing:1px;
+	font-weight: bold;
+}
+
+.self {
+	background: #f4f4f4;
+}
+
+.comment .gravatar {
+	float: left;
+	clear: both;
+	margin: 5px 10px 5px 0;
+}
+
+.comment .gravatar img {
+	height: 80px;
+	width: 80px;
+	border: 1px solid silver;
+}
+
+.comment .content {
+	min-height: 35px;
+	margin: 5px 5px 20px 5px;
+}
+
+.comment cite{
+	font-family: Monospace;
+	font-style: normal;
+}
+
+.comment img.flag {
+	position: relative;
+	top: 2px;
+}
+
+.commentForm {
+	padding: 0px 5px;
+}
+
+.commentForm label {
+	float: left;
+	display: block;
+	width: 80px;
+	margin-top: 4px;
+	clear: left;
+}
+
+.commentForm input, .commentForm select  {
+	margin-top: 4px;	
+}
+.commentForm select  
+{
+    width: 260px;
+}
+
+.commentForm textarea {
+	width: 96%;
+	height: 180px;
+	border:1px solid silver;
+	padding: 12px;
+}
+
+#commentMenu{
+	padding: 0;
+	margin:0;
+	clear:both;
+}
+
+#commentMenu li{
+	float:left;
+	border:1px solid silver;
+	border-bottom: transparent;
+	margin:0;
+	list-style:none;
+	margin-right:5px;
+	padding: 3px 8px;	
+	cursor:pointer;
+	position:relative;
+	top: 2px;
+	background:#d8d8d8;
+}
+
+#commentMenu li.selected{
+	background:white;
+	border-bottom:1px solid white;
+}
+
+#commentPreview{
+	display:none;
+	clear:both;
+	min-height: 150px;
+}
+
+.success {
+	color: #d40016;
+	font-weight: bold;
+}
+
+#mainContent .PleaseLogin
+{
+    font-size: 16px;
+    margin: 60px auto;
+    font-weight: normal;
+    color: #000;
+}
+#mainContent .PleaseLogin a:link, #mainContent .PleaseLogin a:visited
+{
+font-weight: bold;
+    color: #D50031;
+    text-decoration: underline;
+}
+#mainContent .PleaseLogin a:active, #mainContent .PleaseLogin a:hover
+{
+    color: #999;
+}
+#mainContent .CommentClosed
+{
+    font-size: 16px;
+    margin: 40px auto 20px auto;
+    font-weight: bold;
+    color: #D50031;
+}
+#TwitterWidget
+{
+    overflow: hidden;
+    margin: 25px 0;
+}
+h2, h3
+{
+    font-weight: normal;
+    font-size: 1.62em;
+    display: block;
+    width: 100%;
+    margin: 20px auto 15px 0px;
+    color: #D50031;
+    letter-spacing: -.02em;
+}
+h3
+{
+    font-size: 1.4em;
+    letter-spacing: -.04em;
+}
+
+#PoweredByOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#PoweredByInner
+{
+    width: 200px;
+    margin: auto;
+    font-size: .9em;
+    font-family: helvetica;
+}
+#PoweredByInner a
+{
+    color: #D50031;
+    font-weight: bold;
+    text-decoration: none;
+}
+#PoweredByInner a:hover
+{
+    color: #000;
+}
+.PostDate 
+{
+    font-family: helvetica;
+}

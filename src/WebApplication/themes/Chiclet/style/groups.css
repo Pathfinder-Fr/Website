@@ -1,0 +1,142 @@
+﻿
+/*-----------------------------------------------------------------------------------------------------------------
+						Groups
+------------------------------------------------------------------------------------------------------------------*/
+
+
+#GroupMenu, #GroupFullBodyMenu {
+background-color:#DDDDDD;
+border:1px solid #999999;
+display:block;
+margin-left:28px;
+overflow:hidden;
+padding:4px;
+width:905px;
+}
+#GroupFullBodyMenu
+{
+margin-left: 0px;
+width: 900px;
+margin-top: -20px;
+margin-bottom: 30px;
+}
+#GroupMenuRight
+{
+    float: right;
+    width: 355px;
+    font-size: 11px;
+    font-weight: bold;
+}
+#GroupMenuLeft
+{
+    float: left;
+    margin-left: 10px;
+    width: 250px;
+    font-size: 11px;
+    font-weight: bold;    
+}
+#GroupMenuLeft a:link, #GroupMenuLeft a:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+#GroupMenuLeft a:hover, #GroupMenuLeft a:active, #GroupMenuLeft a:link.current, #GroupMenuLeft a:visited.current
+{
+    color: #B2161B;
+    text-decoration: underline;
+}
+.groupmenu
+{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.groupmenu li
+{
+    padding: 0px;
+    float: left;
+}
+
+.groupmenu li a, .groupmenu li a:visited
+{
+    padding: 0px 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-size: 11px;
+}
+
+.groupmenu li.current a, .groupmenu li.current a:visited
+{
+    color: #B2161B;
+    text-decoration: underline;
+}
+.groupmenu li a:hover, .groupmenu li.current a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.AllGroupsLink
+{
+    font-size: 16px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.AllGroupsLink a:link, .AllGroupsLink a:visited
+{
+    text-decoration: none;
+}
+.AllGroupsLink a:hover, .AllGroupsLink a:active
+{
+    text-decoration: underline;
+    color: #000;
+}
+.GroupIntroArea
+{
+    width: 100%;
+    margin: 0px;
+}
+.GroupIntroLeft
+{
+    width: 300px;
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+.GroupIntroRight
+{
+    width: 300px;
+    display: block;
+    float: left;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    padding: 15px;
+}
+.ViewAreaTitle
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 22px;
+    color: #B2161B;
+}
+.ViewItemDescription
+{
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 2px;
+    margin-top: 2px;
+    font-family: Arial;
+}
+
+.ViewItemAuthorDate
+{
+    font-size: 10px;
+    font-weight: bold;
+ font-family: Arial;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-bottom: 12px;
+}

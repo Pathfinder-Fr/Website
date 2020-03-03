@@ -1,0 +1,2051 @@
+﻿#bodyinner
+{
+    width: 100%;
+}
+#pageinner
+{
+ width: 100%;
+}
+#topstripinner
+{
+    width: 100%;
+    margin-right: 30px;
+}
+#nav, #nav ul 
+{
+    margin-right: 32px;
+}
+
+/*  BANNER AREA ------------------------------------------------------------------------- */
+
+
+#ContainerDivOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#ContainerDiv
+{
+    width: 1100px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#adminBodyarea
+{
+    width: 95%;
+    margin: 10px auto 30px auto;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+    min-height: 550px;
+    padding-bottom: 20px;
+}
+
+
+#adminSidepanel
+{
+    background-color: #FFFFFF;
+    border: 1px solid #DF0031;
+    float: left;
+    margin: 24px 20px;
+    padding: 15px 15px 16px;
+    position: relative;
+    width: 190px;
+    text-align: left;
+}
+#adminContent
+{
+    background-image: url(/themes/lollipop/images/adminbodyback.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #Fff;
+    margin-top: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    float: none;
+    width: 90%;
+    text-align: left;
+    overflow: visible;
+}
+
+h4
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    border-bottom: solid 1px #DF0031;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    letter-spacing: -.5px;
+    margin-top: 15px;
+}
+h1
+{
+    width: 100%;
+    border-bottom: solid 1px #DF0031;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    margin-bottom: 0px;
+}
+h1 a.taggedlink:link, h1 a.taggedlink:visited
+{
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+    font-weight: normal;
+}
+.authorPubdate
+{
+    height: 17px;
+    border-bottom: 1px solid #F0F0F0;
+}
+div.post .pubDate
+{
+    color: #666666;
+    font-size: 10px;
+    float: right;
+}
+
+div.post .text
+{
+    padding-top: 10px;
+}
+.bookmarks
+{
+    float: left;
+    font-size: 11px;
+}
+
+/*----------------------------
+						Menu
+----------------------------*/
+
+#menu
+{
+    background: #f4f4f4;
+    border: 1px solid silver;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 40px;
+}
+
+#menu a.apmlfilter
+{
+    float: right;
+    margin-right: 10px; /* background: url(../../pics/apml.png) no-repeat left 1px; */
+    padding-left: 16px;
+}
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li
+{
+    display: inline;
+}
+
+#menu ul li a
+{
+    padding: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+
+#menu ul li a.feed img
+{
+    margin-right: 3px;
+    margin-bottom: -2px;
+}
+
+/*----------------------------
+					 Widgets
+----------------------------*/
+
+div#widgetzone
+{
+    padding: 0;
+    background: none;
+}
+
+div#widgetzone .clear
+{
+    clear: left;
+}
+
+div.widget
+{
+    padding-bottom: 5px;
+}
+
+div.widget .content
+{
+    color: #666666;
+    font-size: 14px;
+}
+
+div.widget h3
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+
+div.widget a.edit
+{
+    font-size: 10px;
+    font-weight: normal;
+    float: right;
+    z-index: 1;
+}
+
+div.widget a.delete
+{
+    font-weight: bold;
+    color: #999999;
+    float: right;
+    margin-left: 5px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+div.widget a.delete:hover
+{
+    color: black;
+}
+
+#widgetzone .widget ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+#widgetzone .widget ul li
+{
+    margin-bottom: 3px;
+}
+
+#widgetzone div.search
+{
+    background: none;
+    border: none;
+    padding-left: 0px;
+}
+
+#widgetzone img.rssButton
+{
+    margin-right: 3px;
+}
+.belogopic
+{
+    margin-top: 25px;
+}
+.recentPosts a
+{
+    font-size: 11px;
+    letter-spacing: -.2px;
+}
+.recentPosts a:link, .recentPosts a:visited
+{
+}
+.recentPosts a:active, .recentPosts a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+ul.recentPosts li
+{
+    padding-bottom: 0px;
+}
+a
+{
+    color: #D50031;
+}
+
+/* -----------------------  Beginning of original adminDefault.css theme ------------------------------------------ */
+
+/* Basic Styles */
+body
+{
+    background-color: #f4f4f4;
+}
+a:link
+{
+    text-decoration: none;
+    color: #1C55A4;
+}
+a:visited
+{
+    text-decoration: none;
+    color: #1C55A4;
+}
+a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+a:active
+{
+    text-decoration: none;
+    color: #1C55A4;
+}
+a:focus
+{
+    outline: none;
+}
+
+/* accordion - ajax styles */
+.accordionHeader a
+{
+    display: block;
+    color: #fff;
+    background-color: #DF0031;
+    font-size: 1.1em;
+    padding: 8px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    line-height: 1.2;
+}
+.accordionHeader a:hover
+{
+}
+.accordionContent
+{
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+.accordionLink
+{
+    line-height: 1.2;
+}
+.accordionLink a
+{
+    display: block;
+    margin-top: 2px;
+    border: 1px dotted #CCCCCC;
+    border-right: 0px;
+    border-left: 0px;
+    font-size: 1em;
+    color: #000000;
+    padding: 5px;
+    padding-left: 6px;
+}
+.accordionLink a:hover
+{
+    border: 1px solid #ccc;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+}
+.accordionImage1
+{
+    width: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/admin/members.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+.accordionImage2
+{
+    width: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/admin/members.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+.accordionImage3
+{
+    width: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/admin/members.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+.accordionImage4
+{
+    width: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/admin/members.gif);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+/* wraps the admin navigation */
+.adminNavigationWrap
+{
+    position: absolute;
+    left: 0px;
+    width: 210px;
+    margin-top: 10px;
+}
+
+/* wraps the admin content */
+.adminContentWrap
+{
+    margin-left: 200px;
+    margin-top: 10px;
+    left: 220px;
+    padding-bottom: 20px;
+}
+
+/* form help descriptions in admin forms */
+.adminHelp
+{
+    margin-bottom: 20px;
+    color: #666666;
+    border: 1px dashed #D5D4E1;
+    padding: 3px;
+    background-color: #FFFFE8;
+    font-size: 11px;
+}
+.adminHelp2
+{
+    margin-bottom: 20px;
+    color: #666666;
+    border: 1px solid #D5D4E1;
+    padding: 3px;
+    background-color: #FFFFE8;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+/* a-z alphabet link styles */
+.aTozNavigation a
+{
+    display: block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    color: #000000;
+    margin-right: 3px;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 3px;
+    width: 15px;
+    text-align: center;
+}
+.aTozNavigation a:hover
+{
+    border: 1px solid #6699cc;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* checkbox list styles */
+.checkboxList
+{
+    margin-bottom: 25px;
+}
+
+/* collapsible ajax Panel Styles */
+.CollapsePanel
+{
+    background-image: url(/images/admin/collapse-panel-1.jpg);
+    background-color: #FFFFFF;
+    background-position: left;
+    background-repeat: repeat-y;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+.CollapsePanelHeader
+{
+    background-color: #FFFFFF;
+    background-image: url(/images/admin/collapse-panel-2.jpg);
+    cursor: hand;
+    font-weight: normal;
+    height: 20px;
+    padding-top: 5px;
+    width: 100%;
+}
+.CollapseHelpHints
+{
+    border-bottom: 1px solid #D5D4E1;
+    font-size: 10px;
+    padding: 5px;
+    text-align: left;
+}
+
+/* detailsview default skin styles */
+.detailsviewMain
+{
+    width: 100%;
+    border: 1px solid #E9E9EF;
+    background-color: #FCFCFC;
+}
+.detailsviewMain td
+{
+    padding: 2px 5px;
+    border: 1px solid #D5D4E1;
+}
+.detailsviewMain th
+{
+    padding: 2px 5px;
+    border: 1px solid #D5D4E1;
+}
+.detailsviewheaderBG
+{
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    text-align: center;
+    height: 22px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.detailsviewRowStyle
+{
+    border: 1px solid #D5D4E1;
+}
+.detailsviewRowStyle:hover
+{
+    border: 1px solid #D5D4E1;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+}
+.detailsviewAlternateRowStyle
+{
+    background-color: #FCFCFC;
+    height: 22px;
+}
+.detailsviewAlternateRowStyle:hover
+{
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+}
+.detailsviewFieldHeader
+{
+    width: 170px;
+}
+
+/* email header with buttons and radio buttons */
+.EmailHeader
+{
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 3px;
+    border: 1px solid #D5D4E1;
+    border-bottom: 0px;
+}
+.EmailHeader2
+{
+    background-color: #F5F4F8;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    border-top: 1px #D1E4FF solid;
+    border-top-color: #C6C6C6;
+    width: 100%;
+}
+
+.formOutlineDiv
+{
+    border: 1px solid #DF0031;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    background-color: #FCFCFC;
+    min-height: 560px;
+    overflow: hidden;
+}
+.formHeaderDiv {
+background-color:#DF0031;
+border-bottom-color:-moz-use-text-color;
+border-bottom-style:none;
+border-bottom-width:0;
+color:#FFFFFF;
+font-size:1.5em;
+font-weight:normal;
+margin-left:0;
+margin-right:0;
+padding-bottom:9px;
+padding-left:12px;
+padding-right:5px;
+padding-top:8px;
+}
+/* form element styles */
+.formNameTitle
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+.formSectionTitle
+{
+    font-weight: bold;
+    border-bottom: 1px solid #D5D4E1;
+}
+td.formLabelsText
+{
+    text-align: right;
+    padding-right: 6px;
+    width: 200px;
+    white-space: nowrap;
+}
+
+/* page footer control style - admin pages */
+.footerControl
+{
+    height: 40px;
+    width: 100%;
+    background-image: url(/images/admin/admin-footer-2-bg.jpg);
+    margin-top: 10px;
+    border-top: 1px solid #6094C8;
+    position: fixed;
+    bottom: 0px;
+}
+.footerTitleText
+{
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+/* gridview styles for skin file */
+.gridviewMain, .fatgridviewMain, .rptgridviewMain
+{
+    width: 100%;
+    border: 1px solid #EBEBEB;
+}
+.gridviewMain td, .fatgridviewMain td, .rptgridviewMain td
+{
+    padding: 6px;
+    border: 1px solid #EBEBEB;
+    font-size: .9em;
+}
+.rptgridviewMain td
+{
+    padding: 4px 5px 0px 5px;
+    vertical-align: top;
+}
+.rptgridviewMain td.gridMessage
+{
+    width: 340px;
+}
+table.fatgridviewMain tr.gridheaderBG th
+{
+    border-color: #ccc;
+    background-color: #eee;
+}
+.rptgridviewMain tr
+{
+    max-height: 30px;
+}
+table.gridviewMain, table.fatgridviewMain, table.rptgridviewMain
+{
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    overflow: visible;
+}
+.gridviewMain th, .fatgridviewMain th, .rptgridviewMain th
+{
+    padding: 1px 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    vertical-align: middle;
+}
+.fatgridviewMain th, .fatgridviewMain td
+{
+    padding:  4px 2px 4px 2px;
+    vertical-align: middle;
+}
+.gridheaderBG
+{
+    height: 22px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+}
+.gridheaderBG a
+{
+    color: #000000;
+}
+.gridheaderBG a:hover
+{
+    text-decoration: underline;
+}
+.gridrowclick
+{
+    background-image: url(/images/admin/grid-row-hover.jpg);
+}
+.gridrowSelectedBG
+{
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+}
+.gridRowStyle, .fatgridRowStyle, .rptgridviewMain
+{
+    border: 1px solid #EBEBEB;
+}
+.gridRowStyle:hover
+{
+    border: 1px solid #EBEBEB;
+    background-color: #FFD8E0;
+}
+.gridAlternateRowStyle
+{
+    background-color: #F4F4F4;
+}
+.gridAlternateRowStyle:hover
+{
+    background-color: #FFD8E0;
+}
+.gridColumnHeaderBG
+{
+    background-image: url(/images/admin/grid-header-bg.jpg);
+}
+.gridColumnHeaderBG:hover
+{
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+}
+
+/* page header control style - admin pages */
+.headerControl
+{
+    height: 70px;
+    background-image: url(/images/admin/admin-header-2-bg.jpg);
+    border-bottom: 1px solid #96B8DB;
+}
+.headerTitleImage
+{
+    height: 70px;
+    background-image: url(/images/admin/admin-title-2.jpg);
+    background-repeat: no-repeat;
+    width: 130px;
+    float: left;
+}
+.headerTitleText
+{
+    color: #FFFFFF;
+    font-size: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* admin login name and status div */
+.loginNameAndStatus
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 300px;
+    text-align: right;
+    color: #000000;
+}
+.loginNameAndStatus a
+{
+    color: #000000;
+    text-decoration: underline;
+}
+.loginNameAndStatus a:hover
+{
+    color: #FFFFFF;
+}
+
+/* ajax MaskedEdit Related Styles */
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditMessage
+{
+    color: #ff0000;
+    font-weight: bold;
+}
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+.MaskedEditFocusNegative
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditBlurNegative
+{
+    color: #ff0000;
+}
+
+.GridTable
+{
+    border: none;
+    font-size: 11px;
+}
+/* admin membership gridview custom pager */
+.contentGridViewPager
+{
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+}
+.contentGridViewPager input:type["checkbox"]
+{
+    margin-top: 20px;
+}
+.membersGridViewPager a, .contentGridViewPager input, .contentGridViewPager label
+{
+    display: block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    color: #000000;
+    margin-right: 6px;
+    margin-top: 6px;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 5px;
+}
+.contentGridViewPager label
+{
+    padding: 8px;
+}
+.membersGridViewPager a:hover, .contentGridViewPager input:hover, .contentGridViewPager label:hover
+{
+    border: 1px solid #6699cc;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* admin membership gridview built-in pager */
+.membersGridViewPager2 tr
+{
+    padding: 0px;
+    border-width: 0px;
+    border-style: none;
+}
+.membersGridViewPager2 td
+{
+    padding: 0px;
+    border-width: 0px;
+    border-style: none;
+}
+.membersGridViewPager2 a
+{
+    display: block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    color: #000000;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 5px;
+    margin-right: 2px;
+}
+.membersGridViewPager2 a:hover
+{
+    border: 1px solid #6699cc;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* delete all membership users button */
+.membersDeleteAll a
+{
+    display: block;
+    float: right;
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    color: #000000;
+    margin-top: 6px;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 3px;
+}
+.membersDeleteAll a:hover
+{
+    border: 1px solid #6699cc;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* delete selected users button */
+.membersToggle a
+{
+    display: block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    color: #000000;
+    margin-left: 5px;
+    margin-top: 6px;
+    background-image: url(/images/admin/grid-header-bg.jpg);
+    padding: 6px;
+}
+.membersToggle a:hover
+{
+    border: 1px solid #6699cc;
+    background-image: url(/images/admin/a-zHover-bg.jpg);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* (default) ajax password strength indicator option 1 - simple text */
+.passwordStrengthIndicator
+{
+    background-color: Gray;
+    color: White;
+    font-family: Arial;
+    font-size: x-small;
+    font-style: italic;
+    padding: 2px 3px 2px 3px;
+    margin-top: 2px;
+}
+
+/* ajax password strength indicator option 2 - bar indicator */
+.passwordStrengthBarIndicator
+{
+    color: Blue;
+    background-color: Blue;
+    padding-bottom: 1px;
+}
+.passwordStrengthBarBorder
+{
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.userCategories
+{
+    margin-left: 6px;
+}
+.userCategories a
+{
+    display: block;
+    float: left;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #000000;
+    margin-right: 3px;
+    background-color: #f4f4f4;
+    padding: 6px;
+}
+.userCategories a:hover
+{
+    color: #000000;
+    background-color: #fff;
+    border: solid 1px #999;
+    text-decoration: none;
+}
+.userCategoriesWrap
+{
+    height: 30px;
+    padding: 2px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 1px Solid #ccc;
+    background-color: #eee;
+}
+
+/* div wrap for number of registered and online users */
+.whosOnlineWrap
+{
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.themelist
+{
+    float: left;
+    width: 27%;
+}
+
+.themelist .item
+{
+    background-color: #EFF8FF;
+    border: solid 1px #D2E0F0;
+    border-bottom: none;
+    width: 100%;
+}
+
+.themelist .item:last-child
+{
+    border-bottom: solid 1px #D2E0F0;
+}
+
+.themelist .alt
+{
+    background-color: #fff;
+}
+
+.themearea
+{
+    float: right;
+    width: 70%;
+}
+
+/* -----------------------  End of original adminDefault.css theme ------------------------------------------ */
+
+.ThemeName
+{
+    margin: 20px auto 30px 0px;
+    font-size: 18px;
+}
+.ThemePanelArea
+{
+    margin: 30px;
+    min-height: 460px;
+}
+.ThemeAuthor
+{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.ThemeDescription p
+{
+    font-size: 12px;
+    margin-top: 20px;
+    border-bottom: 2px solid #E4E2D5;
+    padding-bottom: 20px;
+}
+.section
+{
+    padding: 10px 0px 10px 0px;
+    height: 17px;
+    font-size: 0.8em;
+    font-weight: normal;
+    border-bottom: 2px solid #E4E2D5;
+    margin-bottom: 0px;
+}
+
+h3.section
+{
+    font-size: 1.2em;
+    color: #666;
+}
+.ThemeMessage
+{
+    clear: left;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+.ContentChkEditor
+{
+    vertical-align: baseline;
+    line-height: 24px;
+}
+.ContentSavedMessage
+{
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.nicEdit-main
+{
+    background-color: #fff;
+    padding: 6px;
+    font-family: Arial;
+}
+.ActionMessage
+{
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 18px;
+    display: block;
+    font-size: 14px;
+}
+.editor textarea
+{
+    padding: 10px;
+    font-family: Arial;
+}
+
+/*
+------------------------------------------------------------------------
+CONTENT PARTS
+IN CONTROL PANEL
+------------------------------------------------------------------------
+*/
+
+.contentparts .header
+{
+    background-color: #DF0031;
+    width: 98.8%;
+    color: #fff;
+    padding: 7px;
+    cursor: pointer;
+    border-top: solid 1px #fff;
+    height: 15px;
+}
+
+.contentparts .header .contentid
+{
+    font-weight: normal;
+    float: left;
+}
+
+.contentparts .header .lastchange
+{
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+}
+
+.contentparts .content
+{
+    border: solid 1px #ddd;
+    background-color: #efefef;
+}
+
+.contentparts .ajax__tab_header
+{
+    margin-top: 10px;
+    border-bottom: solid 1px #FD8BA6;
+    height: 20px;
+}
+
+.contentparts .ajax__tab_outer
+{
+    margin-left: 2px;
+    background: #efefef url(/themes/lollipop/images/tableft.png) no-repeat;
+    background-position: left 0;
+    height: 20px;
+}
+
+.contentparts .ajax__tab_inner
+{
+    background: transparent url(/themes/lollipop/images/tabright.png) no-repeat;
+    background-position: right 0;
+    height: 20px;
+    padding: 0 10px 0 15px;
+    color: #000;
+}
+
+.contentparts .ajax__tab_active
+{
+    font-weight: bold;
+}
+
+.contentparts .ajax__tab_inner span
+{
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contentparts .ajax__tab_body
+{
+    padding: 5px;
+    min-height: 380px;
+}
+
+
+.contentparts textarea
+{
+    margin: auto;
+}
+
+.acls table
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.acls table td
+{
+    width: 25%;
+}
+
+.acls table select
+{
+    width: 100%;
+    height: 200px;
+}
+
+.acls .allusers, .acls .allroles
+{
+    height: 441px;
+}
+
+.lseprompt
+{
+    background: #fff;
+}
+.AdminFormArea
+{
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+.AdminFormArea h2 {
+color:#D50031;
+font-size:1.6em;
+font-weight:lighter;
+margin-bottom:15px;
+margin-left:0;
+margin-right:auto;
+margin-top:27px;
+}
+.AdminFormDescription, .AdminHalfDescription
+{
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.AdminHalfDescription
+{
+}
+.AdminFormArea textarea
+{
+    width: 620px;
+    height: 80px;
+    padding: 4px;
+    font-family: Arial;
+    font-size: 14px;
+    border: solid 1px #666;
+    color: #666;
+}
+.ResultsMessage
+{
+    color: #D50031;
+    font-size: 18px;
+    margin-left: 0px;
+    display: block;
+    font-weight: 100;
+    line-height: 1.3;
+}
+.AdminTextTalk
+{
+    font-size: 14px;
+    margin-bottom: 0px;
+    width: 100%;    
+}
+.Activities .AdminTextTalk
+{
+    margin: 10px 20px 0px 0px;
+    font-size: 14px;
+}
+.AdminTextTalk ul {
+font-size:1.3em;
+font-weight:lighter;
+margin-top:40px;
+padding-left:95px;
+list-style: none;
+list-style-image: url(/themes/lollipop/images/soliddot.png);
+}
+.AdminTextTalk ul li
+{
+    margin-bottom: 5px;
+}
+.AdminTextTalk a
+{
+    font-weight: bold;
+    color: #D50031;
+}
+.AdminTextTalk ul a
+{
+    font-weight: lighter;
+    color: #D50031;
+}
+.AdminTextTalk p, .LicenseBox, .HeaderBox {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 1.2em;
+    line-height: 1.3;
+    margin-left: 0;
+    margin-top: 30px;
+    padding: 17px 17px 17px 17px;
+}
+input.adminHeavyText
+{
+    border: solid 1px #ccc;
+    height: 24px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: Arial;
+    padding-top: 4px;
+}
+.ResultsMessageDetails
+{
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.AdminFormLeft
+{
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.AdminFormRight {
+margin-left:350px;
+margin-right:30px;
+margin-top:15px;
+overflow-x:hidden;
+overflow-y:hidden;
+}
+.LoginBoxBig
+{
+    height: 24px;
+    width: 250px;
+    font-size: 18px;
+}
+.NewUserForm
+{
+    font-size: 14px;
+}
+.AdminFormLabel
+{
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+.BlogAdminImages
+{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.BlogAdminImages p
+{
+    margin-bottom: 25px;
+    display: block;
+    overflow: hidden;
+    width: 650px;
+}
+.AdminFormInner
+{
+    display: block;
+    margin: 30px auto;
+}
+select.BigDropDown
+{
+    height: 28px;
+    border: solid 1px #ccc;
+    padding: 2px;
+    font-size: 16px;
+    margin-top: 4px;
+    display: block;
+    overflow: hidden;
+}
+.SlideshowDropDownNotes
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    margin-left: 132px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #D50031;
+}
+input.BigTextBox
+{
+    height: 20px;
+    border: solid 1px #ccc;
+    padding: 3px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+textarea.BigTextBox, textarea.SlideshowImageTextBox
+{
+    border: solid 1px #ccc;
+    padding: 3px;
+    font-size: 16px;
+    margin-top: 4px;
+    color: #000;
+}
+span.BigCheckBox
+{
+    display: block;
+    height: 9px;
+    margin-top: 9px;
+    vertical-align: top;
+}
+input.ImageDescription
+{
+    border: solid 1px #999;
+    padding: 3px;
+    font-size: 16px;
+    color: #000;
+    height: 95px;
+    width: 400px;
+    background-color: #f4f4f4;
+}
+.ImageDescriptionArea
+{
+    width: 420px;
+    vertical-align: top;
+    font-size: 16px;
+}
+table.SlideshowGrid
+{
+    border: solid 1px #ddd;
+}
+.TopGridButtonRight
+{
+    display: block;
+    overflow: hidden;
+    height: 28px;
+    text-align: right;
+    width: 100%;
+}
+
+
+a.SlideshowButton:link, a.SlideshowButton:visited, a.ActivityGridButton:link, a.ActivityGridButton:visited, input.ActivityGridButton, a.TDButtonLeft:visited, a.TDButtonLeft:link, input.TDButtonLeft, input.TopGridButton
+{
+    font-size: 11px;
+    padding: 5px 9px;
+    border: solid 1px #ccc;
+    background-color: #eee;
+    color: #000;
+    text-decoration: none;
+    margin-right: 3px;
+}
+a.ActivityGridButton:link, a.ActivityGridButton:visited, a.TDButtonLeft:visited, a.TDButtonLeft:link, input.TopGridButton:visited, input.TopGridButton:link
+{
+    padding: 1px 9px;
+}
+input.TDButtonLeft
+{
+    padding: 9px;
+}
+input.TopGridButton
+{
+    padding: 2px 9px;
+}
+a.SlideshowButton:active, a.SlideshowButton:hover, a.ActivityGridButton:active, a.ActivityGridButton:hover, input.ActivityGridButton:hover, a.TDButtonLeft:active, a.TDButtonLeft:hover, input.TDButtonLeft:hover, input.TopGridButton:hover
+{
+    background-color: #ddd;
+    text-decoration: underline;
+}
+input.SlideUpload
+{
+    width: 300px;
+    margin: 2px 0px 20px 0px;
+    display: block;
+}
+.UploadTitle
+{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 18px;
+}
+.UploadForm
+{
+    display: block;
+    margin-top: 40px;
+}
+tr.slideshowrow2
+{
+    background-color: #FFEDED;
+}
+tr.slideshowrow1
+{
+    background-color: #FFF;
+}
+tr.slideshowrow1 td, tr.slideshowrow2 td
+{
+    padding: 7px;
+    vertical-align: top;
+}
+td.formLabel, td.formLabelChk
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 4px;
+    vertical-align: text-top;
+    padding-top: 8px;
+}
+td.formLabelChk
+{
+    padding-top: 2px;
+}
+.AdminUserInfo, .AdminUserFieldInfo, .AdminFooterInfo
+{
+    margin: 0 auto 15px 8px;
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.AdminUserFieldInfo
+{
+    margin: 2px auto 10px 0;
+}
+.AdminFooterInfo
+{
+    margin: 30px auto 10px 0;
+}
+.AdminFormSpacer
+{
+    display: block;
+    height: 30px;
+}
+.AdminUserUpdateMessage
+{
+    font-size: 14px;
+    font-family: Tahoma;
+    margin-top: 10px;
+    font-weight: lighter;
+    color: #D50031;
+}
+tr.rwAddSpace .BigFormText
+{
+    font-size: 16px;
+    display: block;
+}
+tr.rwAddSpace
+{
+    height: 40px;
+    vertical-align: text-top;
+}
+td.formCheckField
+{
+    padding-left: 6px;
+    padding-top: 6px;
+}
+.AddActivitiesForm
+{
+    overflow: hidden;
+    display: block;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 25px;
+    border: solid 1px #ddd;
+    background-color: #f4f4f4;
+}
+.AddActivitiesForm td.AddActivitiesLabel {
+    font-size: 1em;
+    padding-right: 8px;
+    text-align: right;
+    width: 180px;
+}
+table.AddActivitiesFormTable tr
+{
+    height: 32px;
+}
+.AddActivitiesFormTable td select
+{
+    padding: 2px;
+     font-size: 1em;
+}
+.AddActivitiesFormTable td.aaLong input, .AddActivitiesFormTable td.aaShort input, .AddActivitiesFormTable td.aaMedium input,
+.fatgridviewMain td.aaLong input
+{
+    width: 400px;
+    border: solid 1px #ccc;
+    text-align: left;
+    padding: 4px;    
+    font-size: 1em;
+}
+.AddActivitiesFormTable td.aaShort input
+{
+    width: 60px;
+}
+.AddActivitiesFormTable td.aaMedium input
+{
+    width: 190px;
+}
+.AddActivitiesFormTable td.aaCheckbox
+{
+    width: 30px;
+    margin-left: -5px;
+}
+.AddActivitiesForm .TextButtonBig
+{
+    margin-left: 187px;
+}
+.fatgridviewMain input, .fatgridviewMain input
+{
+    border: solid 1px #ccc;
+}
+.fatgridviewMain input.ActivityLongInput
+{
+    width: 360px;
+}
+.fatgridviewMain input.ActivityShortInput
+{
+    width: 160px;
+}
+.fatgridviewMain input.ApplicationLongInput
+{
+    width: 200px;
+}
+.fatgridviewMain input.ApplicationShortInput
+{
+    width: 80px;
+}
+.GroupTypeText
+{
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding-top: 4px;
+}
+.GroupTypeDescription
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    padding-left: 21px;
+    margin-bottom: 8px;
+}
+tr.EditorRow td.formField
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.modalPanelTitle td
+{
+    padding: 3px;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-image: url(/themes/lollipop/images/window_titlebg.gif);
+    cursor: hand;
+    color: black;
+    font-family: Verdana;
+    width: 100%;
+    height: 30px;
+    background-color: #6f90dc;
+}
+
+.modalPanel
+{
+    border-right: 1px outset;
+    border-top: 1px outset;
+    z-index: 500;
+    width: 500;
+    border-left: 1px outset;
+    border-bottom: 1px outset;
+    position: absolute;
+    border-collapse: collapse;
+    background-color: buttonface;
+}
+
+.modalPanel td
+{
+    vertical-align: top;
+}
+
+.titleIcon
+{
+    padding-right: 20px;
+}
+.rptgridviewMain td.DateTimeColumn
+{
+    width: 100px;
+}
+.AdminFormFields
+{
+    display: block;
+    overflow: hidden;
+    margin-top: 40px;
+}
+p.AddonBy
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.AdminSrchResultMsgs
+{
+    margin: 30px auto auto 123px;
+}
+.AdditionalMessageNotes
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.ipIconSpan
+{
+    line-height: 8px;
+    margin-left: 4px;
+    vertical-align: bottom;
+}
+a.ipIcon
+{
+}
+.SubscriberList
+{
+    margin-bottom: 30px;
+}
+.adminTopLinks
+{
+    float: right;
+    line-height: 29px;
+}
+.adminTopLinks a
+{
+    color: #fff;
+}
+#footerouter
+{
+    margin-top: 40px;
+}
+.adminHomeVersionInfo  {
+background-color:#F4F4F4;
+border:1px solid #DF0031;
+font-size:1.3em;
+margin-bottom:40px;
+padding:5px 27px;
+margin-top: 20px;
+}
+.TextButtonBigAreaSpaced
+{
+    display: block;
+    margin-top: 30px;
+}
+.TextButtonBigArea
+{
+    margin-top: 12px;
+}
+.ContentPageGroupDropDownNotes {
+font-family:tahoma;
+font-size:0.8em;
+margin-left:203px;
+margin-top:4px;
+overflow-x:hidden;
+overflow-y:hidden;
+padding-bottom: 1px;
+}
+td.rptColCode
+{
+    width: 50px;
+}
+td.rptColID
+{
+    width: 30px;
+}
+td.rptColCategory
+{
+    width: 100px;
+}
+td.rptColAppKey
+{
+    width: 50px;
+}
+td.rptColDescription
+{
+    width: 200px;
+    line-height: 1.2;
+}
+td.rptColDate
+{
+    width: 50px;
+}
+td.rptColSmallDate
+{
+    font-size: .6em;
+    font-weight: bold;
+}
+.EventSelect
+{
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.EventSelect select
+{
+    border: solid 1px #ddd;
+    padding: 4px;
+    width: 230px;
+}
+.AdminFormArea h3
+{
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+.AdminSubHeader
+{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+p.SlideShowIntro
+{
+    overflow: hidden;
+    margin: 20px auto;
+}
+.aTozNavigation
+{
+    margin-top: 6px;
+}
+.adminSearchFields
+{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.adminSearchFields select, .adminSearchFields input
+{
+    width: 200px;
+    padding: 4px;
+    border: solid 1px #ccc;
+    font-size: 1em;
+}
+ .adminSearchFields input.TextButtonBig
+ {
+     width: 100px;
+ }
+ .UploadTitle
+ {
+     color: #D50031;
+     font-size: 1.3em;
+ }
+ .RoleSelect
+ {
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ .RoleSelect select
+ {
+     padding: 5px;
+     width: 300px;
+     border: solid 1px #ccc;
+     font-size: 1em;
+ }
+ .AdminMenuLeft
+ {
+     width: 350px;
+     float: left;
+ }
+.AdminSueetieNews {
+background-color:#f4f4f4;
+border-left: solid 2px #aaa;
+border-right: solid 2px #aaa;
+border-bottom: solid 2px #aaa;
+height:500px;
+margin-bottom:40px;
+margin-left:0px;
+margin-top:0px;
+overflow-x:hidden;
+overflow-y:scroll;
+padding-bottom:20px;
+padding-left:20px;
+padding-right:20px;
+padding-top:20px;
+width:400px;
+}
+.AdminSueetieNewsTitle {
+background-color:#DF0031;
+border-bottom: none;
+border-left: solid 2px #ccc;
+border-right: solid 2px #ccc;
+border-top: solid 2px #ccc;
+color:#FFFFFF;
+font-size:1.3em;
+margin-left:0px;
+margin-top:-35px;
+padding-bottom:5px;
+padding-left:20px;
+padding-right:20px;
+padding-top:6px;
+width:400px;
+}
+.AdminRssRight
+{
+    margin-left: 455px;
+    width: 410px;
+}
+.ViewItemTitleRssBlogPost
+{
+    font-size: 1.1em;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+.ViewItemTitleRssBlogPost a:link, .ViewItemTitleRssBlogPost a:visited
+{
+    text-decoration: none;
+    color: #D50031;
+}
+.ViewItemTitleRssBlogPost a:active, .ViewItemTitleRssBlogPost a:hover
+{
+    text-decoration: underline;
+    color: #000;
+}
+.ViewItemDescription
+{
+    font-size: .8em;
+    font-family: Tahoma;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+.ViewItemAuthorDate {
+color:#D50031;
+font-family:tahoma;
+font-size:0.7em;
+margin-bottom:22px;
+}
+.ajax__tab_xp .ajax__tab_body 
+{
+    font-size: .9em !important;
+    padding: 20px !important;
+}
+.RoleColumns td
+{
+    padding-right: 40px;
+}
+.ProfileMessage
+{
+    font-size: .9em;
+    color: #d50031;
+    margin: 20px 60px 20px 0px; 
+}
+.AddActivitiesForm .ActivityGridButton
+{
+    font-size: 14px;
+}
+table.licenseTable
+{
+    width: 900px;
+    margin-left: 75px;
+}
+table.licenseTable td
+{
+    vertical-align: middle;
+}
+.licenseMessage
+{
+    margin-top: 30px;
+}
+.LicenseBox a
+{
+    color: #d50031;
+    font-weight: bold;
+}
+.LicenseBox a:hover
+{
+    text-decoration: underline;
+}
+.LicenseBox .licenseBoxType
+{
+    width: 100%;
+    font-size: 1.1em;
+    color: #d50031;
+    font-weight: normal;
+    margin-bottom: 15px;
+    display: block;
+}
+.LicenseBox .licenseBoxInfo
+{
+    font-size: .9em;
+    clear: left;
+    line-height: 1.3em;
+}
+table.GeneralSettingsTable tr
+{
+    height: 45px;
+}
+table.GeneralSettingsTable table tr
+{
+    height: 20px;
+}
+table.GeneralSettingsTable td.formField label
+{
+    padding-right: 8px;
+}
+.RestartMessage
+{
+    margin-top: 40px;
+}
+
+/* SHARED COMMERCIAL CLASSES ----------------------------------------------------------- */
+
+.MainMenuList
+{
+    overflow: hidden;
+    margin: 40px auto 60px 50px;
+}
+.MainMenuContents
+{
+}
+.MainMenuContents ul
+{
+    margin-top: 20px;
+}
+.AdminULHeader {
+    color: #666;
+    font-size: 1.4em;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.ActivityLinksArea {
+    margin-top: 40px;
+    overflow: hidden;
+    padding-bottom: 4px;
+    text-align: right;
+    width: 100%;
+}
+.ActivityLinksArea a
+{
+    color: #d50031;
+    font-size: .8em;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.ActivityLinksArea a.last
+{
+    margin-right: 0px;
+}
+.UseStatements
+{
+    padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: .8em;
+    color: #000;
+    font-family: Tahoma;
+}
+.AdminTextTalk ul li.SpacerLI
+{
+    margin-bottom: 30px;
+}
+td.col_purchaseUser img
+{
+    line-height: 1.4;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+td.col_purchaseTitle a, td.col_purchaseCategory a
+{
+    font-weight: bold;
+}
+tr.MainSelectorRow
+{
+    height: 50px;
+}
+td.fixedAdminLeft
+{
+    width: 300px;
+}

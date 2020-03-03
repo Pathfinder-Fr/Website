@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rights>
+  <right name="None" />
+  <right name="ViewDetailedErrorMessages">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="AccessAdminPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="AccessAdminSettingsPages">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="ManageWidgets">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="ViewPublicComments">
+    <role name="BlogAdministrator" />
+    <role name="Anonymous" />
+    <role name="BlogEditor" />
+    <role name="GroupAdministrator" />
+    <role name="Guests" />
+    <role name="Registered" />
+  </right>
+  <right name="ViewUnmoderatedComments">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="CreateComments">
+    <role name="BlogAdministrator" />
+    <role name="Anonymous" />
+    <role name="BlogEditor" />
+    <role name="GroupAdministrator" />
+    <role name="Guests" />
+    <role name="Registered" />
+  </right>
+  <right name="ModerateComments">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="ViewPublicPosts">
+    <role name="BlogAdministrator" />
+    <role name="Anonymous" />
+    <role name="BlogEditor" />
+    <role name="GroupAdministrator" />
+    <role name="Guests" />
+    <role name="Registered" />
+  </right>
+  <right name="ViewUnpublishedPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="CreateNewPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="EditOwnPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="EditOtherUsersPosts">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="DeleteOwnPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="DeleteOtherUsersPosts">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="PublishOwnPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="PublishOtherUsersPosts">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="ViewPublicPages">
+    <role name="BlogAdministrator" />
+    <role name="Anonymous" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="ViewUnpublishedPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="CreateNewPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="EditOwnPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="EditOtherUsersPages">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="DeleteOwnPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="DeleteOtherUsersPages">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="PublishOwnPages">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="PublishOtherUsersPages">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="ViewRatingsOnPosts">
+    <role name="BlogAdministrator" />
+    <role name="Anonymous" />
+    <role name="BlogEditor" />
+    <role name="Registered" />
+  </right>
+  <right name="SubmitRatingsOnPosts">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+    <role name="Registered" />
+  </right>
+  <right name="ViewRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="CreateNewRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="EditRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="DeleteRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="EditOwnRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="EditOtherUsersRoles">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="CreateNewUsers">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="DeleteUserSelf">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="DeleteUsersOtherThanSelf">
+    <role name="BlogAdministrator" />
+  </right>
+  <right name="EditOwnUser">
+    <role name="BlogAdministrator" />
+    <role name="BlogEditor" />
+  </right>
+  <right name="EditOtherUsers">
+    <role name="BlogAdministrator" />
+  </right>
+</rights>

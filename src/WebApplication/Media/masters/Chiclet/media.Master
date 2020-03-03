@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"  Inherits="Sueetie.Core.SueetieBaseMasterPage"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server" profile="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <%@ register src="~/gs/styles/Chiclet/menus/UserMenu.ascx" tagname="UserMenu" tagprefix="uc" %>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <a name="top"></a>
+    <div id="header">
+        <h3>
+            Sueetie</h3>
+        <p>
+            Online Community Software for Nice People</p>
+    </div>
+    <sueetie:sitemenu id="SiteMenu1" runat="server" />
+    <div>
+        <asp:ContentPlaceHolder ID="cphBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+    <uc:UserMenu ID="UserMenu1" runat="server" />
+    <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+        <div id="sueetieFooterLogo">
+            <SUEETIE:SueetieLogo id="SueetieLogo1" runat="server" logofont="White" showtext="True" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

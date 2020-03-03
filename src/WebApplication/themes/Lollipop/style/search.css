@@ -1,0 +1,162 @@
+﻿#content
+{
+    margin: 0px auto;
+    margin-top: 0px;
+    padding: 0px;
+    background: none;
+    border: transparent;
+    text-decoration: none;
+    display: block;
+    margin: 20px 40px;
+    width: 880px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    min-height:350px;
+}
+
+ul.SrchResults
+{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+ul.SrchResults li
+{
+    margin-bottom: 28px;
+    list-style: none;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    line-height: 1.2;
+}
+ul.SrchResults li.srchblog
+{
+    background-image: url(/themes/lollipop/images/search/blog.png);
+    background-position: left 4px;
+}
+ul.SrchResults li.srchalbum
+{
+    background-image: url(/themes/lollipop/images/search/album.png);
+    background-position: left 4px;
+}
+ul.SrchResults li.srchmedia
+{
+    background-image: url(/themes/lollipop/images/search/media.png);
+    background-position: left 4px;
+}
+ul.SrchResults li.srchwiki
+{
+    background-image: url(/themes/lollipop/images/search/wiki.png);
+    background-position: left 4px;
+}
+ul.SrchResults li.srchforum
+{
+    background-image: url(/themes/lollipop/images/search/forum.png);
+    background-position: left 4px;
+}
+ul.SrchResults li.srchcms
+{
+    background-image: url(/themes/lollipop/images/search/cms.png);
+    background-position: left 4px;
+}
+.SrchResultDetails
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.SrchResultDetails, .SrchResultTags
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.SrchResultDetails span, .SrchResultTags span
+{
+    font-weight: bold;
+}
+.highlight
+{
+    background-color: #FDE6E6;
+    padding: 0px 2px;
+    border: solid 1px #ccc;
+}
+.SrchResultSource
+{
+    font-size: 14px;
+    margin: 4px auto 8px auto;
+    display: block;
+    overflow: hidden;
+    color: #D50031;
+}
+.SrchResultSource span
+{
+    font-weight: bold;
+}
+.SrchContent
+{
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    margin-right: 41px;
+}
+.SearchCheckboxes
+{
+    background-color: #F4F4F4;
+    border: 1px solid #DDDDDD;
+    display: block;
+    font-family: Tahoma;
+    font-size: 11px;
+    overflow: hidden;
+    padding: 7px 4px 4px;
+    width: 870px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.SearchCheckboxes label
+{
+    color: #B2161B;
+    line-height: 16px;
+    overflow: hidden;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 11px;
+    vertical-align: top;
+}
+.SearchCheckboxes .SearchCheckbox
+{
+}
+.SearchCheckboxes .SearchInLabel
+{
+    font-size: 1.5em;
+    line-height: 15px;
+    vertical-align: top;
+    background-color: #eee;
+    border: solid 1px #ccc;
+    margin-right: 14px;
+    padding: 1px 25px;
+    color: #B2161B;
+}
+span.btnSearchAllAppsArea
+{
+    float: right;
+    height: 20px;
+    margin-right: 0;
+    margin-top: -7px;
+}
+input#chkAll
+{
+    background-color: #EEEEEE;
+    border-color: #CCCCCC #999999 #999999 #CCCCCC;
+    border-right: 1px solid #999999;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 11px;
+    font-weight: lighter;
+    margin: 3px;
+    padding: 4px 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: Tahoma;
+}
+input#chkAll:hover
+{
+    background-color: #ddd;
+}

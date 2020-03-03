@@ -1,0 +1,7 @@
+Pour déployer les projets en prod, il faut publier chaque projet web dans le dossier suivant :
+
+- Blog : Atomo\Packages\Blog
+- ForumWebApplication : Atomo\Packages\Forum
+- MediaWebApplication : Atomo\Packages\Media
+- WebApplication : Atomo\Packages\WebApplication
+- WikiWebApplication : Atomo\Packages\Wiki

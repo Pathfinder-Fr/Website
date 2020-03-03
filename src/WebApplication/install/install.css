@@ -1,0 +1,262 @@
+﻿body
+{
+    font-family: Helvetica, Arial;
+    background: #f4f4f4;
+    margin-bottom: 50px !important;
+}
+a:link, a:visited
+{
+    color: #CB0644;
+    font-weight: bold;
+}
+p.Spacer
+{
+    padding-bottom: 20px;
+    clear: left;
+}
+.Opener
+{
+    margin: 20px auto 30px 0px;
+    width: 775px;
+}
+p.Opener strong
+{
+    color: #CB0644;
+}
+.LeftBodyArea
+{
+    width: 245px;
+    float: left;
+    display: block;
+}
+.RightBodyArea
+{
+    float: left;
+    display: block;
+    margin-left: 20px;
+    width: 650px;
+}
+.RightBodyArea span
+{
+    color: #CB0644;
+    font-weight: bold;
+}
+li
+{
+    margin-bottom: 15px;
+}
+.SueetieInstallBodyAreaOuter
+{
+    width: 100%;
+    text-align: center;
+}
+
+.SueetieInstallBodyArea
+{
+    width: 960px;
+    margin: 0px auto;
+    text-align: left;
+}
+.SueetieInstallBodyAreaInner
+{
+    background-image: url(/themes/lollipop/images/lollicorner.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #Fff;
+    border: solid 2px #DF0031;
+    margin: 50px auto 50px auto;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+    width: 990px;
+    overflow: hidden;
+}
+.footer
+{
+    height: 60px;
+}
+.ConnectionStrings
+{
+    font-weight: bold;
+    font-size: .8em;
+    font-family: Courier New;
+}
+.clr
+{
+    clear: both;
+    height: 50px;
+    display: block;
+}
+.Details
+{
+    margin-top: 20px;
+}
+.Details ul
+{
+    padding-left: 10px;
+}
+.Details ul li
+{
+    list-style-type: disc;
+}
+.Details em
+{
+    color: #CB0644;
+}
+.SetupMenu
+{
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    clear: both;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 860px;
+}
+h4
+{
+    color: #CB0644;
+    font-weight: bold;
+}
+.SueetieInstallColumnArea
+{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+p.InstallNote
+{
+    font-size: 11px;
+    color: #CB0644;
+}
+.InstallerDisabled
+{
+    margin: 80px auto 100px 90px;
+    font-family: Arial;
+}
+h1, h2
+{
+    color: #CB0644;
+    font-size: 34px;
+    font-weight: lighter;
+    letter-spacing: -0.05em;
+}
+h2
+{
+    font-size: 26px;
+    letter-spacing: -0.06em;
+    margin-bottom: 0px;
+}
+h2.InstallPrep
+{
+    display: block;
+    margin-bottom: 20px;
+}
+.SeeWiki
+{
+    font-size: 14px;
+    color: #CB0644;
+    font-weight: lighter;
+    margin-top: 22px;
+    font-style: italic;
+    margin-bottom: 40px;
+    width: 810px;
+}
+.LinksDisabled
+{
+    color: #CB0644;
+    font-size: 16px;
+    margin-bottom: 30px;
+    display: block;
+}
+.resultLabel
+{
+    font-size: 16px;
+    color: #CB0644;
+    text-transform: uppercase;
+    font-family: Lucida Sans;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 2px;
+    border: solid 1px #999;
+}
+a.SetupLink
+{
+    color: #fff;
+    padding: 12px;
+    background-color: #df0031;
+    border: solid 2px #fff;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+a.SetupLink:hover
+{
+    background-color: #000;
+}
+ol.SetupLinkList
+{
+    margin-top: 50px;
+}
+ol.SetupLinkList li
+{
+    margin: 30px 0px 60px 0;
+}
+.SetupLinkArea
+{
+    display: block;
+    margin-bottom: 50px;
+}
+.FireUpGummyBear
+{
+    display: block;
+    margin: 60px 0px;
+    line-height: 50px;
+}
+input.TextButtonBig
+{
+    color: #fff;
+    padding: 12px;
+    background-color: #df0031;
+    border: solid 2px #fff;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input.TextButtonBig:hover
+{
+    background-color: #000;
+}
+.TextButtonBig input.TextButtonBigMatchHeight
+{
+    padding: .2em 6px;
+}
+.ForumButtonArea
+{
+    height: 80px;
+    display: block;
+    margin-top: 30px;
+}
+.ForumMessageArea
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.CheckListArea
+{
+    margin: 30px 20px 30px 0;
+    overflow: hidden;
+}
+.DBErrorArea
+{
+    padding: 14px;
+    background-color: #f4f4f4;
+    border: solid 2px #df0031;
+    margin-bottom: 40px;
+    font-size: .8em;
+    font-family: Tahoma;
+    display: block;
+    overflow: hidden;
+}

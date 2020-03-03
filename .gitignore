@@ -1,0 +1,29 @@
+
+# Visual Studio Files
+*.user
+*.csproj.vspscc
+*.suo
+.vs
+bin/
+obj/
+
+# Packages, build
+packages/*
+artifacts/*
+Pub/*
+Publish/*
+publish/*
+build.log
+*.binlog
+
+# Wiki files
+src/WebApplication/Wiki/public/Attachments/*
+src/WebApplication/Wiki/public/Upload/*
+src/WebApplication/Wiki/public/Plugins/*
+src/WebApplication/Wiki/public/*
+
+# Lucene index files
+src/WebApplication/util/index/*
+
+# Data files
+data/*

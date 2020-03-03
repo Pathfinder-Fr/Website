@@ -1,0 +1,3 @@
+robocopy ..\..\..\ScrewturnWiki\WebApplication\bin ScrewTurn304 Anthem.* ScrewTurn.Wiki.AclEngine.* Screwturn.Wiki.BackupRestore.* Screwturn.Wiki.PluginFramework.* Screwturn.Wiki.SearchEngine.* SgmlReaderDll.dll /log:"Update Screwturn.log"
+robocopy ..\..\..\ScrewturnWiki\SqlServerProviders\bin\Release ScrewTurn304 SqlServerProviders.* /log+:"Update Screwturn.log"
+robocopy ..\..\..\ScrewturnWiki\SqlServerProviders\bin\Release ..\WebApplication\Wiki\public\Plugins SqlServerProviders.* /log+:"Update Screwturn.log"

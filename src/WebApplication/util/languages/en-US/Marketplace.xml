@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+  <resource key="new_listings">New Listings</resource>
+  <resource key="list_free">Free</resource>
+  <resource key="breadcrumb_separator">&amp;raquo;&amp;nbsp;</resource>
+
+  <resource key="adtype_commercial">Commercial</resource>
+  <resource key="adtype_freeregistered">Free to Members</resource>
+  <resource key="adtype_freeall">Free</resource>
+  <resource key="adtype_freecontribution">Contribution</resource>
+
+  <resource key="purchasetype_commercial">Commercial</resource>
+  <resource key="purchasetype_freeregistered">Free to Members</resource>
+  <resource key="purchasetype_freeall">Free</resource>
+  <resource key="purchasetype_freesubscribers">Free to Subscribers</resource>
+  <resource key="purchasetype_freecontribution">Donation</resource>
+  <resource key="purchasetype_other">Other</resource>
+
+  <resource key="statustype_active">Active</resource>
+  <resource key="statustype_pending">Activation Pending</resource>
+  <resource key="statustype_expired">Inactive / Expired</resource>
+  <resource key="statustype_soldout">Sold Out</resource>
+  <resource key="statustype_other">Other</resource>
+
+  <resource key="commerce_licensetype_notvalid">Not Valid</resource>
+  <resource key="commerce_licensetype_trialperiod">Trial Period</resource>
+  <resource key="commerce_licensetype_free">Free</resource>
+  <resource key="commerce_licensetype_personal">Personal</resource>
+  <resource key="commerce_licensetype_sueetieinsider">Sueetie Insider</resource>
+  <resource key="commerce_licensetype_entrepreneur">Entrepreneur</resource>
+  <resource key="commerce_licensetype_smallbusiness">Small Business</resource>
+  <resource key="commerce_licensetype_corporate">Corporate</resource>
+  <resource key="commerce_licensetype_enterprise">Enterprise</resource>
+  <resource key="commerce_licensetype_evaluation">Evaluation License</resource>
+
+  <resource key="loginto_electronicdownload">Login to Download this Product</resource>
+  <resource key="loginto_productlicense">Login to Acquire this License</resource>
+  <resource key="loginto_subscription">Login to Subscribe</resource>
+  <resource key="loginto_sueetiepackage">Login to Acquire this License</resource>
+  <resource key="loginto_nonlicensedsoftware">Login to Purchase this Item</resource>
+  <resource key="loginto_physicalcontent">Login to Purchase this Item</resource>
+  <resource key="loginto_service">Login to Purchase this Service</resource>
+
+
+  <resource key="license_hasexisting_message">You acquired a {0} on {1}. Your Product Key is &lt;strong&gt;{2}.&lt;/strong&gt; All Product Keys are available on your Sueetie Member Profile Page.</resource>
+  <resource key="license_created_message">Your Free Product Key has been created.  You can copy and paste the following key into your Sueetie Product Key Management form as described below.  Thank you for supporting Sueetie!</resource>
+
+  <resource key="productpurchase_title_suffix"> Product Key</resource>
+  <resource key="productpurchase_transactionxid">Your purchase reference code: </resource>
+
+  <resource key="productpurchase_title_success">Thank you for your purchase!</resource>
+  <resource key="productpurchase_title_failure">Transaction not completed as expected</resource>
+  <resource key="purchase_failure_email_admin"> Admin</resource>
+  <resource key="purchase_failure_email_subject">Transaction Failed on Sueetie Marketplace</resource>
+  <resource key="purchase_failure_email_firstline">A transaction failed on the Sueetie Marketplace for the following user and time:</resource>
+
+  <resource key="cartlink_commercial_sidebar">Add to your Shopping Cart</resource>
+  <resource key="cartlink_commercial_bottom">Add {0} to your Shopping Cart</resource>
+
+</root>

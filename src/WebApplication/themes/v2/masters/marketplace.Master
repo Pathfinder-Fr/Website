@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<%@ Import Namespace="Sueetie.Commerce" %>
+
+<asp:Content ContentPlaceHolderID="cphHeader" runat="server">
+    <SUEETIE:SueetieTheme runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme runat="server" StyleSheet="marketplace.css" />
+    <SUEETIE:SueetieTheme runat="server" StyleSheet="custom.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+    <![endif]-->
+    <script type='text/javascript' src='/scripts/jquery.js'></script>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+    <h1 class="separators">Liens</h1>
+    <div class="links">
+        <ul>
+            <li><a href="default.aspx"><SUEETIE:SueetieLocal runat="server" LanguageFile="marketplace.xml" Key="home" /></a></li>
+            <li><a href="browse.aspx"><SUEETIE:SueetieLocal runat="server" LanguageFile="marketplace.xml" Key="products_all" /></a></li>
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="cphLowerSideBar" runat="server" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="cphBody" runat="server">
+    <div class="marketplace">
+        <asp:ContentPlaceHolder ID="NavBar" runat="server" />
+        <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+    </div>
+</asp:Content>

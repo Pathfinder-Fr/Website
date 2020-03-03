@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<paths>
+		<left>C:\code\perso\Pathfinder-fr\pathfinder-fr\ext\yafnet\yafsrc\YetAnotherForum.NET\</left>
+		<right>C:\code\perso\Pathfinder-fr\pathfinder-fr\src\WebApplication\Forum\</right>
+		<filter>*.*</filter>
+		<subfolders>1</subfolders>
+		<left-readonly>1</left-readonly>
+		<right-readonly>0</right-readonly>
+	</paths>
+</project>

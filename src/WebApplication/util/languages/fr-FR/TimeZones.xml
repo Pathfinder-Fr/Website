@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+        <resource key="UTC-12">(UTC-12:00) Eniwetok, Kwajalein</resource>
+        <resource key="UTC-11">(UTC-11:00) Midway Island, Samoa</resource>
+        <resource key="UTC-10">(UTC-10:00) Hawaii</resource>
+        <resource key="UTC-9">(UTC-9:00) Alaska</resource>
+        <resource key="UTC-8">(UTC-8:00) Pacific Time (US &amp; Canada)</resource>
+        <resource key="UTC-7">(UTC-7:00) Arizona</resource>
+        <resource key="UTC-7">(UTC-7:00) Mountain Time (US &amp; Canada)</resource>
+        <resource key="UTC-6">(UTC-6:00) Central Time (US &amp; Canada), Mexico City</resource>
+        <resource key="UTC-5">(UTC-5:00) Eastern Time (US &amp; Canada), Bogota, Lima, Quito</resource>
+        <resource key="UTC-4">(UTC-4:00) Atlantic Time (Canada), Caracas, La Paz</resource>
+        <resource key="UTC-3.5">(UTC-3:30) Newfoundland</resource>
+        <resource key="UTC-3">(UTC-3:00) Brazil, Buenos Aires, Georgetown, Falkland Is.</resource>
+        <resource key="UTC-2">(UTC-2:00) Ascension</resource>
+        <resource key="UTC-1">(UTC-1:00) Azores, Cape Verde Islands</resource>
+        <resource key="UTC0">(UTC) Casablanca, Dublin, Edinburgh, London, Lisbon, Monrovia</resource>
+        <resource key="UTC1">(UTC+1:00) Paris, Berlin, Brussels, Kristiansund, Madrid, Rome, Warsaw</resource>
+        <resource key="UTC2">(UTC+2:00) Jerusalem, Kaliningrad, South Africa</resource>
+        <resource key="UTC3">(UTC+3:00) Baghdad, Riyadh, Moscow, Nairobi</resource>
+        <resource key="UTC3.5">(UTC+3:30) Tehran</resource>
+        <resource key="UTC4">(UTC+4:00) Adu Dhabi, Baku, Muscat, Tbilisi</resource>
+        <resource key="UTC4.5">(UTC+4:30) Kabul</resource>
+        <resource key="UTC5">(UTC+5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</resource>
+        <resource key="UTC5.5">(UTC+5:30) Bombay, Calcutta, Madras, New Delhi</resource>
+        <resource key="UTC6">(UTC+6:00) Almaty, Colomba, Dhaka</resource>
+        <resource key="UTC7">(UTC+7:00) Bangkok, Hanoi, Jakarta</resource>
+        <resource key="UTC8">(UTC+8:00) Beijing, Hong Kong, Perth, Singapore, Taipei</resource>
+        <resource key="UTC9">(UTC+9:00) Osaka, Sapporo, Seoul, Tokyo, Yakutsk</resource>
+        <resource key="UTC9.5">(UTC+9:30) Adelaide, Darwin</resource>
+        <resource key="UTC10">(UTC+10:00) Melbourne, Papua New Guinea, Sydney, Vladivostok</resource>
+        <resource key="UTC11">(UTC+11:00) Magadan, New Caledonia, Solomon Islands</resource>
+        <resource key="UTC12">(UTC+12:00) Auckland, Wellington, Fiji, Marshall Island</resource>
+
+</root>

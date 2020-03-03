@@ -1,0 +1,35 @@
+﻿body { }
+.RemoteIpAccess { width: 100%; }
+    .RemoteIpAccess table.AgentsTable { width: 100%; }
+        .RemoteIpAccess table.AgentsTable td.remoteIpDateTimeCol, .RemoteIpAccess table.AgentsTable td.remoteIpDateTimeCol sorting_1 { width: 135px; }
+table.AgentsTable, table.ProductTable, table.purchaseTable { clear: both; margin-top: 10px; border: 1px solid #ccc; overflow: visible; border-collapse: collapse; }
+table.purchaseTable { width: 100%; }
+    table.AgentsTable a, table.ProductTable a, table.purchaseTable a { color: #D50031; }
+table.AgentsTable td.lightUrlCol a, table.ProductTable td.lightUrlCol a { font-weight: normal; }
+table.AgentsTable td.rawUrls, table.ProductTable td.rawUrls { max-width: 400px; }
+table.AgentsTable tbody, table.ProductTable tbody { border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+table.AgentsTable thead th, table.ProductTable thead th, table.purchaseTable thead th { background-color: #EEEEEE; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding-bottom: 2px; padding-left: 2px; padding-right: 2px; padding-top: 2px; vertical-align: middle; color: #000000; font-size: 11px; font-weight: bold; height: 22px; text-align: left; }
+table.AgentsTable td, table.ProductTable td, table.purchaseTable td { padding-bottom: 2px; padding-left: 2px; padding-right: 2px; padding-top: 2px; vertical-align: middle; border: 1px solid #ccc; font-size: 0.9em; padding-bottom: 6px; padding-left: 6px; padding-right: 6px; padding-top: 6px; line-height: 1.4; }
+    table.AgentsTable td.AgentsTableCountCol, table.AgentsTable td.AgentsTableCountCol .sorting_asc, table.AgentsTable td.AgentsTableCountCol .sorting_desc { width: 60px; }
+    table.AgentsTable td input, table.ProductTable td input { font-size: 11px; padding: 5px 9px; border: solid 1px #ccc; background-color: #eee; color: #000; text-decoration: none; margin-right: 3px; }
+        table.AgentsTable td input:hover, table.ProductTable td input:hover { border: solid 1px #aaa; background-color: #ddd; }
+.sorting { -moz-background-clip: border; -moz-background-origin: padding; -moz-background-size: auto auto; background-attachment: scroll; background-color: transparent; background-image: url("../images/datatables/sort_both.png"); background-position: right center; background-repeat: no-repeat; }
+.sorting, .sorting_asc, .sorting_desc { cursor: pointer; }
+.sorting_asc { -moz-background-clip: border; -moz-background-origin: padding; -moz-background-size: auto auto; background-attachment: scroll; background-color: transparent; background-image: url("../images/datatables/sort_asc.png"); background-position: right center; background-repeat: no-repeat; }
+.sorting_desc { -moz-background-clip: border; -moz-background-origin: padding; -moz-background-size: auto auto; background-attachment: scroll; background-color: transparent; background-image: url("../images/datatables/sort_desc.png"); background-position: right center; background-repeat: no-repeat; }
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next { float: left; height: 19px; margin-left: 3px; width: 19px; }
+.dataTables_paginate { float: right; text-align: right; width: 44px; margin-top: 8px; }
+.paginate_disabled_previous { background-image: url("../images/datatables/back_disabled.jpg"); }
+.paginate_enabled_next { background-image: url("../images/datatables/forward_enabled.jpg"); }
+.paginate_enabled_previous { background-image: url("../images/datatables/back_enabled.jpg"); }
+.paginate_disabled_next { background-image: url("../images/datatables/forward_disabled.jpg"); }
+.dataTables_wrapper { clear: both; font-size: 0.8em; margin-top: 10px; position: relative; }
+.dataTables_filter { text-align: right; }
+    .dataTables_filter input { border: 1px solid #ddd; }
+.dataTables_length { float: left; width: 40%; }
+.dataTables_info { clear: both; float: left; width: 450px; margin-top: 12px; font-size: .9em; font-weight: bold; }
+table.display td { padding-bottom: 3px; padding-left: 10px; padding-right: 10px; padding-top: 3px; }
+tr.even { background-color: #fff; }
+    tr.even td.sorting_1 { background-color: #f5f5f5; }
+tr.odd { background-color: #f5f5f5; }
+    tr.odd td.sorting_1 { background-color: #EBEBEB; }

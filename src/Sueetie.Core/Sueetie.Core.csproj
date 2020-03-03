@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A839E4E2-D8E4-4381-9CF3-0D267053E957}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sueetie.Core</RootNamespace>
+    <AssemblyName>Sueetie.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RssToolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d9202816019f11ea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\SueetieBaseThemedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\SueetieBasePanel.cs">
+    </Compile>
+    <Compile Include="Base\SueetieAdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\SueetieBaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\SueetieBaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Business\SueetieThreads.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\SueetieUrls.cs" />
+    <Compile Include="Business\SueetieApplications.cs" />
+    <Compile Include="Containers\Blogs\SueetieRssBlogPost.cs" />
+    <Compile Include="Containers\Blogs\SueetieBlog.cs" />
+    <Compile Include="Containers\Blogs\SueetieBlogSpam.cs" />
+    <Compile Include="Containers\Calendars\FullCalendarEvent.cs" />
+    <Compile Include="Containers\Calendars\SueetieCalendar.cs" />
+    <Compile Include="Containers\Calendars\SueetieCalendarEvent.cs" />
+    <Compile Include="Containers\Common\CrawlerAgent.cs" />
+    <Compile Include="Containers\Common\PageRule.cs" />
+    <Compile Include="Containers\Common\SueetieNoLog.cs" />
+    <Compile Include="Containers\Common\SueetieRequest.cs" />
+    <Compile Include="Containers\Common\SueetieResource.cs" />
+    <Compile Include="Containers\Common\SueetieRole.cs" />
+    <Compile Include="Containers\Media\SueetieMediaDirectory.cs" />
+    <Compile Include="Containers\Media\SueetieMediaGallery.cs" />
+    <Compile Include="Containers\Tags\SueetieTag.cs" />
+    <Compile Include="Containers\Tags\SueetieTagEntry.cs" />
+    <Compile Include="Containers\Common\UserLogActivity.cs" />
+    <Compile Include="Containers\ContentParts\SueetieContentPage.cs" />
+    <Compile Include="Containers\ContentParts\SueetieContentPageGroup.cs" />
+    <Compile Include="Containers\ContentParts\SueetieContentPagePart.cs" />
+    <Compile Include="Containers\Content\ApplicationQuery.cs" />
+    <Compile Include="Containers\Content\ContentTypeDescription.cs" />
+    <Compile Include="Containers\Media\SueetieMediaAlbum.cs" />
+    <Compile Include="Containers\Tags\SueetieTagQuery.cs" />
+    <Compile Include="Containers\Tags\SueetieTagMaster.cs" />
+    <Compile Include="Containers\Users\SueetieBannedIP.cs" />
+    <Compile Include="Containers\Users\SueetieSubscriber.cs" />
+    <Compile Include="Containers\Wikis\SueetieWikiMessage.cs" />
+    <Compile Include="Enumerators\SueetiePhotoType.cs" />
+    <Compile Include="Enumerators\SueetiePhotoSize.cs" />
+    <Compile Include="Enumerators\SueetieDaySpan.cs" />
+    <Compile Include="Enumerators\SueetieContactType.cs" />
+    <Compile Include="Enumerators\SueetieRequestType.cs" />
+    <Compile Include="Enumerators\GSPMimeType.cs" />
+    <Compile Include="Enumerators\SueetieDisplayType.cs" />
+    <Compile Include="Enumerators\SueetieImageDisplayType.cs" />
+    <Compile Include="Extensions\SueetieExtensions.cs" />
+    <Compile Include="Helpers\ViewStateHelper.cs" />
+    <Compile Include="HttpModules\WwwRewrite.cs" />
+    <Compile Include="SueetieCalendars.cs" />
+    <Compile Include="SueetieRSS.cs" />
+    <Compile Include="SueetieTags.cs" />
+    <Compile Include="Helpers\SueetieUrlIHelper.cs" />
+    <Compile Include="Helpers\SueetieComparer.cs" />
+    <Compile Include="HttpModules\UrlRewrite.cs" />
+    <Compile Include="Enumerators\SueetieUrlLink.cs" />
+    <Compile Include="Enumerators\SueetieSortBy.cs" />
+    <Compile Include="Enumerators\SueetieBlogSortType.cs" />
+    <Compile Include="Enumerators\SueetieApplicationViewType.cs" />
+    <Compile Include="Enumerators\SueetieGroupType.cs" />
+    <Compile Include="Enumerators\SueetieTaskType.cs" />
+    <Compile Include="Enumerators\UserLogCategoryType.cs" />
+    <Compile Include="Business\SueetieLogs.cs" />
+    <Compile Include="Containers\Common\SiteLogEntry.cs" />
+    <Compile Include="Business\SiteStatistics.cs" />
+    <Compile Include="Containers\Blogs\SueetieBlogComment.cs" />
+    <Compile Include="Containers\Blogs\SueetieBlogPost.cs" />
+    <Compile Include="Business\SiteSettings.cs" />
+    <Compile Include="Containers\Common\UserLogCategory.cs" />
+    <Compile Include="Containers\Common\UserLogEntry.cs" />
+    <Compile Include="Containers\ContentParts\SueetieContentPart.cs" />
+    <Compile Include="Containers\Content\ContentQuery.cs" />
+    <Compile Include="Containers\Content\SueetieContent.cs" />
+    <Compile Include="Containers\Content\UserContent.cs" />
+    <Compile Include="Containers\Content\FavoriteContent.cs" />
+    <Compile Include="Containers\Forums\SueetieForumContent.cs" />
+    <Compile Include="Containers\Forums\SueetieForumMessage.cs" />
+    <Compile Include="Containers\Forums\SueetieForumTopic.cs" />
+    <Compile Include="Containers\Classifieds\ClassifiedsPhoto.cs" />
+    <Compile Include="Containers\Media\SueetieDownload.cs" />
+    <Compile Include="Containers\Media\SueetieMediaObject.cs" />
+    <Compile Include="Containers\Users\SueetieAspnetUser.cs" />
+    <Compile Include="Containers\Users\SueetieFavorite.cs" />
+    <Compile Include="Containers\Users\SueetieFollow.cs" />
+    <Compile Include="Containers\Users\SueetiePM.cs" />
+    <Compile Include="Containers\Users\SueetieUserAvatar.cs" />
+    <Compile Include="Containers\Wikis\SueetieWikiCategory.cs" />
+    <Compile Include="Containers\Wikis\SueetieWikiPage.cs" />
+    <Compile Include="Enumerators\SiteLogCategoryType.cs" />
+    <Compile Include="Enumerators\SiteLogType.cs" />
+    <Compile Include="Enumerators\SueetieCacheDuration.cs" />
+    <Compile Include="Enumerators\SueetieRegistrationType.cs" />
+    <Compile Include="Helpers\SueetieUIHelper.cs" />
+    <Compile Include="Helpers\EmailHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\SueetieIPHelper.cs" />
+    <Compile Include="Business\SueetieLocalizer.cs" />
+    <Compile Include="SueetieCommon.cs" />
+    <Compile Include="SueetieClassifieds.cs" />
+    <Compile Include="SueetieMedia.cs" />
+    <Compile Include="Enumerators\SueetieApplicationType.cs" />
+    <Compile Include="Enumerators\SueetieContentType.cs" />
+    <Compile Include="Business\SueetieCache.cs" />
+    <Compile Include="Business\SueetieConfiguration.cs" />
+    <Compile Include="Containers\Users\SueetieUserProfile.cs" />
+    <Compile Include="Business\SueetieUser.cs" />
+    <Compile Include="Enumerators\SueetieContentViewType.cs" />
+    <Compile Include="Enumerators\SueetieFollowType.cs" />
+    <Compile Include="Enumerators\SueetieUserType.cs" />
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Base\SueetieBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\SueetieQStringHelper.cs" />
+    <Compile Include="Providers\SueetieDataProvider.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\SueetieContext.cs" />
+    <Compile Include="SueetieBlogs.cs" />
+    <Compile Include="SueetieContentParts.cs" />
+    <Compile Include="SueetieForums.cs" />
+    <Compile Include="SueetieRoles.cs" />
+    <Compile Include="SueetieUsers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Providers\DbSueetieDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SueetieWikis.cs" />
+    <Compile Include="Tasks\SleepAwhileTask.cs" />
+    <Compile Include="Tasks\WriteSqlRecordTask.cs" />
+    <Compile Include="Business\ISueetieTask.cs" />
+    <Compile Include="Business\SueetieTask.cs" />
+    <Compile Include="Business\SueetieTaskScheduler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Sueetie.Core.Configuration.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

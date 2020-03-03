@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+	<!-- Home Page -->
+
+	<resource key="metatag_description">Communauté francophone du jeu de rôles Pathfinder et du monde de Golarion</resource>
+	<resource key="metatag_keywords">Pathfinder, Golarion, Jeu de rôle, Open Gaming License, Donjons et Dragons, Communauté, Paizo, Black-Book Éditions, RPG, JdR</resource>
+	<resource key="metatag_author"></resource>
+	<resource key="metatag_verify-v1"></resource>
+
+	<!-- Links -->
+	<resource key="menutab_blogs">Blogs</resource>
+	<resource key="menutab_blog">Blog</resource>
+	<resource key="menutab_admin">[CP]</resource>
+	<resource key="menutab_groups">Groups</resource>
+	<resource key="menutab_forums">Forums</resource>
+	<resource key="menutab_media">Galerie</resource>
+	<resource key="menutab_wiki">Wiki</resource>
+	<resource key="menutab_search">Recherche</resource>
+	<resource key="menutab_contact_us">Nous Contacter</resource>
+	<resource key="menutab_marketplace">Marketplace</resource>
+	<resource key="menutab_calendar">Calendars</resource>
+	<resource key="menutab_cms">CMS</resource>
+
+	<resource key="link_login">Connexion</resource>
+	<resource key="link_logout">Déconnexion</resource>
+	<resource key="link_greetings_member">Bienvenue, {0} !</resource>
+	<resource key="link_greetings_anonymous">Bienvenue, Invité !</resource>
+	<resource key="link_register">Inscription</resource>
+	<resource key="link_conversations">Messages privés</resource>
+
+
+	<!-- User Activity Log -->
+
+	<resource key="activity_is_now_following">{0} suit désormais {1}</resource>
+	<resource key="activity_blogged">{0} a bloggé {1} {2} {3}</resource>
+	<resource key="activity_in_the">dans</resource>
+	<resource key="activity_commented_on">{0} a commenté à propos de {1} {2} {3}</resource>
+	<resource key="activity_posted">{0} a écrit {1} {2} {3}</resource>
+	<resource key="activity_in">sur</resource>
+	<resource key="activity_replied_to">{0} a répondu à {1} {2} {3}</resource>
+	<resource key="activity_created">{0} a créé {1} {2} {3}</resource>
+	<resource key="activity_updated">{0} a mis à jour {1} {2} {3}</resource>
+	<resource key="activity_created_a_new">{0} a créé un nouveau {1} {2} {3}</resource>
+	<resource key="activity_named">nommé</resource>
+	<resource key="activity_added_new">{0} a ajouté un nouveau {1} {2} {3} {4} {5}</resource>
+	<resource key="activity_to">à</resource>
+	<resource key="activity_posted_a_new_ad_titled">posted a new classified ad titled</resource>
+	<resource key="activity_added_a_new_product_item">listed the new product</resource>
+	<resource key="activity_became_a_new_member">{0} vient de s'inscrire. Bienvenue !</resource>
+	<resource key="activity_user_registered">{0} a demandé à s'inscrire</resource>
+	<resource key="activity_user_loggedin">{0} s'est connecté</resource>
+	<resource key="activity_updated_a_cms_page">{0} updated the content page {1} {2} {3}</resource>
+	<resource key="activity_created_a_cms_page">{0} created a new content page titled {1} {2} {3}</resource>
+	<resource key="activity_new_calendar_event">{0} scheduled {1} {2} {3}</resource>
+	<resource key="activity_new_wiki_message">{0} added {1} {2} {3} {4} {5}</resource>
+	<resource key="activity_a_new_message">a new discussion message</resource>
+	<resource key="activity_to">à</resource>
+	<resource key="activity_marked_as_answer">{0} marked message in {1} {2} {3} {4} {5}</resource>
+	<resource key="activity_as_an_answer">as an answer</resource>
+	<resource key="activity_by">by</resource>
+
+	<!-- Registration and Login Processes -->
+
+	<resource key="welcome_back">Bienvenue, </resource>
+	<resource key="welcome_exclamation">!</resource>
+	<resource key="activate_title">Activation de compte</resource>
+	<resource key="activate_thankyou">Merci d'avoir activé votre compte. Vous pouvez maintenant &lt;a href="Login.aspx"&gt;vous connecter ici&lt;/a&gt;.</resource>
+	<resource key="activate_problem">&lt;p&gt;Nous sommes désolé, mais un problème a empêché d'activer votre compte.&lt;/p&gt;&lt;p style="margin: 20px;"&gt;N'hésitez pas à utiliser &lt;a href="/blog/contact.aspx"&gt;le formulaire de contact &lt;/a&gt; pour nous permettre de vous aider.</resource>
+	<resource key="forgot_password_title">Mot de passe oublié</resource>
+	<resource key="forgot_password_enterusername">Veuillez saisir votre nom d'utilisateur Pathfinder-fr pour réinitialiser votre mot de passe.</resource>
+	<resource key="forgot_password_emailsubject">Les informations de votre compte Pathfinder-fr.org</resource>
+
+	<resource key="forgot_username_question">Nom d'utilisateur oublié ?</resource>
+	<resource key="forgot_username_title">Nom d'utilisateur oublié</resource>
+	<resource key="forgot_username_sent_msg">Les informations sur votre compte ont été envoyée à &lt;strong&gt;{0}.&lt;/strong&gt; Le mot de passe a été réinitialisé pour vous permettre de vous connecter de nouveau sur le site. Vous pourrez le changer une fois connecté.</resource>
+	<resource key="forgot_username_notindatabase">Nous sommes désolés mais cette adresse email n'est pas dans notre base de données.</resource>
+	<resource key="forgot_username_empty_email">Veuillez saisir votre adresse email</resource>
+	<resource key="forgot_username_enter_email">Veuillez saisir votre adresse email ci-dessous pour recevoir votre nom d'utilisateur et réinitialiser votre mot de passe.</resource>
+	<resource key="forgot_username_success">Les informations sur votre compte vous ont été envoyées par email. Veuillez vérifier votre boite de réception dans quelques instants.</resource>
+	<resource key="forgot_username_couldnotfind">Impossible de trouver votre compte, veuillez réessayer.</resource>
+	<resource key="forgot_username_user_services">Service utilisateurs {0}</resource>
+	<resource key="forgot_username_your_accountinfo">Informations de votre compte {0}</resource>
+	<resource key="forgot_username_as_requested">Comme demandé, vos informations utilisateurs pour le site {0} sont les suivante :</resource>
+	<resource key="forgot_username_your_username">Votre nom d'utilisateur : {0}</resource>
+	<resource key="forgot_username_your_password">Mot de passe temporaire : {0}</resource>
+	<resource key="forgot_username_homepage_link">Page d'accueil {0}</resource>
+
+	<resource key="members_sign_in_title">Connexion</resource>
+	<resource key="forgot_password_question">Mot de passe oublié ?</resource>
+	<resource key="members_create_account">Devenez un membre.</resource>
+	<resource key="login_password_label">Mot de passe :</resource>
+	<resource key="login_username_label">Nom d'utilisateur :</resource>
+	<resource key="login_failed_msg">
+		Nous sommes désolés, mais votre connexion a échoué. Veuillez réessayer.&lt;br /&gt;
+	&lt;br /&gt;
+	Si vous n'avez pas encore créé de compte, vous pouvez en &lt;a href='{0}'&gt;créer un ici.&lt;/a&gt;</resource>
+	<resource key="login_failed_locked_msg">
+		&lt;strong&gt;Nous sommes désolés, mais en raison d'un trop grand nombre de tentatives de connexions avec un mauvais mot de passe votre compte a été verrouillé&lt;/strong&gt;.&lt;br /&gt;
+		Cette protection a pour but d'éviter que le mot de passe de votre compte puisse être deviné par un visiteur.&lt;br /&gt;
+		Pour pouvoir de nouveau utiliser ce compte, veuillez vous rendre sur la page "Contact" du site pour demander à un administrateur de déverrouiller votre compte.
+	</resource>
+	<resource key="login_failed_notapproved_msg">
+		Nous sommes désolés, mais vous ne pouvez vous connecter avec ce compte tant qu'il n'a pas été approuvé.&lt;br /&gt;
+		Vous avez du recevoir par email un lien vous permettant d'activer votre compte ou un administrateur doit encore approuver votre compte.&lt;br /&gt;
+		Si vous n'avez pas reçu cet email ou si l'activation vous semble longue, n'hésitez pas à nous contacter via le formulaire "contact" du menu du site.
+	</resource>
+	<resource key="login_remember_my_account">Se souvenir de moi</resource>
+	<resource key="accountinfo_password_changed">Votre mot de passe a été mis à jour.</resource>
+	<resource key="accountinfo_password_exceeded_attempts">Nous sommes désolés. Vous avez dépassé le nombre de tentatives limites pour vous connecter et votre compte a été désactivé. Veuillez nous &lt;a href='mailto:{0}'&gt;contacter par email&lt;/a&gt; pour obtenir de l'aide.</resource>
+	<resource key="accountinfo_password_current_incorrect">Le mot de passe actuel saisi n'est pas correct. Pour récupérer votre mot de passe actuel, veuillez vous déconnecter et utiliser le lien "mot de passe perdu" de la page de connexion.</resource>
+	<resource key="accountinfo_clear_avatar_button">Supprimer la photo</resource>
+	<resource key="accountinfo_profile_updated">Profile updated successfully ! Due to caching, changes will not display immediately.</resource>
+	<resource key="memberprofile_title">Profil de membre : </resource>
+	<resource key="register_title">Inscription</resource>
+	<resource key="register_form_description">
+		Veuillez remplir les informations ci-dessous pour créer votre compte. Pour éviter la création de comptes de spam,
+		nous exigeons que votre adresse email soit vérifiée.
+		Une fois votre inscription soumise, un email vous sera envoyé avec un lien vers le site qui permettra de valider votre compte.
+		Une fois cette étape effectuée, vous pourrez vous connecter et participer au site.
+	</resource>
+	<resource key="register_username_label">Nom d'utilisateur :</resource>
+	<resource key="register_password_label">Mot de passe :</resource>
+	<resource key="register_email_label">Adresse Email :</resource>
+	<resource key="register_displayname_label">Nom d'affichage :</resource>
+	<resource key="register_timezone_label">Fuseau horaire:</resource>
+	<resource key="register_subscribe_label">S'abonner à la newsletter</resource>
+	<resource key="register_createuserbutton_text">S'inscrire</resource>
+	<resource key="register_validator_displayname">&lt;br&gt;Le nom d'affichage doit contenir au moins 2 caractères, uniquement des lettres et des espaces.</resource>
+	<resource key="register_validator_password">&lt;br&gt;Le mot de passe doit contenir au moins 6 caractères.</resource>
+	<resource key="register_validator_username">&lt;br&gt;Le nom d'utilisateur doit contenir au moins 4 caractères, uniquement des lettres et des chiffres, sans espaces.</resource>
+	<resource key="register_validator_email">&lt;br&gt;Email does not comform to established patterns. Please contact us if a valid email address.</resource>
+	<resource key="register_exists_email">&lt;br&gt;Cette adresse email est déjà utilisée  &lt;a href='ForgotPassword.aspx'&gt;Vous avez perdu vos identifiants ?&lt;/a&gt;</resource>
+	<resource key="register_exists_email_long">Email address already exists.  Do you have a {0} account?  If so, please &lt;a href=&quot;{1}&quot;&gt;login here.&lt;/a&gt;</resource>
+	<resource key="register_exists_username_long">Username already exists.  Do you have a {0} account?  If so, please &lt;a href=&quot;{1}&quot;&gt;login here.&lt;/a&gt;</resource>
+	<resource key="register_exists_displayname">Votre nom d'affichage est déjà pris. Veuillez en choisir un autre.</resource>
+	<resource key="register_emailvalidation_subject">Validation de votre compte {0}</resource>
+	<resource key="register_emailvalidation_firstline">Pour terminer l'activation de votre compte {0}, veuillez cliquer sur le lien suivant :</resource>
+	<resource key="register_emailvalidation_yourusername">Votre nom d'utilisateur est : </resource>
+	<resource key="register_emailvalidation_yourpassword">Votre mot de passe est : </resource>
+	<resource key="register_emailtoadmin_subject">New Site User for Approval</resource>
+	<resource key="register_emailtoadmin_firstline">Please go to the Site Administrative Membership area to approve or disapprove the following user:</resource>
+	<resource key="register_emailtoadmin_admin"> Admin</resource>
+	<resource key="register_bannedattempt_subject">Banned User Registration Attempt</resource>
+	<resource key="register_bannedattempt_firstline">An attempt to register a new site account was made with the following IP and user account info:</resource>
+	<resource key="register_bannedattempt_ipaddress">IP Address:</resource>
+	<resource key="register_bannedattempt_user">Nom d'utilisateur :</resource>
+
+
+	<!-- Administrative Approval Email -->
+
+	<resource key="approval_email_subject">Bievenue sur le site Pathfinder-fr !</resource>
+	<resource key="approval_email_firstline">Votre compte a bien été approuvé. Utilisez les informations indiquées ci-dessous pour vous connecter et participer au site.</resource>
+	<resource key="approval_email_username">Nom d'utilisateur : </resource>
+	<resource key="approval_email_password">Mot de passe : </resource>
+	<resource key="approval_email_homepage">Retour à la page d'accueil</resource>
+
+
+	<!-- Links and Menu Items -->
+
+	<resource key="menu_dashboard">Dashboard</resource>
+
+	<!-- Demo String -->
+
+	<resource key="demo_string">Some rockin' text</resource>
+
+	<!-- Message Page  -->
+
+	<resource key="msg_not_a_good_thing">...and not a good something.  We'll be expanding our message services to provide more details on the situation, but for now please accept our apologies and enjoy a link to the &lt;a href='default.aspx'&gt;Sueetie Home Page. &lt;/a &gt;"</resource>
+	<resource key="msgtitle_unknown_user">Utilisateur inconnu</resource>
+	<resource key="msg_unknown_user">You've been directed to the profile page of a user who is not a member of the online community, and thus has no community profile</resource>
+	<resource key="msgtitle_wikiaccess_denied">Accès refusé</resource>
+	<resource key="msg_wikiaccess_denied">We're sorry, but you do not have access to this Wiki page.  If you think you require access, please contact the &lt;a href='mailto:admin@sueetie.com'&gt;Wiki Administrator.&lt;/a&gt;  Return to the &lt;a href='/wiki/default.aspx'&gt;Wiki Main Page.&lt;/a&gt;</resource>
+	<resource key="msgtitle_logged_out">Déconnecté</resource>
+	<resource key="msg_logged_out">Vous êtes maintenant déconnecté du site. &lt;a href='login.aspx'&gt;Cliquez ici&lt;/a&gt; pour vous reconnecter.</resource>
+	<resource key="msgtitle_registrations_currently_closed">Registrations Are Currently Closed</resource>
+	<resource key="msg_registrations_currently_closed">We're sorry, but we are not supporting new member accounts at the moment.  Please subscribe to the site blog for notification of when we have re-enabled new membership. Thanks!</resource>
+	<resource key="msgtitle_chat_members_only">Community Chat is for Members Only</resource>
+	<resource key="msg_chat_members_only">We're sorry, but Community Chat is only available to members only.  Please &lt;a href='login.aspx'&gt;login&lt;/a&gt; or &lt;a href='register.aspx'&gt;register&lt;/a&gt; to join in!</resource>
+	<resource key="msgtitle_registration_email_sent">Encore un dernier clic !</resource>
+	<resource key="msg_registration_email_sent">Vous devirez recevoir d'ici peu un email avec un lien vers ce site qui vous permettra de terminer votre inscription.</resource>
+	<resource key="msgtitle_account_approval_sent">Account Approval Process Initiated!</resource>
+	<resource key="msg_account_approval_sent">The site administrator has been notified of your account request. When approved you will receive an email with a link back to the site where you can login and join the community.  Thank you.</resource>
+	<resource key="msgtitle_account_banned_registration">Un problème est survenu</resource>
+	<resource key="msg_account_banned_registration">here has been some sort of problem creating your account. We apologize for the snafu and ask that you use the contact form to let us know about it.  Thanks much!</resource>
+	<resource key="msgtitle_account_banned_login">The hatch, it just blew!</resource>
+	<resource key="msg_account_banned_login">Some sort of computer glitch occurred when you logged into the community with your account. We apologize for the snafu and ask that you use the contact form to let us know about it.  Thanks much!</resource>
+	<resource key="msgtitle_user_not_authorized">Not Authorized</resource>
+	<resource key="msg_user_not_authorized">We're sorry, but you are not authorized to view this page. Please contact us if you feel this message is in error.</resource>
+	<resource key="message_site_message">Message du site</resource>
+
+
+	<!-- Forums-->
+
+	<resource key="ForumTitle">Forums</resource>
+
+	<!-- Blogs -->
+
+	<resource key="BlogTitle">Blog</resource>
+
+	<!-- Controls -->
+
+	<resource key="greeting_shared">Bienvenue, {0}!</resource>
+	<resource key="content_save">Enregistrer</resource>
+	<resource key="content_cancel">Annuler</resource>
+	<resource key="content_pagelist">Autres Pages CMS</resource>
+
+	<!-- Generic strings -->
+
+	<resource key="guest">Invité</resource>
+
+	<!-- Tags -->
+
+	<resource key="tags_label">Tags :</resource>
+	<resource key="no_tags_entered">Aucun tag saisi...</resource>
+	<resource key="no_tags">Pas de tag pour cet élément</resource>
+	<resource key="no_tags_blogpost">Pas de tag pour ce message</resource>
+	<resource key="tags_forumtopic_label">Tags sujet :</resource>
+	<resource key="tags_button_add">Ajouter</resource>
+	<resource key="tags_button_cancel">Annuler</resource>
+	<resource key="no_tags_notpublished">Tags will appear when post is published</resource>
+	
+
+	<!-- Calendars -->
+
+	<resource key="click_for_more">Click for More</resource>
+	<resource key="calendar_editnotes">&lt;strong&gt;Enter Event Title and Date.&lt;/strong&gt;  All other fields optional.  Multi-day events are all-day events. Repeating events are weekly.</resource>
+	<resource key="calendar_label_repeatdate">End Repeat Date</resource>
+	<resource key="calendar_label_startendtime">Start/End Times - (Ex: 1:00 PM)</resource>
+	<resource key="calendar_button_add">Process</resource>
+	<resource key="calendar_button_cancel">Cancel</resource>
+	<resource key="calendar_button_delete">Delete</resource>
+	<resource key="calendar_label_startdate">Start/End Dates (mm/dd/yyyy)</resource>
+
+	<resource key="member_profileupdate_msg">&lt;strong&gt;Please Note:&lt;/strong&gt; Your profile updates may require a few minutes to take affect.</resource>
+	<resource key="member_avatarupdate_msg">&lt;strong&gt;Please Note:&lt;/strong&gt; New avatar may require a few minutes to display above and elsewhere throughout the community.</resource>
+
+	<resource key="calendar_updated_success">Calendar Event was Successfully Updated!</resource>
+	<resource key="calendar_created_success">Calendar Event was Successfully Created!</resource>
+
+	<!-- Date Spans and Report Resources -->
+
+	<resource key="dayspan_na">Unknown</resource>
+	<resource key="dayspan_day">24 Hours</resource>
+	<resource key="dayspan_week">7 Days</resource>
+	<resource key="dayspan_month">30 Days</resource>
+	<resource key="dayspan_quarter">90 Days</resource>
+	<resource key="dayspan_year">Year</resource>
+
+	<!-- Content Page Utilities-->
+
+	<resource key="modal_contentpage_log">Log Update</resource>
+
+
+
+</resources>

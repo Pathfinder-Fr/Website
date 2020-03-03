@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageSA.master.cs"
+    Inherits="ScrewTurn.Wiki.MasterPageSA" %>
+
+<%@ Register TagPrefix="uc" TagName="UserMenu" Src="~/themes/lollipop/menus/UserMenu.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+</head>
+<body id="SABody">
+    <form id="FrmMasterSA" runat="server">
+    <asp:Literal ID="lblStrings" runat="server" EnableViewState="False" meta:resourcekey="lblStringsResource1" />
+
+    <script type="text/javascript">
+		<!--
+			function __GetServerElementById(id) {
+				return document.getElementById(__BaseName + id);
+			}
+			function __RequestConfirm() {
+				return confirm(__ConfirmMessage);
+			}
+		// -->
+    </script>
+
+    <div id="pageouter">
+        <div id="pageinner">
+            <div id="topouter">
+                <div id="topstrip">
+                    <div id="topstripinner">
+                        <asp:ContentPlaceHolder ID="phSiteMenu" runat="server">
+                            <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" />
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div id="bodyouter">
+                <div id="bodyinner">
+                    <div id="homePageLink">
+                        <a href="/default.aspx" title="" class="logoLink">
+                            <img src="/images/shared/sueetie/logo.png" alt="" /></a>
+                    </div>
+                    <div id="bodyarea">
+                        <div id="HeaderSADiv">
+                            <asp:Literal ID="lblHeaderDiv" runat="server" EnableViewState="False" meta:resourcekey="lblHeaderDivResource1" />
+                        </div>
+                        <div id="NavigationSADiv">
+                            <asp:HyperLink ID="lnkPreviousPage" runat="server" Text="&laquo; Back to previous page"
+                                ToolTip="Go to the previous page" meta:resourcekey="lnkPreviousPageResource1" />
+                            &bull;
+                            <asp:HyperLink ID="lnkMainPage" runat="server" Text="Main Page" ToolTip="Go to the main page of the current namespace"
+                                meta:resourcekey="lnkMainPageResource1" />
+                        </div>
+                        <div id="ContainerSADiv">
+                            <asp:ContentPlaceHolder ID="CphMasterSA" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <asp:Literal ID="lblFooterDiv" runat="server" EnableViewState="false" />
+                    </div>
+                    <div id="footerouter">
+                        <div id="footerinner">
+                            <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+                            <br />
+                            <div id="sueetielogo">
+                                <SUEETIE:SueetieLogo ID="SueetieLogo1" runat="server" ShowText="True" LogoFont="White" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

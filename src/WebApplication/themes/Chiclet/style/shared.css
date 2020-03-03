@@ -1,0 +1,406 @@
+*
+{
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 0;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 0;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: 0;
+    font-family: Helvetica, Arial;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    vertical-align: baseline;
+}
+body
+{
+    overflow-x: hidden;
+}
+html
+{
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: #EEEEE6;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+body
+{
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    background-color: #ddd;
+}
+p
+{
+line-height:1.5em;
+margin-bottom:15px;
+margin-left:0;
+margin-right:0;
+margin-top:0;
+}
+strong
+{
+    font-weight: bold;
+}
+h1#logoHolder
+{
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+h2
+{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+#header h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 21px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+    letter-spacing: -.04em;
+    margin: 0px;
+}
+
+#addcomment
+{
+    color: #D50031;
+    font-size: 1.6em;
+    font-weight: lighter;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+}
+img
+{
+    border: none;
+}
+
+#content img
+{
+    max-width: 250px;
+}
+input
+{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #CCC;
+    font-size: 15px;
+    padding: 3px;
+}
+input.SueetieLogoImage
+{
+    background-color: Transparent;
+}
+.button
+{
+    padding: 2px;
+}
+
+/* HEADER ELEMENTS */
+
+#header
+{
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: #BF0031;
+    background-image: url("/themes/chiclet/images/HeadBack.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#header p
+{
+    color: #eee;
+    font-family: helvetica;
+    font-size: 0.6em;
+    font-weight: lighter;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2px;
+}
+
+#menu
+{
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("/themes/chiclet/images/subHeadBack.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: #ccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #ccc;
+    font-size: 11px;
+    font-weight: normal;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+#menu a:link, #menu a:visited
+{
+    color: #df0031;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 4px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+}
+#menu a:hover, #menu a:active
+{
+    background-color: #DF0031;
+    border: solid 1px #ccc;
+    color: #fff;
+}
+
+#content
+{
+    line-height: 1.6em;
+    padding: 12px;
+    overflow: hidden;
+}
+
+
+/* FOOTER ELEMENTS */
+
+#footer
+{
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    background-color: #D50031;
+    padding-top: 20px;
+}
+
+#footer p
+{
+    font-size: 0.85em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0px auto;
+}
+
+#footer p a
+{
+    color: #dddddd;
+    border-bottom: 1px dotted #89817f;
+    font-weight: bold;
+}
+
+#footer p a:hover
+{
+    color: #FFFFFF;
+}
+
+#footerFirst, #topLinks
+{
+    font-family: helvetica;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+#footerFirst ul, #topLinks ul
+{
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    list-style-type: none;
+    background: transparent;
+    color: #fff;
+}
+#footerFirst li, #topLinks li
+{
+    display: inline;
+    padding: 0px 5px 0px 5px;
+    margin: 0px;
+    border-right: 1px solid #f3f1e9;
+}
+
+#footerFirst li a, #topLinks li a
+{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+#footerFirst li a:hover, #topLinks li a:hover
+{
+    color: #ccc;
+    text-decoration: underline;
+}
+#footerFirst li.last, #topLinks li.last
+{
+    border: 0px;
+}
+
+#footerLast
+{
+    position: relative;
+    padding: 0px;
+}
+
+#copyrightInfo
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 24px 0px 20px 0px;
+    background: transparent;
+    font-size: 11px;
+}
+#copyrightInfo .separator2
+{
+    color: #D50031;
+}
+#sueetieFooterLogo
+{
+    padding-bottom: 40px;
+    margin-left: auto;
+    padding-top: 30px;
+}
+#sueetieFooterLogo img, #sueetieFooterLogo img a
+{
+    border: none;
+}
+#sueetieFooterLogo p
+{
+    display: block;
+    color: #fff;
+    margin: 0px auto;
+}
+.SueetieLogoText p
+{
+    width: 250px;
+    font-weight: normal;
+    line-height: normal;
+}
+#sueetieFooterLogo a
+{
+    color: #fff;
+}
+#sueetieFooterLogo a:hover, #sueetieFooterLogo a:active
+{
+    color: #000;
+}
+#menu a.current
+{
+    background-color: #DF0031;
+    border:  solid 1px #ccc;
+    color: #fff;
+    font-weight: bold;
+}
+#contentInner
+{
+    margin: 4px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    background-image: url("/themes/chiclet/images/wire_bg.png");
+    background-repeat: repeat-x;
+    border: solid 1px #Df0031;
+}
+
+#BodyTitleArea, .BodyTitleArea
+{
+    border-bottom: 1px solid #D50031;
+    color: #D50031;
+    font-family: Helvetica;
+    font-size: 1.6em;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    padding-bottom: 2px;
+}

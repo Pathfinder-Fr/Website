@@ -1,0 +1,57 @@
+﻿@import url(nosidebar.css);
+
+.MessageTitle { background: transparent url(theme/content-heading.png) no-repeat left top; padding-left: 26px; color: #4b3124; font-size: 16pt; }
+
+.CreateAccountArea { margin: 0 auto; width: 650px; }
+
+.formSectionTitle { font-size: 11pt; font-weight: bold; text-align: center; }
+
+.FormArea { font-size: 11pt; text-align: left; }
+.FormArea p { }
+.FormArea table { margin: 0 auto; }
+.FormArea td { padding: 4px 0; }
+.FormArea input, .FormArea select, .FormArea textarea { margin-left: 4px; font-size: 11pt; padding: 3px;  }
+.FormArea input.text { border: 1px solid #4b3124; background-color: #f6f4e1; }
+.FormArea input.active { background-color: #9b3d18; }
+
+.FormArea .JoinArea { margin: 0 auto; }
+.FormArea .ForgetPasswordArea { margin: 0 auto; width: 370px; }
+
+.FormArea .LoginBoxBig { font-size: 12pt; font-weight: bold; }
+
+.FormArea .BigErrorMessage { }
+
+.FormArea .FormFieldDescription { margin: .5em 0; }
+
+.FormArea .TextButtonBigArea { }
+.FormArea .TextButtonBig { border: 1px solid #4b3124; }
+
+.FormArea .TextButtonSmall { }
+
+/* PROFIL */
+
+.bioSectionTitle { color: #4b3124; font-size: 11pt; font-weight: bold; margin: .5em 0; }
+
+.ProfileLeftTD { text-align: center; }
+.ProfileDetails { text-align: left; padding: 4px; }
+.ProfileDetails span { }
+.ProfileDetails .twitter { background: transparent url(theme/sueetie/twitter.png) no-repeat left center; padding-left: 18px; }
+.ProfileDetails .website { background: transparent url(theme/sueetie/website.png) no-repeat left center; padding-left: 18px; }
+
+.hilite { font-weight: bold; }
+
+#radioFollowLinks { }
+#FollowingNote { font-size: 8pt; }
+#FollowArea { padding: 4px; }
+
+#FavoriteLinks { }
+#FavoriteNote { font-size: 8pt; }
+#FavoriteArea { padding: 4px; }
+
+#ActivityLinks { }
+#ActivityNote { font-size: 8pt; }
+#ActivityArea { padding: 4px; }
+
+.favoriteTitle { margin: 1em 0 0 8px; font-weight: bold; font-size: 11pt; text-decoration: none; }
+.favoriteDescription { margin: .5em 0; }
+.favoriteAuthoredBy { color: #666; font-style: italic; font-size: 8pt; margin: 0 0 1em 8px; }

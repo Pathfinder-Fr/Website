@@ -1,0 +1,317 @@
+H1.separator
+{
+font-size: 1.4em;
+}
+h1.pagetitle, h1.pagetitlesystem 
+{
+    line-height: 26px
+}
+.WikiList
+{
+    padding: 0px 30px;
+}
+body
+{
+    font-family: Arial;
+}
+#ContentBodyRight #MainDiv
+{
+    margin-left: 18px;
+    margin-right: 0px;
+}
+#ContentBodyLeft #MainDiv
+{
+    margin-left: 0px;
+    margin-right: 18px;
+}
+.WikiEditTextArea
+{
+    padding: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    width: 95%;
+    height: 360px;
+}
+#MainHeaderDiv, #HeaderSADiv
+{
+    display: block;
+    width: 100%;
+    margin-top: -12px;
+}
+#HeaderSADiv
+{
+    margin-left: 56px;
+}
+#SidebarDiv
+{
+    background-image: url(/images/lollipop/sidecandy.jpg);
+    background-repeat: no-repeat;
+}
+table
+{
+    width: 100%;
+    border: solid 1px #ddd;
+    margin-top: 20px;
+}
+th
+{
+    background-color: #000;
+    color: #eee;
+    font-weight: normal;
+    margin-left: 10px;
+    padding: 3px;
+    border: none;
+    text-align: left;
+    font-size: 12px;
+}
+th a:link, th a:visited
+{
+    color: #eee;
+}
+th a:hover, th a:active
+{
+    color: #D50031;
+    text-decoration: underline;
+}
+td
+{
+    border: none;
+}
+tr.row
+{
+    border-bottom: solid 1px #ddd;
+    font-size: 11px;
+    vertical-align: text-top;
+}
+tr.row td
+{
+    padding-top: 13px;
+    padding-bottom: 4px;
+}
+td.update, td.date, td.gumdrop
+{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 20px;
+}
+td.update
+{
+    font-weight: normal;
+    color: #999;
+}
+td.update a
+{
+    color: #D50031;
+    font-weight: bold;
+}
+td.files
+{
+    width: 150px;
+}
+table#PageListTable
+{
+    margin-top: 25px;
+}
+tr.tablerow, tr.tablerowalternate
+{
+    font-size: 11px;
+}
+#ContainerDivOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#ContainerDiv
+{
+    background-image: url(/images/licorice/bodyback.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    border: solid 2px #888888;
+    margin: 18px auto;
+    padding: 0px;
+    width: 980px;
+    text-align: left;
+    overflow: hidden;
+}
+#MainFooterDiv
+{
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 0px auto;
+}
+#MainFooterDiv img
+{
+    margin-bottom: 5px;
+}
+#MainFooterDiv p
+{
+    margin: 0px;
+    padding: 0px;
+}
+#NavLinks
+{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.NavLinksLeft
+{
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    width: 600px;
+}
+.NavLinksLeft a
+{
+    font-family: Lucida Sans;
+    padding-right: 9px;
+    background-image: url(/images/licorice/greydotblock.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    text-transform: uppercase;
+}
+.NavLinksLeft a.last
+{
+    background-image: none;
+    padding-right: 0;
+}
+.NavLinksRight
+{
+    float: right;
+    margin-right: 0px;
+    width: 200px;
+    text-align: right;
+    height: 22px;
+}
+#NamespaceSelectDiv
+{
+    display: none;
+}
+.WikiWelcome select
+{
+    border: solid 1px #ccc;
+    min-width: 150px;
+    color: #555;
+}
+#SearchControlsDiv
+{
+    margin: 20px 0px;
+}
+#RadiosDiv
+{
+    font-size: 11px;
+    margin: 8px 0px 12px 0px;
+    line-height: 20px;
+}
+#RadiosDiv label
+{
+    font-size: 11px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+#RadiosDiv input
+{
+    line-height: 18px;
+    vertical-align: middle;
+}
+#CategoryFilterDiv, #CategorySubFilterDiv
+{
+    line-height: 18px;
+    font-size: 12px;
+}
+#CategoryFilterDiv h4
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+#CategoryFilterDiv
+{
+    margin-bottom: 20px;
+}
+#SearchStatsDiv
+{
+    font-size: 11px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    color: #D50031;
+}
+.searchresultpage
+{
+    font-weight: normal;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+#ResultsDiv excerpt
+{
+    padding-bottom: 6px;
+    border-bottom: solid 1px #ccc;
+}
+table.updateTable
+{
+    background-color: #fff;
+}
+.AccountUpgradeMessage
+{
+    display: block;
+    overflow: hidden;
+}
+.AccountUpgradeMessage p
+{
+    margin: 25px auto 25px 0px;
+    font-size: 11px;
+    font-family: helvetica;
+    color: #D50031;
+}
+.ProfileMessageArea p
+{
+    display: block;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.lightbullet
+{
+    color: #D50031;
+}
+#PageContentDiv
+{
+    line-height: 150%;
+    padding: 0px;
+}
+#contentInner a
+{
+    color: #D50031;
+    text-decoration: underline;
+}
+#contentInner a.headeranchor
+{
+    color: #ccc;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    text-decoration: none;
+    vertical-align: top;
+}
+#contentInner a.headeranchor:hover
+{
+    color: #FF7B24;
+    font-weight: bold;
+}
+
+#bodyareabottom
+{
+    text-align: center;
+}
+div#PageContentDiv ul, div#PageContentDiv ol
+{
+    padding-left: 30px;
+}
+div#PageContentDiv ol a
+{
+    font-weight: bold;
+}

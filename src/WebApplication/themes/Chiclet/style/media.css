@@ -1,0 +1,100 @@
+p {
+	margin:8px;
+	padding: auto;
+}
+/* Photos ------------------------------------------------------------------------------------------------------------------------ */
+
+#Thumbnails
+{
+	margin-left: 15px;
+	padding-top: 35px;
+}
+#CenterObjectViewOuter
+{
+	text-align: center;
+}
+#CenterObjectViewInner
+{
+	margin: 30px auto;
+}
+p.searchResultTitle
+{
+	color: #60B8A8;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+	margin-top: 0px;
+}
+p.SearchBlock
+{
+	vertical-align: top;
+}
+.SearchLabel
+{
+	margin-top: 0px;
+}
+#SearchTitle
+{
+	margin-top: 20px;
+	padding-bottom: 0px;
+	margin-left: 304px;
+	border: none;
+}
+#SearchTitle img
+{
+	border: none;
+}
+.centerPic
+     {
+     	text-align: center;
+}
+#contentMedia
+{
+    position: relative;
+    height: auto;
+    margin: 0px auto;
+    overflow: visible;
+}
+.gsp_ns
+{
+    margin: 0px auto;
+    text-align: left;
+    overflow-x: hidden;
+    padding: 8px;
+    background-color: #fff;
+    border: solid 1px #df0031;
+    min-height: 220px;
+    background-image: url("/themes/chiclet/images/wire_bg.png");
+    background-repeat: repeat-x;
+}
+#albumMenuContainer
+{
+text-align: left;
+}
+.gs_footer
+{
+    text-align: center;
+    margin-top: 90px;
+}
+.albumHeader
+{
+    margin-bottom: 30px;
+    height: 60px;
+}
+.thumbnailArea
+{
+    overflow: hidden;
+    margin: 20px;
+}
+.albumMenu.indented
+{
+    margin-left: 95px;
+}
+#content img {
+max-height:254px;
+max-width:300px;
+}
+.gsp_albumdetail
+{
+    display: none;
+}

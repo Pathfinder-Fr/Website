@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Sueetie.Core.SueetieBaseMasterPage" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+
+<script runat="server" language="C#">
+
+    void Page_Load()
+    {
+        Page.Header.Controls.Add(MakeStyleSheetControl("/themes/lollipop/style/shared.css"));
+        Page.Header.Controls.Add(MakeStyleSheetControl("/themes/lollipop/style/admin.css"));
+        Page.Header.Controls.Add(MakeStyleSheetControl("/themes/lollipop/style/token-input-facebook.css"));
+        Page.Header.Controls.Add(new LiteralControl("<!--[if IE]><link rel=\"stylesheet\" href=\"/themes/lollipop/style/ie.css\" type=\"text/css\" /><![endif]-->"));
+    }
+</script>
+
+<%@ Register Src="~/admin/controls/adminHeader.ascx" TagName="adminHeader" TagPrefix="uc1" %>
+<%@ Register Src="~/admin/controls/adminSideNavigation.ascx" TagName="adminSideNavigation"
+    TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="form1" runat="server">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/scripts/jquery-1.4.2.min.js" />
+            <asp:ScriptReference Path="~/scripts/nicedit.js" />
+            <asp:ScriptReference Path="~/scripts/jquery.tokeninput.js" />
+           <asp:ScriptReference Path="~/scripts/jquery.simplemodal-1.3.4.min.js" />
+        </Scripts>
+        <Services>
+            <asp:ServiceReference Path="~/util/services/SueetieService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <%-- header user control include --%>
+<div id="topouter">
+        <div id="topinner">
+            <a href="http://sueetie.com" class="logoLink">&nbsp;</a>
+        </div>
+    </div>
+    <div id="topmenuouter">
+        <div id="topmenuinner">
+            <asp:ContentPlaceHolder ID="phSiteMenu" runat="server">
+                <div class="adminTopLinks"><a href="/default.aspx">Return to Site</a></div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="ContainerDivOuter">
+    <div id="ContainerDiv">
+        <div id="ContentBodyRight">
+            <div id="sidepanel">
+                <asp:ContentPlaceHolder ID="cphSidePanel" runat="server">
+                    <uc3:adminSideNavigation ID="adminSideNavigation1" runat="server" activeaccordionpanel="0" />
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="content">
+            <%-- div content body title wrap --%>
+            <div class="formHeaderDiv">
+                <%-- content body title edit region --%>
+                <asp:ContentPlaceHolder ID="cphBodyTitle" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%-- user category buttons wrap --%>
+            <div class="userCategoriesWrap">
+                <asp:ContentPlaceHolder ID="cphUserNavigation" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%-- form content body wrap --%>
+            <div class="formOutlineDiv">
+                <asp:ContentPlaceHolder ID="cphContentBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</div>
+     <div id="footerouter">
+        <div id="footerinner">
+            <SUEETIE:FooterMenu ID="FooterMenu1" runat="server" />
+            <br />
+            <div id="sueetielogo">
+                <SUEETIE:SueetieLogo ID="SueetieLogo1" runat="server" ShowText="True" LogoFont="White" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

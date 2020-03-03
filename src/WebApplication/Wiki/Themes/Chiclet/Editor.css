@@ -1,0 +1,233 @@
+﻿body
+{
+    background-color: #f4f4f4;
+}
+#MainPopupDiv
+{
+    font-family: Arial;
+}
+#MainPopupDiv select
+{
+    border: solid 1px #ccc;
+    width: 270px;
+    padding: 4px;
+}
+#MainPopupDiv input
+{
+    border: solid 1px #ccc;
+    line-height: 22px;
+    font-size: 14px;
+}
+a.menulink:link, a.menulink:visited
+{
+	display: block;
+    font-size: 12px;
+    font-family: Arial;
+    text-decoration: none;
+}
+a.menulink:hover, a.menulink:active
+{
+    color: #000;
+    text-decoration: underline;
+    clear: left;    
+}
+#lstNamespace text
+{
+    width: 272px;
+    padding: 5px;
+    font-size: 14px;
+}
+#ClientTreePagesDiv, #ClientTreeFilesDiv {
+background-color:#FFFFFF;
+border:1px solid #ccc;
+height:180px;
+margin-bottom:12px;
+overflow:auto;
+width:264px;
+padding: 2px;
+}
+p.popupLabel
+{
+    margin-top: 8px;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.popupbuttons
+{
+    display: block;
+    margin-top: 8px;
+}
+.popupbuttons input
+{
+    background-color: #eee;
+    border: solid 1px #ccc;
+}
+.popupbuttons input:hover
+{
+    background-color: #ddd;
+}
+.ImageFormBottom
+{
+    width: 620px;
+    overflow: hidden;
+}
+.ImageFormLeft
+{
+    width: 390px;
+    float: left;
+    display: block;
+}
+.ImageFormLeft p.popupLabel
+{
+
+}
+.ImageFormLeft label
+{
+    color: #555;
+}
+.ImageFormRight
+{
+display:block;
+float:left;
+margin-left:auto;
+margin-right:0;
+margin-top:30px;
+width:220px;
+}
+.ImageFormRight .popupbuttons 
+{
+    margin-top: 30px;
+    width: 220px;
+}
+#ButtonsDiv 
+{
+    margin: 15px auto 15px 0px;
+    display: block;
+    overflow: hidden;
+}
+#ButtonsDiv input
+{
+    background-color: #eee;
+    border: solid 1px #ccc;
+}
+#ButtonsDiv input:hover
+{
+    background-color: #ddd;
+}
+#SaveOptionsDiv
+{
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+}
+#PageNameAndTitleDiv
+{
+    display: block;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#PageNameAndTitleDiv input
+{
+    width: 240px;
+    border: solid 1px #ccc;
+    height: 20px;
+    padding: 2px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+#PageNameAndTitleDiv input.bigtextbox.wide
+{
+    width: 500px;
+}
+input.tabbuttonactive 
+{
+    font-weight: normal;
+    color: #000;
+}
+#EditorDiv textarea
+{
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #999;
+    margin-right: 20px;
+    width: 900px;
+}
+#CategoriesDiv, #EditCommentDiv, #SueetieInfoDiv
+{
+    width: 95%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#CategoriesDiv h3.separator, #EditCommentDiv h3.separator, #AttachmentsDiv h3.separator, #SueetieInfoDiv h3.separator
+{
+    font-size: 21px;
+}
+#CategoriesListDiv
+{
+    width: 300px;
+   border: solid 1px #ccc;  
+   padding: 5px;
+   height: 150px;
+   margin-bottom: 15px;
+   display: block;
+   background-color: #f4f4f4;
+}
+.categorycreation
+{
+    font-size: 16px;
+}
+.categorycreation input
+{
+    width: 300px;
+}
+.categorycreation input.categorycreationButton
+{
+    border: solid 1px #ccc;
+        background-color: #eee;
+    width: 80px;
+}
+.categorycreation input.categorycreationButton:hover
+{
+    background-color: #ddd;
+}
+#EditCommentDiv
+{
+    line-height: 26px;
+}
+#EditCommentDiv input
+{
+    border: solid 1px #ccc;
+    background-color: #f4f4f4;
+    width: 600px;
+    margin-bottom: 5px;
+}
+#AttachmentsDiv
+{
+    width: 95%;
+}
+#ContainerSADiv
+{
+    padding: 0px 0px 70px 14px;
+}
+#VisualEditorBody
+{
+    font-family: Arial;
+    font-size: 14px;
+}
+#SueetieInfoDiv textarea.textareaAbstract
+{
+    border: solid 1px #ccc;
+    background-color: #f4f4f4;
+    width: 600px;
+    height: 130px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding: 6px;
+    font-family: Arial;
+    font-size: 14px;    
+    y-overflow: scroll;
+}

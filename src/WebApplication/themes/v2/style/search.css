@@ -1,0 +1,14 @@
+ul.SrchResults { padding: 0; margin: 0;}
+
+ul.SrchResults li { list-style: none; margin: 0 0 28px 0; padding-left: 0px; }
+  li.srchblog { }
+  li.srchwiki { }
+  li.srchforum { }
+
+ul.SrchResults li a { font-size: 12pt; font-weight: bold; }
+
+li .SrchResultSource { font-size: 8pt; color: #888; }
+  li .SrchResultSource span { font-weight: bold; }
+li .SrchContent { padding: .5em; }
+li .SrchResultDetails { font-size: 8pt; color: #888; }
+  li .SrchResultDetails span { font-weight: bold; }

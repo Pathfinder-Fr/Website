@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <resource key="menutab_allblogs">All Blogs</resource>
+  <resource key="sidebar_allblogs">Sueetie Community Blogs</resource>
+  <resource key="aggregate_all_blogs">All Blogs in this Community</resource>
+  <resource key="aggregate_all_recentposts">Recent Blog Posts - All Blogs</resource>
+  <resource key="aggregate_sidebar_msg">
+    &lt;b&gt;A Sueetie Community Site supports an unlimited number of blogs.&lt;/b&gt; At right
+    are the current blogs at Sueetie.com. Below the blog list is an aggregated list
+    of the most recent posts from all blogs arranged chronologically.
+  </resource>
+
+  	<resource key="contact_us">Contact Us</resource>
+
+</resources>

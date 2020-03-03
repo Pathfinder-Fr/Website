@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Marketplace.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+<asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+
+ <asp:Content ID="contentLowerSideBar" ContentPlaceHolderID="cphLowerSideBar" runat="server">
+    <asp:ContentPlaceHolder ID="cphLowerSideBar" runat="server" />
+</asp:Content>
+                            
+<asp:Content ID="Content1" ContentPlaceHolderID="NavBar" runat="server">
+    <asp:ContentPlaceHolder ID="NavBar" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

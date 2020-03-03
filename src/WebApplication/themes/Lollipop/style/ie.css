@@ -1,0 +1,45 @@
+.hometopbody
+{
+    margin:  -10px auto 0px 70px;
+}
+.homespacer
+{
+    height: 0px;
+}
+.topmenus
+{
+    text-align: right;
+    float: right;
+}
+.followFavoriteArea .followButton
+{ 
+    padding: 3px 0px 3px 0px;
+}
+.followFavoriteArea .followButton, .followFavoriteArea .faveButton
+{ 
+    padding: 3px 0px 3px 12px;
+}
+.hometop .headerrightbottomlinks
+{
+    float: right;
+    height: 90px;
+    margin-top: 15px;
+    margin-right: 140px;
+    margin-bottom: 0px;
+    clear: right;
+}
+.headerrightbottomlinks
+{
+    clear: right;
+    float: right;
+    display: inherit;
+}
+.ulTags li, #ulTags li
+{
+    line-height: 35px;
+}
+.JoinArea td
+{
+    height: 30px;
+    padding: 3px;
+}

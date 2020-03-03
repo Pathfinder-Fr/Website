@@ -1,0 +1,230 @@
+.WelcomeMessage
+{
+    overflow: hidden;
+    height: 80px;
+}
+.WelcomeText
+{
+vertical-align: baseline;
+font-size: 1em;
+color: #df0031;
+font-weight: bold;
+}
+.WelcomeMessage img
+{
+    margin-left: 10px;
+    border: solid 1px #df0031;
+}
+.recentPostsTitle {
+color:#DF0031;
+font-size:1.8em;
+letter-spacing:-0.03em;
+line-height:25px;
+margin:20px 0;
+overflow:hidden;
+}
+.RecentThumbnail
+{
+    float: left;
+    margin: 4px;
+}
+.RecentThumbnail img
+{
+    width: 85px;
+    padding: 1px;
+    border: solid 1px #D50031;
+}
+.recentPhotosArea
+{
+    display: block;
+    overflow: hidden;
+    margin-left: -15px;
+}
+#tabs-2
+{
+}
+.ViewItem
+{
+    margin: 0 0 16px 0;
+    display: block;
+    overflow: hidden;
+}
+.ViewItemTitle
+{
+    font-family: helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: normal;
+}
+.ViewItemAuthorDate
+{
+    font-size: 11px;
+    font-family: helvetica;
+    color: #790328;
+    font-weight: normal;
+    margin-left: 2px;
+}
+.ViewItemAuthorDate a:link, .ViewItemAuthorDate a:visited
+{
+    color: #790328;
+    text-decoration: underline;
+}
+.ViewItemAuthorDate a:active, .ViewItemAuthorDate a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.recentPosts
+{
+    margin-bottom: 30px;
+}
+.homeTextLeft
+{
+    margin-top: 30px;
+    width: 570px;
+    float: left;
+    text-align: right;
+}
+.homeTextLeft p
+{
+    width: 520px;
+}
+.RecentActivityArea {
+background:none repeat scroll 0 0 transparent;
+border:medium none transparent;
+display:block;
+float:right;
+margin:0 75px 30px auto;
+overflow:visible;
+padding:0;
+text-decoration:none;
+width:350px;
+}
+#mainContent
+{
+    width: 980px;
+}
+#contentInner ul
+{
+    margin: 0px;
+    line-height: 150%;
+}
+#contentInner li
+{
+    padding-left: 0px;
+}
+#mainContent img
+{
+    margin-bottom: 0px;
+}
+#mainContent img.RecentThumbnailImage
+{
+    border: solid 1px #000;
+    margin-bottom: 0px;
+}
+#mainContent img.RecentThumbnailImage:hover
+{
+    border: solid 1px #FF7B24;
+    margin-bottom: 0px;
+}
+.recentPhotosArea
+{
+    width: 310px;
+}
+#mainContent img.dbPic
+{
+    float: right;
+    width: 115px;
+    border: solid 1px #000;
+    margin: 5px 0px 4px 20px;
+}
+.recentPosts p img.dbPic
+{
+    float: right;
+    width: 115px;
+    border: solid 1px #000;
+    margin: 5px 0px 4px 20px;
+}
+#mainContent img.GreetingImage
+{
+    margin-left: 30px;
+}
+.ViewAllLink
+{
+    border-top: dashed 1px #ccc;
+    margin-top: 8px;
+    margin-left: 5px;
+    height: 35px;
+    white-space: nowrap;
+    width: 230px;
+}
+.ViewAllLink a
+{
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    padding-right: 3px;
+}
+.ViewAllLink .raq
+{
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    margin-right: 0px;
+    color: #60B8A8;
+    text-decoration: none;
+    line-height: 22px;
+}
+.HomeCertPics
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+   width: 100%;
+   height: 64px;
+}
+img.MSSolDev
+{
+    margin-top: 8px;
+    padding-left: 30px;
+    vertical-align: top;
+}
+p
+{
+    margin: 15px 0px;
+}
+.recentPosts, .recentUserLog, .recentTopics
+{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.recentUserLog .ViewSubHeader
+{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    margin: 15px auto;
+    letter-spacing: -.01em;
+}
+.recentUserLog a.ActivityUser
+{
+    text-decoration: underline;
+}
+.recentUserLog a.ActivityUser:hover
+{
+    color: #000;
+}
+.recentUserLog .members, .recentUserLog .media, .recentUserLog .cms, .recentUserLog .mediaupload, 
+.recentUserLog .forum, .recentUserLog .blog, .recentUserLog .blogcomment, .recentUserLog .wiki, .recentUserLog .marketplace, 
+.recentUserLog .newuser, .recentUserLog .business, .recentUserLog .roundup, .recentUserLog .classifieds, .recentUserLog .cms,
+.recentUserLog .calendarevent
+{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 4px;
+    background-repeat: no-repeat;
+    line-height: 16px;
+    background-image: url(/themes/lollipop/images/dots.png);
+    padding-left: 22px;
+}

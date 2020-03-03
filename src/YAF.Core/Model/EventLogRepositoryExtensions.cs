@@ -1,0 +1,167 @@
+/* Yet Another Forum.NET
+ * Copyright (C) 2003-2005 Bjørnar Henden
+ * Copyright (C) 2006-2013 Jaben Cargman
+* Copyright (C) 2014-2019 Ingo Herbote
+ * http://www.yetanotherforum.net/
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+
+ * http://www.apache.org/licenses/LICENSE-2.0
+
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+namespace YAF.Core.Model
+{
+    using System;
+    using System.Data;
+
+    using YAF.Types;
+    using YAF.Types.Constants;
+    using YAF.Types.Extensions;
+    using YAF.Types.Interfaces;
+    using YAF.Types.Interfaces.Data;
+    using YAF.Types.Models;
+
+    /// <summary>
+    ///     The event log repository extensions.
+    /// </summary>
+    public static class EventLogRepositoryExtensions
+    {
+        #region Public Methods and Operators
+
+        /// <summary>
+        /// The create.
+        /// </summary>
+        /// <param name="repository">
+        /// The repository.
+        /// </param>
+        /// <param name="userID">
+        /// The user id.
+        /// </param>
+        /// <param name="source">
+        /// The source.
+        /// </param>
+        /// <param name="description">
+        /// The description.
+        /// </param>
+        /// <param name="type">
+        /// The type.
+        /// </param>
+        /// <returns>
+        /// The <see cref="int"/>.
+        /// </returns>
+        public static int Create(this IRepository<EventLog> repository, int? userID, object source, string description, EventLogTypes logType = EventLogTypes.Information)
+        {
+            CodeContracts.VerifyNotNull(repository, "repository");
+
+            var returnValue =
+                (int)
+                repository.DbFunction.Scalar.eventlog_create(
+                    UserID: userID, Source: source.GetType().ToString(), Description: description, Type: logType.ToInt(), UTCTIMESTAMP: DateTime.UtcNow);
+
+            repository.FireNew();
+
+            return returnValue;
+        }
+
+        /// <summary>
+        /// The delete by user.
+        /// </summary>
+        /// <param name="repository">
+        /// The repository.
+        /// </param>
+        /// <param name="userId">
+        /// The user id.
+        /// </param>
+        /// <param name="boardId">
+        /// The board id.
+        /// </param>
+        /// <returns>
+        /// The <see cref="DataTable"/>.
+        /// </returns>
+        public static void DeleteByUser(this IRepository<EventLog> repository, int userId, int? boardId = null)
+        {
+            CodeContracts.VerifyNotNull(repository, "repository");
+
+            repository.DbFunction.Query.eventlog_deletebyuser(BoardID: boardId ?? repository.BoardID, PageUserID: userId);
+
+            repository.FireDeleted();
+        }
+
+        /// <summary>
+        /// The list.
+        /// </summary>
+        /// <param name="repository">
+        /// The repository.
+        /// </param>
+        /// <param name="userId">
+        /// The user id.
+        /// </param>
+        /// <param name="maxRows">
+        /// The max rows.
+        /// </param>
+        /// <param name="maxDays">
+        /// The max days.
+        /// </param>
+        /// <param name="pageIndex">
+        /// The page index.
+        /// </param>
+        /// <param name="pageSize">
+        /// The page size.
+        /// </param>
+        /// <param name="sinceDate">
+        /// The since date.
+        /// </param>
+        /// <param name="toDate">
+        /// The to date.
+        /// </param>
+        /// <param name="eventIDs">
+        /// The event i ds.
+        /// </param>
+        /// <param name="boardId">
+        /// The board id.
+        /// </param>
+        /// <returns>
+        /// The <see cref="DataTable"/>.
+        /// </returns>
+        public static DataTable List(
+            this IRepository<EventLog> repository, 
+            int userId, 
+            int maxRows, 
+            int maxDays, 
+            int pageIndex, 
+            int pageSize, 
+            DateTime sinceDate, 
+            DateTime toDate, 
+            string eventIDs, 
+            int? boardId = null)
+        {
+            CodeContracts.VerifyNotNull(repository, "repository");
+
+            return repository.DbFunction.GetData.eventlog_list(
+                BoardID: boardId ?? repository.BoardID, 
+                PageUserID: userId, 
+                MaxRows: maxRows, 
+                MaxDays: maxDays, 
+                PageIndex: pageIndex, 
+                PageSize: pageSize, 
+                SinceDate: sinceDate, 
+                ToDate: toDate, 
+                EventIDs: eventIDs, 
+                UTCTIMESTAMP: DateTime.UtcNow);
+        }
+
+        #endregion
+    }
+}

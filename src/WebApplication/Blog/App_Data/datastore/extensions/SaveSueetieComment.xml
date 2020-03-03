@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SaveSueetieComment">
+  <AdminPage />
+  <Author>Dave Burke</Author>
+  <Description>Saves a copy of the comment to the Sueetie database.</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help>Saves Blog Comment to Sueetie SQL Database.</Help>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <IsScalar>false</IsScalar>
+    <KeyField>BlogID</KeyField>
+    <Name>SaveSueetieComment</Name>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Sueetie Blog ID</Label>
+      <MaxLength>1</MaxLength>
+      <Name>BlogID</Name>
+      <ParamType>Integer</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>1</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.5</Version>
+</ManagedExtension>

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "Content/forum.css",
+    "inputFile": "Content/forum.less"
+  },
+  {
+    "outputFile": "Content/InstallWizard.css",
+    "inputFile": "Content/InstallWizard.less"
+  },
+  {
+    "outputFile": "Content/forum.css",
+    "inputFile": "Content/forum.scss"
+  },
+  {
+    "outputFile": "themes/cleanSlate/theme.css",
+    "inputFile": "themes/cleanSlate/theme.less"
+  }
+]

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<RootFolder>$(MSBuildProjectDirectory)\..</RootFolder>
+	<SrcFolder>$(RootFolder)\src</SrcFolder>
+	<LibFolder>$(RootFolder)\lib</LibFolder>
+    <ToolFolder>$(MSBuildProjectDirectory)</ToolFolder>
+    <PublishFolder>$(RootFolder)\Publish</PublishFolder>
+
+    <BuildFolder>$(RootFolder)\artifacts</BuildFolder>
+    <BinFolder>$(BuildFolder)\bin</BinFolder>
+    <OutDir Condition="$(OutDir) == ''">$(BinFolder)\</OutDir>
+    <WebDir>$(BuildFolder)\Web\</WebDir>
+    <PubFolder>$(BuildFolder)\Pub</PubFolder>
+    <SolutionDir>$(SrcFolder)</SolutionDir>
+
+    <Platform Condition="$(Platform) == ''">Any CPU</Platform>
+    <Configuration Condition="'$(Configuration)'==''" >Release</Configuration>
+    <BuildPlatform Condition="$(ProgramW6432) != ''">x64</BuildPlatform>
+    <BuildPlatform Condition="$(BuildPlatform) == ''">x86</BuildPlatform>
+  </PropertyGroup>
+
+  <Target Name="Build" DependsOnTargets="Compile;WebCompile;Publish" />
+
+  <Target Name="Restore">
+    <Exec Command="$(ToolFolder)\nuget.exe restore $(RootFolder)\Sueetie.Atomo.sln" />
+  </Target>
+
+  <Target Name="Compile" DependsOnTargets="Restore;RootCompile;BlogCompile;WikiCompile;ForumCompile;MediaCompile">
+  </Target>
+
+  <Target Name="RootCompile">
+    <MSBuild Projects="$(SrcFolder)\WebApplication\WebApplication.csproj" Targets="_WPPCopyWebApplication" Properties="Configuration=$(Configuration);OutDir=$(OutDir);Platform=AnyCPU;AutoParameterizationWebConfigConnectionStrings=false" />
+  </Target>
+
+  <Target Name="BlogCompile">	
+    <MSBuild Projects="$(SrcFolder)\WebApplication\Blog\BlogEngine.WebApplication.csproj" Targets="_WPPCopyWebApplication" Properties="Configuration=$(Configuration);OutDir=$(OutDir);Platform=AnyCPU;AutoParameterizationWebConfigConnectionStrings=false" />
+  </Target>
+
+  <Target Name="WikiCompile">
+    <MSBuild Projects="$(SrcFolder)\WebApplication\Wiki\WikiWebApplication.csproj" Targets="_WPPCopyWebApplication" Properties="Configuration=$(Configuration);OutDir=$(OutDir);Platform=AnyCPU;AutoParameterizationWebConfigConnectionStrings=false" />
+    <Copy SourceFiles="$(LibFolder)\ScrewTurn304\SqlServerProviders.dll" DestinationFolder="$(OutDir)_PublishedWebsites\WikiWebApplication\public\Plugins" />
+  </Target>
+
+  <Target Name="ForumCompile">
+    <MSBuild Projects="$(SrcFolder)\WebApplication\Forum\YAF.csproj" Targets="_WPPCopyWebApplication" Properties="Configuration=$(Configuration);OutDir=$(OutDir);Platform=AnyCPU;AutoParameterizationWebConfigConnectionStrings=false;SolutionDir=$(SolutionDir)" />
+  </Target>
+
+  <Target Name="MediaCompile">
+    <MSBuild Projects="$(SrcFolder)\WebApplication\Media\MediaWebApplication.csproj" Targets="_WPPCopyWebApplication" Properties="Configuration=$(Configuration);OutDir=$(OutDir);Platform=AnyCPU;AutoParameterizationWebConfigConnectionStrings=false" />
+  </Target>
+
+  <Target Name="Publish" DependsOnTargets="CleanPublish;CopyPublish;TransformPublish">
+  </Target>
+
+  <Target Name="CleanPublish">
+    <!--
+    <RemoveDir Directories="$(PubDir)" ContinueOnError="true"/>
+    <MakeDir Directories="$(PubDir)"/>
+    -->
+  </Target>
+
+  <Target Name="CopyPublish">
+    <ItemGroup>
+      <BuildWebFiles Include="$(BinFolder)\_PublishedWebsites\WebApplication\**\*.*"/>
+      <BuildMediaFiles Include="$(BinFolder)\_PublishedWebsites\MediaWebApplication\**\*.*"/>
+      <BuildWikiFiles Include="$(BinFolder)\_PublishedWebsites\WikiWebApplication\**\*.*"/>
+      <BuildForumFiles Include="$(BinFolder)\_PublishedWebsites\YAF\**\*.*"/>
+      <BuildBlogFiles Include="$(BinFolder)\_PublishedWebsites\BlogEngine.WebApplication\**\*.*"/>
+    </ItemGroup>
+    <Copy SourceFiles="@(BuildWebFiles)" DestinationFiles="@(BuildWebFiles -> '$(PubFolder)\Web\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(BuildMediaFiles)" DestinationFiles="@(BuildMediaFiles -> '$(PubFolder)\Web\Media\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(BuildWikiFiles)" DestinationFiles="@(BuildWikiFiles -> '$(PubFolder)\Web\Wiki\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(BuildForumFiles)" DestinationFiles="@(BuildForumFiles -> '$(PubFolder)\Web\Forum\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(BuildBlogFiles)" DestinationFiles="@(BuildBlogFiles -> '$(PubFolder)\Web\Blog\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+
+  <Target Name="TransformPublish" Condition="Exists('$(PublishFolder)\Transforms')">
+    <!-- Scripts de production -->    
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\web.config&quot; &quot;$(PublishFolder)\Transforms\web.prod.config&quot;"/>
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\util\config\connections.config&quot; &quot;$(PublishFolder)\Transforms\util\config\connections.prod.config&quot;"/>
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\util\config\Sueetie.config&quot; &quot;$(PublishFolder)\Transforms\util\config\Sueetie.prod.config&quot;"/>
+    
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Forum\db.config&quot; &quot;$(PublishFolder)\Transforms\Forum\db.prod.config&quot;"/>
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Forum\mail.config&quot; &quot;$(PublishFolder)\Transforms\Forum\mail.prod.config&quot;"/>
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Forum\web.config&quot; &quot;$(PublishFolder)\Transforms\Forum\web.prod.config&quot;"/>
+                                 
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Blog\web.config&quot; &quot;$(PublishFolder)\Transforms\Blog\web.prod.config&quot;"/>
+                                 
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Media\web.config&quot; &quot;$(PublishFolder)\Transforms\Media\web.prod.config&quot;"/>
+                                 
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Wiki\app.config&quot; &quot;$(PublishFolder)\Transforms\Wiki\app.prod.config&quot;"/>
+    <Exec Command="$(ToolFolder)\XdtTransform.exe &quot;$(PubFolder)\Web\Wiki\web.config&quot; &quot;$(PublishFolder)\Transforms\Wiki\web.prod.config&quot;"/>
+  </Target>
+
+  <Target Name="WebCompile">
+  </Target>
+</Project>

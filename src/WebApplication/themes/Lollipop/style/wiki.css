@@ -1,0 +1,485 @@
+body
+{
+    font-family: Arial;
+}
+#ContentBodyRight #MainDiv
+{
+    margin-left: 18px;
+    margin-right: 0px;
+}
+#ContentBodyLeft #MainDiv
+{
+    margin-left: 0px;
+    margin-right: 18px;
+}
+.WikiEditTextArea
+{
+    padding: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    width: 95%;
+    height: 360px;
+}
+#MainHeaderDiv, #HeaderSADiv
+{
+    display: block;
+    width: 100%;
+}
+#HeaderSADiv
+{
+    margin-left: 0px;
+}
+#SidebarDiv
+{
+    background-image: url(/themes/lollipop/images/sidecandy.jpg);
+    background-repeat: no-repeat;
+}
+table
+{
+    width: 100%;
+    border: solid 1px #ddd;
+    margin-top: 20px;
+}
+th
+{
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-image:url(/themes/lollipop/images/sidebarheaderback.png);
+background-repeat:repeat-x;
+border:1px solid #EEEEEE;
+color:#314251;
+font-size:11px;
+font-weight:bold;
+height:29px;
+padding: 0px 8px 0px 1px;
+}
+th a:link, th a:visited
+{
+    color: #000;
+}
+th a:hover, th a:active
+{
+    color: #D50031;
+    text-decoration: underline;
+}
+td
+{
+    border: none;
+}
+tr.row
+{
+    border-bottom: solid 1px #ddd;
+    font-size: 11px;
+    vertical-align: text-top;
+}
+tr.row td
+{
+    padding-top: 13px;
+    padding-bottom: 4px;
+}
+td.update, td.date, td.gumdrop
+{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 20px;
+}
+td.notes
+{
+    padding-right: 15px;
+}
+td.update
+{
+    font-weight: bold;
+    color: #999;
+}
+td.update a
+{
+    color: #D50031;
+    font-weight: bold;
+}
+td.files
+{
+    width: 150px;
+}
+table#PageListTable
+{
+    margin-top: 25px;
+}
+tr.tablerow, tr.tablerowalternate
+{
+    font-size: 11px;
+}
+#ContainerDivOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#ContainerDiv
+{
+    background-image: url(/themes/lollipop/images/bodyback.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    border: solid 2px #888888;
+    margin: 18px auto;
+    padding: 0px;
+    width: 980px;
+    text-align: left;
+    overflow: hidden;
+}
+#MainFooterDiv
+{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+#NavLinks
+{
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+    overflow: hidden;
+}
+.NavLinksLeft
+{
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+}
+.NavLinksLeft a
+{
+font-family: Lucida Sans;
+    padding-right: 9px;
+    background-image: url(/themes/lollipop/images/greydotblock.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    text-transform: uppercase;
+}
+.NavLinksLeft a.last
+{
+    background-image: none;
+    padding-right: 0;
+    font-weight: normal;
+}
+.NavLinksRight
+{
+    float: right;
+    margin-right: 0px;
+    width: 100px;
+    text-align: right;
+}
+#NamespaceSelectDiv
+{
+    clear: left;
+    margin-top: 6px;
+}
+.WikiWelcome select
+{
+    border: solid 1px #ccc;
+    min-width: 150px;
+    color: #555;
+}
+#SearchControlsDiv
+{
+    margin: 20px 0px;
+}
+#RadiosDiv
+{
+    font-size: 11px;
+    margin: 8px 0px 12px 0px;
+    line-height: 20px;
+}
+#RadiosDiv label
+{
+    font-size: 11px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+#RadiosDiv input
+{
+      line-height: 18px;
+    vertical-align: middle;  
+}
+#CategoryFilterDiv, #CategorySubFilterDiv
+{
+    line-height: 18px;
+    font-size: 12px;
+}
+#CategoryFilterDiv h4
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+#CategoryFilterDiv
+{
+    margin-bottom: 20px;
+}
+#SearchStatsDiv
+{
+    font-size: 11px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    color: #D50031;
+}
+.searchresultpage
+{
+    font-weight: normal;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+#ResultsDiv excerpt
+{
+    padding-bottom: 6px;
+    border-bottom: solid 1px #ccc;
+}
+table.updateTable
+{
+    background-color: #fff;
+}
+.AccountUpgradeMessage
+{
+    display: block;
+    overflow: hidden;
+}
+.AccountUpgradeMessage p
+{
+    margin: 25px auto 25px 0px;
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #D50031;
+}
+.ProfileMessageArea p
+{
+    display: block;
+    width: 80%;
+    margin-bottom: 30px;
+}
+#content
+{
+    width: 100%;
+    margin: 0px;
+}
+#bodyarea
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 920px;
+}
+#bodyareabottom
+{
+    text-align: center;
+}
+#PageContentDiv
+{
+font-family:Arial;
+font-size:14px;
+line-height:21px;
+padding-bottom:7px;
+}
+.WikiList ol li
+{
+    margin-bottom: 15px;
+    line-height: 17px;
+}
+.WikiList ol li b {
+    color: #D50031;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-right: 6px;
+}
+div#userMenu ul.menu
+{
+    margin-right: 0px;
+}
+#PageContentDiv .liPicLeft ul
+{
+    padding-left: 400px;
+}
+div.imageleft
+{
+    margin-right: 20px;
+}
+#PageContentDiv a {
+font-weight:bold;
+}
+a.headeranchor
+{
+    font-size: 11px;
+    font-weight: normal;
+}
+h1.separator, h2.separator, h3.separator{
+	border-bottom: none;
+	font-weight: lighter;
+	padding-bottom: 6px;
+}
+h1.separator
+{
+	padding-bottom: 16px;
+}
+h1 a
+{
+	font-weight: lighter;
+}
+h1
+{
+	font-size: 1.8em;
+	letter-spacing: -.04em;
+}
+div.imageright
+{
+	margin-left: 10px;
+}
+#PageContentDiv a.headeranchor {
+font-size:0.5em;
+font-weight:lighter;
+line-height:15px;
+padding-left:4px;
+vertical-align:top;
+}
+.wikiTagsArea {
+    margin-top: 12px;
+    overflow: hidden;
+    padding-bottom: 3px;
+    width: 100%;
+}
+#content p.small, p.small
+{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 15px;
+}
+#PageNameAndTitleDiv input.bigtextbox
+{
+    width: 500px;
+}
+#SaveOptionsDiv
+{
+    font-size: 14px;
+    line-height: 1.2;
+}
+#SaveOptionsDiv input
+{
+    margin-right: 5px;
+}
+#PageContentDiv ul, #PageContentDiv ol
+{
+    padding-left: 30px;
+}
+span.messagesubject {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-left: 3px;
+    margin-right: 8px;
+}
+div.messageheader {
+    font-size: 12px;
+}
+div.rootmessagecontainer {
+    border-top: 3px solid #dF0031;
+    margin-top: 12px;
+}
+div.messageheader {
+    background-color: #F4F4F4;
+     padding: 2px 2px 2px 6px;
+     border: solid 1px #ddd;
+}
+#PageContentDiv .HowToList ul, #PageContentDiv .HowToList ol
+{
+   padding-bottom: 0;
+    padding-left: 70px !important;
+    padding-top: 20px;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-weight: normal;
+}
+#PageContentDiv .HowToList a
+{
+    font-weight: normal;
+}
+#PageContentDiv .HowToList h1.separator
+{
+    font-size: 1.8em;
+}
+#PageContentDiv .HowToList h2.separator {
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #666666;
+    padding-bottom: 4px;
+}
+.WikiList ol
+{
+    padding-bottom: 0px;
+}
+#PageContentDiv .WikiListArea h2
+{
+    margin-top: 0px;
+}
+pre
+{
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-family: Arial;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+div.mediaSet
+{
+    overflow: hidden;
+    margin-top: 40px;
+}
+.mediaSet li
+{
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+.mediaSet li img
+{
+    border: 1px solid #ddd;
+}
+div#mediaSetArea
+{
+    margin: 30px auto;
+    overflow: hidden;
+}
+div#mediaSetArea a
+{
+    font-size: 1.3em;
+    margin: 8px auto 18px auto;
+}
+div#mediaSetArea ul
+{
+    margin: 20px auto;
+    padding-left: 0px;
+    display: block;
+    overflow: hidden;
+}
+div#mediaSetArea li
+{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+div#mediaSetArea li img
+{
+    border: 1px solid #d50031;
+}
+div#mediaSetArea li img:hover
+{
+    border-color: #000;
+}
+div#mediaSetArea .mediaSetClick
+{
+    font-color: #d50031;
+    font-size: .8em;
+    font-family: Tahoma;
+    clear: left;
+}

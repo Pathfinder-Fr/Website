@@ -1,0 +1,1398 @@
+﻿
+/* Original Classifieds Theme Classes ----------------------------------------------------------------- */
+
+#title h1
+{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+}
+
+.item_list h3, .item_list h4, .item_list h5, .item_list h6
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* begin main layout divs */
+
+#title
+{
+    height: 24px;
+    width: 770px;
+    padding-top: 17px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    background: url(/themes/lollipop/images/classifieds/background_title.jpg) no-repeat center top;
+}
+
+#nav_header
+{
+    margin: 0 auto;
+    background: #75746E url(/themes/lollipop/images/classifieds/background_nav_top.gif) repeat-x top;
+    line-height: normal;
+    width: 780px;
+    height: 40px;
+}
+#nav_header ul
+{
+    margin: 0;
+    padding: 0px 0;
+    list-style: none;
+    float: right;
+    background: url(/themes/lollipop/images/classifieds/nav_top_filler.gif) repeat-x left top;
+}
+#nav_header li
+{
+    float: left;
+    background: url(/themes/lollipop/images/classifieds/nav_top_left.gif) no-repeat left top;
+    margin: 0;
+    padding: 0;
+}
+#nav_header a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background: url(/themes/lollipop/images/classifieds/nav_top_right.gif) no-repeat right top;
+    padding: 13px 25px 13px 15px;
+}
+
+#nav_header a span
+{
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 54px; /* hide the underline in normal state, required for hover effect in IE */
+}
+
+#nav_header a:hover span
+{
+    border-bottom: #c0c0c0 1px solid;
+    padding-bottom: 2px;
+}
+
+#color_bar
+{
+    font-size: 10px;
+    font-weight: bold;
+    width: 760px;
+    border-bottom: #ccc 1px solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 27px;
+    padding-top: 13px;
+    color: #FFFFFF;
+}
+
+#crumbs
+{
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 26px;
+    width: 760px;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: middle;
+    background: #75746E url(/themes/lollipop/images/classifieds/background_crumbs.jpg) repeat-x top;
+    margin: 0px auto 5px;
+}
+
+#crumbs h2, #crumbs h3
+{
+    font-size: 10px;
+    display: inline;
+}
+
+#crumbs_search
+{
+    float: left;
+    font-size: 12px;
+}
+
+#whats_new
+{
+    float: right;
+    font-size: 12px;
+    width: 280px;
+    text-align: right;
+}
+
+#crumbs p
+{
+    display: inline;
+    vertical-align: middle;
+}
+
+#crumbs .search_box
+{
+    margin: 0px;
+    padding: 0px;
+    height: 15px;
+    font-size: 11px;
+    width: 170px;
+}
+
+#crumbs #category_select
+{
+    margin: 0px;
+    padding: 0px;
+    height: 17px;
+    font-size: 11px;
+    width: 170px;
+}
+
+#crumbs select
+{
+    padding: 0px;
+    height: 17px;
+    font-size: 11px;
+    width: 160px;
+    margin-top: 2px;
+}
+
+#crumbs .submit, #crumbs .go
+{
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    font-size: 11px;
+    margin-top: 0px;
+}
+
+#crumbs_text
+{
+    padding-top: 0px;
+}
+
+input .submit
+{
+    font-size: 11px;
+    width: 70px;
+}
+
+#nav_browse
+{
+    float: right;
+}
+
+#nav_login
+{
+    float: left;
+}
+
+#body
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #B6B3A6;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    min-height: 280px;
+    overflow: hidden;
+    font-size: 90%;
+}
+
+#col_main_left
+{
+    width: 198px;
+    float: left;
+    background: #E1DFCF;
+}
+
+#col_main_right
+{
+    border-left: 3px solid #DFDCCB;
+    margin-left: 198px;
+    border-right: 1px solid #CAC7B8;
+    background: #F7F6F2;
+}
+
+#content .display_left
+{
+    margin-top: -20px;
+}
+#resultsContent .display_left
+{
+    margin-top: 53px;
+}
+#resultsContent .display_left img
+{
+    border: solid 1px #000;
+    margin-bottom: 15px;
+}
+#resultsContent
+{
+    margin-top: 40px;
+    clear: left;
+}
+#allAdsContent
+{
+    
+}
+#allAdsContent table:first-child
+{
+    width: 677px;
+}
+#content_header
+{
+    clear: left;
+    font-size: 1.2em;
+    color: #000000;
+    height: 35px;
+    width: 100%;
+    padding-top: 35px;
+}
+
+#content_header ul
+{
+    list-style-position: outside;
+    margin-top: 10px;
+    list-style-image: url(/themes/lollipop/images/classifieds/ul_bullet.gif);
+}
+
+#content_header li
+{
+    list-style-position: outside;
+    margin-left: -17px;
+}
+
+#content_header h2, #content_header h3, #resultsContent h3
+{
+    display: inline;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#featured_item
+{
+    height: 200px;
+    width: 176px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFFFFF;
+    border-right-color: #A29F93;
+    border-bottom-color: #A29F93;
+    border-left-color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    background: #DCDACE url(/themes/lollipop/images/classifieds/background_feature.jpg) repeat-x top;
+}
+
+.display_left #featured_item
+{
+    width: 160px;
+    font-size: 1em;
+}
+
+
+#featured_item h2
+{
+    font-size: 1em;
+    font-weight: bold;
+    display: inline;
+}
+
+.row1 a:link img, .row2 a:link img, .display_left a:link img, #featured_item a:link img
+{
+    border: 1px solid #666;
+}
+
+.row1 a:visited img, .row2 a:visited img, .display_left a:visited img, #featured_item a:visited img
+{
+    border: 1px solid #666;
+}
+
+
+
+#announcements
+{
+    font-size: 0.8em;
+    padding: 10px;
+    height: 100%;
+    background: #F7F6F2;
+}
+
+#announcements ul
+{
+    margin-top: 0px;
+}
+
+#announcements li
+{
+    list-style-position: outside;
+    list-style-image: url(/themes/lollipop/images/classifieds/ul_arrow.gif);
+    margin-bottom: 15px;
+    margin-left: -24px;
+}
+
+#user_assistance
+{
+    color: #7F4728;
+    padding: 10px;
+    font-size: 0.8em;
+    float: left;
+    width: 178px;
+    background: #F9F9F8 url(/themes/lollipop/images/classifieds/background_user_assist.jpg) repeat-x top;
+}
+
+#user_assistance h2, #user_assistance h3
+{
+    color: #000000;
+    font-size: 1em;
+}
+
+.post_title
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.post_dollars
+{
+    width: 50px;
+}
+
+#post_cents
+{
+    width: 25px;
+}
+
+.post_url, .post_title, .post_description
+{
+    width: 350px;
+    font-family: Arial;
+    font-size: 14px;
+}
+.post_url, .post_title
+{
+    height: 17px;
+    padding-top: 2px;
+}
+.post_dropdown
+{
+    height: 22px;
+    font-size: 14px;
+    width: 200px;
+}
+.post_description
+{
+    height: 90px;
+}
+
+.section
+{
+    padding: 10px;
+    height: 17px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-bottom: 2px solid #E4E2D5;
+    margin-bottom: 0px;
+}
+
+h3.section
+{
+    font-size: 1.2em;
+}
+
+.content_right
+{
+    margin: 30px auto 20px 15px;
+    width: 100%;
+}
+
+.content_right form, .content_right fieldset
+{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.content_right fieldset input, .content_right fieldset textarea
+{
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.content_right legend
+{
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+}
+
+.content_right table
+{
+    margin-left: 40px;
+    width: 600px;
+}
+.content_right td, .category_browse td
+{
+    padding-right: 20px;
+}
+
+.category_browse td h4
+{
+    font-size: 1.4em;
+    display: inline;
+}
+
+.category_browse td h4 a:link, .category_browse td h4 a:visited
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.category_browse td h4 a:hover, .category_browse td h4 a:active
+{
+    text-decoration: underline;
+}
+
+.category_browse td ul a:link, .category_browse td ul a:visited
+{
+    text-decoration: none;
+}
+
+.category_browse td ul a:hover, .category_browse td ul a:active
+{
+    text-decoration: underline;
+}
+
+.category_browse td ul
+{
+    list-style-position: outside;
+    margin-top: 10px;
+    list-style-image: url(/themes/lollipop/images/classifieds/ul_bullet.gif);
+}
+
+.category_browse td li, .category_browse td li
+{
+    list-style-position: outside;
+    margin-left: -17px;
+}
+
+#search_n_browse, #ad_n_browse
+{
+  margin-top: 20px;
+    height: 139px;
+    width: 707px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+}
+#ad_n_browse
+{
+    height: 89px;
+}
+#search_n_no_browse
+{
+    height: 139px;
+    width: 288px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    float: right;
+    background: #E1DFCF;
+}
+
+#search_n_browse div#search
+{
+    float: left;
+    background-color: #f4f4f4;
+    width: 286px;
+}
+
+#search_n_browse div#browse, #ad_n_browse div#browse
+{
+    float: left;
+    background-color: #fff;
+}
+#ad_n_browse div#browse
+{
+    height: 76px;
+    margin-left: 0px;
+}
+#search a
+{
+    font-size: 11px;
+}
+
+#search legend, #browse legend
+{
+    color: #333333;
+    font-weight: bold;
+}
+#search select, #search .search_box, #browse select, #browse ul
+{
+    font-size: 14px;
+    margin-top: 2px;
+    padding-left: 20px;
+}
+#browse ul
+{
+    margin-bottom: 3px;
+}
+#browse li
+{
+    margin-bottom: 2px;
+}
+#search select, #search .search_box
+{
+    width: 240px;
+}
+
+
+#search, #browse
+{
+    height: 165px;
+    border: solid 1px #A29F93;
+    background: repeat-x top;
+    padding: 7px 10px 10px;
+}
+#browse .OnAd
+{
+    height: 65px;
+}
+#search textarea
+{
+    font-size: 14px;
+    height: 16px;
+}
+#browse
+{
+    width: 338px;
+    margin-left: 12px;
+}
+#browse select
+{
+    font-size: 14px;
+    width: 315px;
+    padding: 4px;
+    border: solid 1px #ddd;
+}
+#search form, #browse form
+{
+    display: inline;
+    border: none;
+}
+#browse fieldset, #search fieldset
+{
+    padding-bottom: 8px;
+}
+#search .search_box, #search select
+{
+    margin-bottom: 8px;
+}
+
+/* begin admin panel (similar to search boxes) */
+#admin_panel
+{
+    width: 680px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    font-size: .7em;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+#admin_panel div
+{
+    clear: none;
+    padding-top: 5px;
+}
+
+#admin_panel #query span.input_label
+{
+    float: left;
+    text-align: right;
+    width: 70px;
+}
+
+
+#admin_panel #query input
+{
+    width: 170px;
+}
+
+
+
+#admin_panel #query select
+{
+    width: 175px;
+}
+
+#admin_panel #status span.input_label
+{
+    float: left;
+    text-align: right;
+    width: 100px;
+}
+
+#admin_panel #status select
+{
+    width: 145px;
+}
+
+#admin_panel #status input
+{
+    width: 145px;
+}
+
+#admin_panel span.input_control
+{
+    float: right;
+    text-align: left;
+}
+
+#admin_panel div#query
+{
+    float: left;
+    background-color: #f4f4f4;
+}
+
+#admin_panel div#status
+{
+    float: left;
+    background-color: #f4f4f4;
+    margin-left: 15px;
+}
+
+#admin_panel #query a
+{
+    font-size: 11px;
+}
+
+#admin_panel #query legend, #admin_panel #status legend
+{
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#admin_panel #query select, #admin_panel #query .search_box, #admin_panel #status select, #admin_panel #status ul
+{
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+#admin_panel #query select, #admin_panel #query .search_box
+{
+    /* width: 290px; */
+}
+
+#admin_panel #status select
+{
+    /* width: 190px; */
+    vertical-align: middle;
+    border: none;
+    display: inline;
+}
+
+#admin_panel #query, #admin_panel #status
+{
+    height: 185px;
+    width: 265px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: #A29F93;
+    padding: 7px 10px 10px;
+}
+
+
+
+.login_box input.text
+{
+    width: 150px;
+}
+
+input.user_info
+{
+    width: 200px;
+}
+
+input.register_password
+{
+    width: 100px;
+}
+
+input.register_question
+{
+    width: 250px;
+}
+
+/* begin item grid */
+
+
+#item_../images/classifieds
+{
+    text-align: center;
+    float: left;
+    width: 161px;
+    clear: none;
+}
+
+.item_list
+{
+    width: 100%;
+    font-size: .7em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item_list th
+{
+    height: 25px;
+    background: #DEDDD3;
+}
+
+.item_list_footer
+{
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    background: #DEDDD3;
+}
+
+.item_list_footer li
+{
+    list-style-type: none;
+    white-space: nowrap;
+    display: inline;
+    margin: 0px 3px;
+}
+
+.item_list_footer ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.display_left
+{
+    text-align: center;
+    float: left;
+    clear: none;
+    font-size: .8em;
+}
+
+
+.display_right
+{
+    text-align: left;
+    padding-left: 173px;
+}
+.display_right textarea
+{
+    font-family: Arial;
+    font-size: 14px;
+}
+.display_right#ad_details h4, .display_right#ad_details h5
+{
+    text-align: left;
+    font-size: 1.1em;
+    padding: 10px;
+    display: block;
+    background: #f4f4f4;
+    border: solid 1px #ccc;
+}
+.display_right#ad_details h3
+{
+    display: normal;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.display_right#ad_details h5.action
+{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #7F4728;
+}
+
+
+
+/* begin classes */
+
+legend.select_category
+{
+    display: inline;
+}
+
+.col_select, .col_photo, .col_photo_nopreview, .col_startdate, .col_price, .col_type, .col_location, .col_category, .col_general, .col_checkbox
+{
+    text-align: center;
+    font-size: .8em;
+    padding: 4px;
+}
+.col_title
+{
+    text-align: left;
+    width: 225px;
+    font-size: 1em;    
+    padding-left: 5px;
+}
+.col_title a:link, .col_title a:visited
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+.col_title a:active, .col_title a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+td.col_photo img
+{
+    border: solid 1px #000;
+}
+td.col_photo
+{
+    border-left: solid 1px #ccc;
+}
+#ad_details td.col_heading
+{
+    color: #7F4728;
+    vertical-align: top;
+}
+
+#ad_details td.col_detail
+{
+    padding-left: 10px;
+}
+
+#ad_details .ad_description_text td.col_detail
+{
+    font-weight: bold;
+}
+
+.ad_description_text
+{
+    padding-top: 0px;
+}
+
+
+
+.col_checkbox, .col_photo_nopreview
+{
+    width: 30px;
+}
+
+
+.row1, .row2
+{
+    height: 60px;
+     background-color: #fff;
+}
+
+.row2
+{
+    background-color: #f4f4f4;
+}
+
+.small_text
+{
+    font-size: 0.8em;
+    color: #666666;
+    font-weight: normal;
+}
+
+.normal_weight
+{
+    font-weight: normal;
+}
+
+
+tr.new_section
+{
+    padding-top: 1em;
+}
+
+p.new_section
+{
+    margin-top: 1em;
+}
+.wizard-step
+{
+    width: 700px;
+}
+.AdminLabel
+{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px auto 5px 0px;
+}
+.AdminStatsArea
+{
+    font-size: 80%;
+    margin-top: 40px;
+    border-top: dashed 1px #ddd;
+    width: 660px;
+}
+.MyAdsArea
+{
+    margin-top: 20px;
+    min-height: 250px;
+    margin-left: 0px;
+}
+tr.EmptyRow
+{
+    font-size: 16px;
+    color: #666;
+    padding-left: 15px;
+}
+.AdSubmitted
+{
+    font-size: 16px;
+    color: #000;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+table.AdGrid, .AdGrid TD
+{
+    border: solid 1px #ccc;
+}
+table.AdGrid
+{
+    margin: 40px auto 30px 2px;
+}
+table.AdGrid th
+{
+    font-size: 11px;
+    border: solid 1px #999;
+    background-color: #ddd;
+}
+.AdEditLinks
+{
+    width: 650px;
+    text-align: center;
+    font-size: .8em;
+    margin-top: 5px;
+}
+.AdEditLinks a:link, .AdEditLinks a:visited
+{
+    text-decoration: none;
+}
+.AdEditLinks a:active, .AdEditLinks a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+#adBottom
+{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-top: dashed 1px #ddd; 
+    width: 500px;
+    padding-top: 20px;
+}
+#adBottom ul
+{
+    padding-left: 30px;
+}
+.AdvancedSearch
+{
+    clear: left;
+    padding-top: 20px;
+    font-size: 11px;
+}
+table.SubCategoryList td
+{
+    height: 24px;
+}
+.NoDisplay
+{
+    display: none;
+}
+textarea.ResponseCommentsTextBox
+{
+     Width: 452px;
+    Height: 123px;
+}
+
+/*  BANNER AREA ------------------------------------------------------------------------- */
+
+
+#ContainerDivOuter
+{
+    width: 100%;
+    text-align: center;
+}
+#ContainerDiv
+{
+    width: 990px;
+    margin: 20px auto;
+}
+
+#content
+{
+
+}
+
+#ContentBodyRight #content
+{
+    margin-left: 18px;
+    margin-right: 0px; 
+}
+#ContentBodyLeft #content
+{
+     margin-left: 0px;
+     margin-right: 18px; 
+}
+
+#sidepanel
+{
+}
+.links, .categorylinks
+{
+	width: 280px;
+	background-image: url(/themes/lollipop/images/block.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin-bottom: 10px;
+	margin-left: -80px;
+	padding: 0px 10px 5px 0px;
+	overflow: visible;
+	line-height: 21px;
+}
+
+.links li
+{
+	display: block; 
+	padding: 0px 0px 0px 20px;
+	list-style-type: none;
+	text-align: right;
+	font-size: 14px;
+}
+.links li a:visited, .links li a:link
+{
+text-decoration: none;
+}
+.links li a:active, .links li a:hover
+{
+color: #000;
+text-decoration: underline;
+}
+h1
+{
+    width: 100%;
+    border-bottom: solid 1px #888888;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    margin-bottom: 0px;
+}
+h1 a.taggedlink:link, h1 a.taggedlink:visited
+{
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+    font-weight: normal;
+}
+.authorPubdate
+{
+    height: 17px;
+    border-bottom: 1px solid #F0F0F0;
+}
+div.post .pubDate
+{
+    color: #666666;
+    font-size: 10px;
+    float: right;
+}
+
+div.post .text
+{
+    padding-top: 10px;
+}
+.bookmarks
+{
+    float: left;
+    font-size: 11px;
+}
+
+/*----------------------------
+						Menu
+----------------------------*/
+
+#menu
+{
+    background: #f4f4f4;
+    border: 1px solid silver;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 40px;
+}
+
+#menu a.apmlfilter
+{
+    float: right;
+    margin-right: 10px;
+    background: url(../../pics/apml.png) no-repeat left 1px;
+    padding-left: 16px;
+}
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#menu ul li
+{
+    display: inline;
+}
+
+#menu ul li a
+{
+    padding: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+
+#menu ul li a.feed img
+{
+    margin-right: 3px;
+    margin-bottom: -2px;
+}
+
+.belogopic
+{
+    margin-top: 25px;
+}
+.recentPosts a
+{
+    font-size: 11px;
+    letter-spacing: -.2px;
+}
+.recentPosts a:link, .recentPosts a:visited
+{
+}
+.recentPosts a:active, .recentPosts a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+ul.recentPosts li
+{
+    padding-bottom: 0px;
+}
+a
+{
+    color: #D50031;
+}
+.sidebarcontent
+{
+    margin: 30px 0px;
+}
+#GroupMenuRight, #GroupMenuLeft
+{
+    float: right;
+    margin-left: 0;
+    margin-right: 120px;
+    width: 375px;
+    font-size: 11px;
+    font-weight: bold;
+}
+#GroupMenuLeft
+{
+float:left;
+margin: 10px auto;
+padding:0 0 0 40px;
+    width: 250px;
+}
+#GroupMenuLeft a:link, #GroupMenuLeft a:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+#GroupMenuLeft a:hover, #GroupMenuLeft a:active, #GroupMenuLeft a:link.current, #GroupMenuLeft a:visited.current 
+{
+    text-decoration: underline;
+}
+.groupmenu
+{
+	margin: -5px 0px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.groupmenu li
+{
+	padding: 0px;
+	float: left;
+}
+
+.groupmenu li a, .groupmenu li a:visited
+{
+	padding: 0px 10px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	font-size: 11px;
+}
+
+.groupmenu li.current a, .groupmenu li.current a:visited
+{
+	color: #000;
+	text-decoration: underline;
+}
+.groupmenu li a:hover, .groupmenu li.current a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+.AllGroupsLink
+{
+	font-size: 16px;
+	margin: 20px 0px;
+	font-weight: bold;
+}
+.AllGroupsLink a:link, .AllGroupsLink a:visited
+{
+	text-decoration: none;
+}
+.AllGroupsLink a:hover, .AllGroupsLink a:active
+{
+	text-decoration: underline;
+	color: #000;
+}
+.GroupIntroArea
+{
+    width: 100%;
+    margin: 0px;
+}
+.GroupIntroLeft
+{
+    width: 300px;
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+.GroupIntroRight
+{
+    width: 300px;
+    display: block;
+    float: left;
+    border: solid 1px #ccc;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+.ViewAreaTitle
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 22px;    
+    color: #D50031;
+}
+.ViewItemDescription
+{
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 2px;
+    margin-top: 2px;    
+}
+
+.ViewItemAuthorDate
+{
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-bottom: 16px;    
+}
+.classifieds table.content
+{
+	font-family: Arial;
+	font-size: 8pt;
+	border: solid 1px #8394B2;
+	color: #000000;
+	padding: 0px;
+	background-color: #eee;
+	width: 100%;
+}
+.classifieds .content td
+{
+	padding: 5px;
+}
+.classifieds .content.innerform td 
+{
+	padding: 0px;
+}
+.classifieds .menubarlinks 
+{
+	background-color: #fff;
+	color: #404040;
+}
+.classifieds .menubarlinks a
+{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+}
+.WhatsNew
+{
+    margin: 20px auto 20px 0px;
+    font-weight: bold;
+}
+#footer
+{
+   padding-top: 20px;
+}
+.MPNoCategoriesArea
+{
+    text-align: center;
+    margin-top: 50px;
+    width: 600px;
+    padding: 20px;
+}
+.MPNoCategories1
+{
+width: 400px;
+margin: 18px auto 20px auto;
+
+    background-color: #fff;
+    border: solid 1px #D50031;
+    font-size: 16px;
+
+}
+.none
+{
+    text-align: left;
+    font-size: 16px;
+    margin: 0px auto 10px 2px;
+}

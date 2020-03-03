@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Sueetie.Core.SueetieBaseMasterPage" %>
+
+<%@ Register TagPrefix="uc" TagName="UserMenu" Src="~/gs/styles/v2/menus/UserMenu.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="Server">
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+            <uc:UserMenu ID="UserMenu1" runat="server" />
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <asp:ContentPlaceHolder ID="phSiteMenu" runat="server">
+            <SUEETIE:SiteMenu runat="server" />
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                    <asp:ContentPlaceHolder ID="cphGroupMenu" runat="server" />
+                        <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                        <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+            <SUEETIE:FooterMenu runat="server" />
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy</a>.</p>
+                <p><SUEETIE:SueetieTag ID="SueetieTag1" runat="server" ShowText="True" LogoFont="White" /></p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

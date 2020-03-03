@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializableStringDictionary>
+  <SerializableStringDictionary>
+    <DictionaryEntry Key="maxitems" Value="10" />
+    <DictionaryEntry Key="feedurl" Value="http://twitter.com/statuses/user_timeline/189564250.rss" />
+    <DictionaryEntry Key="accounturl" Value="http://twitter.com/PathfinderFr" />
+    <DictionaryEntry Key="pollinginterval" Value="30" />
+    <DictionaryEntry Key="followmetext" Value="Suivez-nous sur Twitter !" />
+  </SerializableStringDictionary>
+</SerializableStringDictionary>

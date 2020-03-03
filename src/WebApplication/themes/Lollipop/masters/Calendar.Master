@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="Sueetie.Master" %>
+
+<%@ Import Namespace="Sueetie.Core" %>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphHeader" runat="server">
+    <SUEETIE:SueetieTheme ID="SueetieTheme1" runat="server" StyleSheet="shared.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme2" runat="server" StyleSheet="sueetie.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme3" runat="server" StyleSheet="fullcalendar.css" />
+    <SUEETIE:SueetieTheme ID="SueetieTheme4" runat="server" StyleSheet="custom.css" />
+    <!--[if IE]>
+        <SUEETIE:SueetieTheme runat="server" StyleSheet="ie.css" />
+        <![endif]-->
+    <link href="/themes/lollipop/style/impromptu.css" rel="stylesheet" type="text/css" />
+
+    <script type='text/javascript' src='/scripts/jquery.js'></script>
+    <script type='text/javascript' src='/scripts/jquery-ui-custom.js'></script>
+    <script type='text/javascript' src='/scripts/fullcalendar.js'></script>
+    <script type='text/javascript' src='/scripts/gcal.js'></script>
+    <script type='text/javascript' src='/scripts/jquery-utils.js'></script>
+    <script type='text/javascript' src='/scripts/jquery.alerts.js'></script>
+    <script type='text/javascript' src='/scripts/jquery-impromptu.3.1.min.js'></script>
+
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="phSiteMenu" runat="server">
+    <SUEETIE:SiteMenu ID="SiteMenu1" runat="server" HighlightTab="CalendarTab" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSidePanel" runat="server">
+    <asp:ContentPlaceHolder ID="cphSidePanel" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Scripts>
+        </Scripts>
+        <Services>
+            <asp:ServiceReference Path="~/util/services/SueetieService.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

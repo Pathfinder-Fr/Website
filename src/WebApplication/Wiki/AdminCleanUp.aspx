@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminCleanUp.aspx.cs" Inherits="ScrewTurn.Wiki.AdminCleanUp" %>

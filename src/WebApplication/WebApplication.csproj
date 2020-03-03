@@ -1,0 +1,1875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{212510CE-C1CA-4CC6-A79C-C780A9501B84}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sueetie.Web</RootNamespace>
+    <AssemblyName>Sueetie.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DeployIisAppPath>Pathfinder-fr</DeployIisAppPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.17815, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="RssToolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d9202816019f11ea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Sueetie.AddonPack, Version=3.2.4169.28849, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\Sueetie.AddonPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Sueetie.Analytics, Version=3.2.4169.28847, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\Sueetie.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sueetie.Licensing, Version=3.2.4169.28844, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Framework\Sueetie.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\addonpack\Blogs\default.aspx" />
+    <Content Include="admin\addonpack\ForumAnswers\default.aspx" />
+    <Content Include="admin\addonpack\MediaSets\MediaSetObjects.aspx" />
+    <Content Include="admin\addonpack\MediaSets\MediaSetGroupEdit.aspx" />
+    <Content Include="admin\addonpack\MediaSets\MediaSetEdit.aspx" />
+    <Content Include="admin\addonpack\MediaSets\default.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\BlockedCountries.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\default.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\BlockByCountry.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\CheckIP.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\BlockedAgents.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\CheckAgent.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\AgentPages.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\TruncateRequestTable.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\RecentAccessReport.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\RemoteIpPages.aspx" />
+    <Content Include="admin\addonpack\SettingsAddonPack.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\ManualIpRanges.aspx" />
+    <Content Include="admin\addonpack\SlideShows\SlideShowImages.aspx" />
+    <Content Include="admin\addonpack\SlideShows\default.aspx" />
+    <Content Include="admin\addonpack\SiteAccessControl\UpdateIpRanges.aspx" />
+    <Content Include="admin\analytics\reports\Blogs\BlogRss.aspx" />
+    <Content Include="admin\analytics\reports\Blogs\BlogRssViews.aspx" />
+    <Content Include="admin\analytics\reports\default.aspx" />
+    <Content Include="admin\analytics\maintenance\Default.aspx" />
+    <Content Include="admin\analytics\reports\Search\SearchTermsUser.aspx" />
+    <Content Include="admin\analytics\reports\Search\SearchTermsApp.aspx" />
+    <Content Include="admin\analytics\reports\Search\SearchTerms.aspx" />
+    <Content Include="admin\analytics\reports\Search\TagClickViews.aspx" />
+    <Content Include="admin\analytics\reports\Search\TagClicks.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsTopMembers.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsForMember.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsAllMembers.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsByApplication.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsForPage.aspx" />
+    <Content Include="admin\analytics\maintenance\PageRules.aspx" />
+    <Content Include="admin\analytics\maintenance\FilterUrls.aspx" />
+    <Content Include="admin\analytics\maintenance\FilterUsers.aspx" />
+    <Content Include="admin\analytics\default.aspx" />
+    <Content Include="admin\analytics\maintenance\FilteredUrlActivity.aspx" />
+    <Content Include="admin\analytics\reports\Views\ViewsAllPages.aspx" />
+    <Content Include="admin\analytics\SettingsAnalytics.aspx" />
+    <Content Include="admin\applications\MediaGalleries.aspx" />
+    <Content Include="admin\controls\adminAnalyticsNavLinks.ascx" />
+    <Content Include="admin\controls\adminMarketplaceNavLinks.ascx" />
+    <Content Include="admin\marketplace\ActivityReport.aspx" />
+    <Content Include="admin\marketplace\SueetieProductKey.aspx" />
+    <Content Include="admin\marketplace\PaymentServices.aspx" />
+    <Content Include="admin\marketplace\ManageCategories.aspx" />
+    <Content Include="admin\marketplace\EditProduct.aspx" />
+    <Content Include="admin\marketplace\ManageProducts.aspx" />
+    <Content Include="admin\marketplace\default.aspx" />
+    <Content Include="admin\marketplace\AddNewProduct.aspx" />
+    <Content Include="admin\marketplace\ManagePhotos.aspx" />
+    <Content Include="admin\marketplace\Payment\PaypalStandard.aspx" />
+    <Content Include="admin\marketplace\SettingsMarketplace.aspx" />
+    <Content Include="admin\site\RestartApp.aspx" />
+    <Content Include="admin\site\Licenses.aspx" />
+    <Content Include="boutique\accueil.aspx" />
+    <Content Include="boutique\offres.aspx" />
+    <Content Include="boutique\paiement.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\avatars\0.jpg" />
+    <Content Include="images\avatars\0t.jpg" />
+    <Content Include="images\avatars\noavatar.jpg" />
+    <Content Include="images\avatars\noavatarthumbnail.jpg" />
+    <Content Include="images\Pathfinder\admincandy.jpg" />
+    <Content Include="images\Pathfinder\Background.gif" />
+    <Content Include="images\Pathfinder\banner-back-red.jpg" />
+    <Content Include="images\Pathfinder\banner-back.jpg" />
+    <Content Include="images\Pathfinder\banner-shadow-content-900.png" />
+    <Content Include="images\Pathfinder\banner-shadow-content-red.png" />
+    <Content Include="images\Pathfinder\banner-shadow-content.png" />
+    <Content Include="images\Pathfinder\banner-shadow-red.jpg" />
+    <Content Include="images\Pathfinder\banner-shadow.jpg" />
+    <Content Include="images\Pathfinder\bannershadowdark.jpg" />
+    <Content Include="images\Pathfinder\be.png" />
+    <Content Include="images\Pathfinder\body-back-red.jpg" />
+    <Content Include="images\Pathfinder\body-back.jpg" />
+    <Content Include="images\Pathfinder\bodyback-red.png" />
+    <Content Include="images\Pathfinder\container-back-red.jpg" />
+    <Content Include="images\Pathfinder\container-back.jpg" />
+    <Content Include="images\Pathfinder\content-back-900.png" />
+    <Content Include="images\Pathfinder\content-back-red.jpg" />
+    <Content Include="images\Pathfinder\content-back.jpg" />
+    <Content Include="images\Pathfinder\content-back.png" />
+    <Content Include="images\Pathfinder\content-top-900.png" />
+    <Content Include="images\Pathfinder\content-top-red.jpg" />
+    <Content Include="images\Pathfinder\content-top.jpg" />
+    <Content Include="images\Pathfinder\content-top.png" />
+    <Content Include="images\Pathfinder\cupcakebuttoncorner.png" />
+    <Content Include="images\Pathfinder\db.png" />
+    <Content Include="images\Pathfinder\gummybears.jpg" />
+    <Content Include="images\Pathfinder\gummybuttoncorner.png" />
+    <Content Include="images\Pathfinder\gummyiis.jpg" />
+    <Content Include="images\Pathfinder\headerlogo.jpg" />
+    <Content Include="images\Pathfinder\homeshadow.png" />
+    <Content Include="images\Pathfinder\icecream.png" />
+    <Content Include="images\Pathfinder\Logo-Fr.jpg" />
+    <Content Include="images\Pathfinder\logos\Blog.png" />
+    <Content Include="images\Pathfinder\logos\Forum.png" />
+    <Content Include="images\Pathfinder\logos\Wikis.png" />
+    <Content Include="images\Pathfinder\lollipopbuttoncorner.png" />
+    <Content Include="images\Pathfinder\Maintenance.jpg" />
+    <Content Include="images\Pathfinder\mmbuttoncorner.png" />
+    <Content Include="images\Pathfinder\nicEditorIcons.gif" />
+    <Content Include="images\Pathfinder\Pathfinder-Fr-2.png" />
+    <Content Include="images\Pathfinder\Pathfinder-Fr.png" />
+    <Content Include="images\Pathfinder\peppermints.jpg" />
+    <Content Include="images\Pathfinder\red2\body-back.jpg" />
+    <Content Include="images\Pathfinder\red2\body-top.jpg" />
+    <Content Include="images\Pathfinder\red2\bullet.gif" />
+    <Content Include="images\Pathfinder\red2\container-back.jpg" />
+    <Content Include="images\Pathfinder\red2\sidepanel-back.jpg" />
+    <Content Include="images\Pathfinder\red2\sidepanel-bottom.jpg" />
+    <Content Include="images\Pathfinder\red2\sidepanel-top.jpg" />
+    <Content Include="images\Pathfinder\red2\title-back.jpg" />
+    <Content Include="images\Pathfinder\sidepanel-back.jpg" />
+    <Content Include="images\Pathfinder\sidepanel-bottom-red.jpg" />
+    <Content Include="images\Pathfinder\sidepanel-bottom.jpg" />
+    <Content Include="images\Pathfinder\sidepanel-top-red.jpg" />
+    <Content Include="images\Pathfinder\sidepanel-top.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP1.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP1Off.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP2.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP2Off.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP3.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP3Off.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP4.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP4Off.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP5.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\AP5Off.jpg" />
+    <Content Include="images\Pathfinder\wiki\Aventures\WAventures.jpg" />
+    <Content Include="images\Pathfinder\wiki\Bouton0.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonE.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonM.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonM2.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonP.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonP2.jpg" />
+    <Content Include="images\Pathfinder\wiki\BoutonW.jpg" />
+    <Content Include="images\Pathfinder\wiki\danger.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\AdJ.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\AdJOff.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\Geographie.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\GeographieOff.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\Histoire.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\HistoireOff.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\Livres.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\LivresOff.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\Religion.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\ReligionOff.png" />
+    <Content Include="images\Pathfinder\wiki\Golarion\WGolarion.jpg" />
+    <Content Include="images\Pathfinder\wiki\ialt.png" />
+    <Content Include="images\Pathfinder\wiki\ibase.png" />
+    <Content Include="images\Pathfinder\wiki\logoref.png" />
+    <Content Include="images\Pathfinder\wiki\Logos\Logo Rapports.png" />
+    <Content Include="images\Pathfinder\wiki\Logos\Pathfinder Chronicles.png" />
+    <Content Include="images\Pathfinder\wiki\Logos\Pathfinder RPG.png" />
+    <Content Include="images\Pathfinder\wiki\needu.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\Abri.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\AdJ.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\AdJOff.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\Ado.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\ialt.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\ibase.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\Livres.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\LivresOff.png" />
+    <Content Include="images\Pathfinder\wiki\PRPG\MvtTactique.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\Temp.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\Tenaille.jpg" />
+    <Content Include="images\Pathfinder\wiki\PRPG\WPRPG.jpg" />
+    <Content Include="images\Pathfinder\yafsmall.jpg" />
+    <Content Include="images\shared\sueetie\blank.gif" />
+    <Content Include="images\shared\ceebox\cee-close-btn.png" />
+    <Content Include="images\shared\ceebox\cee-next-btn.gif" />
+    <Content Include="images\shared\ceebox\cee-next-btn.png" />
+    <Content Include="images\shared\ceebox\cee-prev-btn.gif" />
+    <Content Include="images\shared\ceebox\cee-prev-btn.png" />
+    <Content Include="images\shared\ceebox\loader.gif" />
+    <Content Include="images\shared\sueetie\lollipop.png" />
+    <Content Include="images\yafsmall.jpg" />
+    <Content Include="install\sql\sueetie_3.3.0_fix.sql" />
+    <Content Include="robots.txt" />
+    <Content Include="scripts\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="scripts\jquery.ceebox-min.js" />
+    <Content Include="scripts\jquery.color.js" />
+    <Content Include="scripts\jquery.easing.js" />
+    <Content Include="scripts\jquery.metadata.js" />
+    <Content Include="scripts\jquery.swfobject.js" />
+    <Content Include="scripts\jquery1.4.4.js" />
+    <Content Include="themes\Lollipop\images\ui-lightness\su-gradient-background.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_highlight-soft_75_efefef_1x100.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_222222_256x240.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_228ef1_256x240.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_d50031_256x240.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_ef8c08_256x240.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_ffd27a_256x240.png" />
+    <Content Include="themes\Lollipop\images\ui-lightness\ui-icons_ffffff_256x240.png" />
+    <Content Include="themes\Lollipop\pages\mediasets.aspx" />
+    <Content Include="themes\Lollipop\style\ceebox.css" />
+    <Content Include="themes\Lollipop\style\jquery-ui-1.8.13.custom.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\admin\reddown.gif" />
+    <Content Include="images\shared\sueetie\ajax-loader.gif" />
+    <Content Include="images\shared\sueetie\ip.png" />
+    <Content Include="admin\Migrate.ashx" />
+    <None Include="install\sql\sueetie_3.2.0_membership.sql" />
+    <None Include="install\sql\sueetie_3.2.0_install.sql" />
+    <None Include="install\sql\sueetie_3.2.0_populate.sql" />
+    <None Include="install\sql\sueetie_3.2.0_postpopulate.sql" />
+    <None Include="install\sql\sueetie_3.2.0_postinstall.sql" />
+    <None Include="install\sql\sueetie_3.2.0_GSP.sql" />
+    <Content Include="install\sql\sueetie_3.1.0_3.2.0_upgrade.sql" />
+    <Content Include="install\sql\sueetie_3.2.0_triplescoop.sql" />
+    <Content Include="install\sueetie30iis.png" />
+    <Content Include="scripts\jquery-1.4.4.min.js" />
+    <Content Include="scripts\jquery.dataTables.js" />
+    <Content Include="scripts\jquery.dataTables.min.js" />
+    <Content Include="scripts\mobilyslider.js" />
+    <Content Include="scripts\sueetieUI.js" />
+    <Content Include="themes\Chiclet\pages\ForgotPassword.aspx" />
+    <Content Include="themes\Chiclet\pages\ForgotUsername.aspx" />
+    <Content Include="themes\Lollipop\images\albumtitleback.png" />
+    <Content Include="themes\Lollipop\images\datatables\back_disabled.jpg" />
+    <Content Include="themes\Lollipop\images\datatables\back_enabled.jpg" />
+    <Content Include="themes\Lollipop\images\datatables\favicon.ico" />
+    <Content Include="themes\Lollipop\images\datatables\forward_disabled.jpg" />
+    <Content Include="themes\Lollipop\images\datatables\forward_enabled.jpg" />
+    <Content Include="themes\Lollipop\images\datatables\sort_asc.png" />
+    <Content Include="themes\Lollipop\images\datatables\sort_asc_disabled.png" />
+    <Content Include="themes\Lollipop\images\datatables\sort_both.png" />
+    <Content Include="themes\Lollipop\images\datatables\sort_desc.png" />
+    <Content Include="themes\Lollipop\images\datatables\sort_desc_disabled.png" />
+    <Content Include="themes\Lollipop\images\disc.png" />
+    <Content Include="themes\Lollipop\images\lollicorner.png" />
+    <Content Include="themes\Lollipop\images\marketplace\ajax-loader.gif" />
+    <Content Include="themes\Lollipop\images\marketplace\cart.png" />
+    <Content Include="themes\Lollipop\images\marketplace\non-preview-photo.gif" />
+    <Content Include="themes\Lollipop\images\marketplace\paymenticons.png" />
+    <Content Include="themes\Lollipop\images\marketplace\preview-photo.gif" />
+    <Content Include="themes\Lollipop\images\na.png" />
+    <Content Include="themes\Lollipop\images\rightarrow.png" />
+    <Content Include="themes\Lollipop\pages\ForgotPassword.aspx" />
+    <Content Include="themes\Lollipop\pages\ForgotUsername.aspx" />
+    <Content Include="themes\Lollipop\pages\marketplace\Browse.aspx" />
+    <Content Include="themes\Lollipop\pages\marketplace\CompletePurchase.aspx" />
+    <Content Include="themes\Lollipop\pages\marketplace\Default.aspx" />
+    <Content Include="themes\Lollipop\pages\marketplace\ShowProduct.aspx" />
+    <Content Include="themes\Lollipop\pages\nuthercontent.aspx" />
+    <Content Include="themes\Lollipop\style\analytics.css" />
+    <Content Include="themes\Lollipop\style\custom.css" />
+    <Content Include="themes\Lollipop\style\addonpack.css" />
+    <Content Include="themes\Lollipop\style\datatables.css" />
+    <Content Include="themes\v2\images\adminbodyback.png" />
+    <Content Include="themes\v2\images\albumheaderback.png" />
+    <Content Include="themes\v2\images\albumtitleback.png" />
+    <Content Include="themes\v2\images\be.png" />
+    <Content Include="themes\v2\images\blogs\rsssleek.png" />
+    <Content Include="themes\v2\images\blogs\rsstag.png" />
+    <Content Include="themes\v2\images\calendarEdit.png" />
+    <Content Include="themes\v2\images\daveburke.jpg" />
+    <Content Include="themes\v2\images\Delete.gif" />
+    <Content Include="themes\v2\images\dots.png" />
+    <Content Include="themes\v2\images\download.png" />
+    <Content Include="themes\v2\images\downred.gif" />
+    <Content Include="themes\v2\images\greydotblock.png" />
+    <Content Include="themes\v2\images\homebodyback.png" />
+    <Content Include="themes\v2\images\lollicorner.png" />
+    <Content Include="themes\v2\images\lollicornergrape.png" />
+    <Content Include="themes\v2\images\lollitag.png" />
+    <Content Include="themes\v2\images\media\folder.png" />
+    <Content Include="themes\v2\images\media\pdf.png" />
+    <Content Include="themes\v2\images\media\txt.png" />
+    <Content Include="themes\v2\images\media\zip.png" />
+    <Content Include="themes\v2\images\noavatar.jpg" />
+    <Content Include="themes\v2\images\pencil.png" />
+    <Content Include="themes\v2\images\rightarrow2.gif" />
+    <Content Include="themes\v2\images\search\album.png" />
+    <Content Include="themes\v2\images\search\blog.png" />
+    <Content Include="themes\v2\images\search\cms.png" />
+    <Content Include="themes\v2\images\search\forum.png" />
+    <Content Include="themes\v2\images\search\media.png" />
+    <Content Include="themes\v2\images\search\wiki.png" />
+    <Content Include="themes\v2\images\sidebarpanelback.png" />
+    <Content Include="themes\v2\images\soliddot.png" />
+    <Content Include="themes\v2\images\tabback.png" />
+    <Content Include="themes\v2\images\tableft.png" />
+    <Content Include="themes\v2\images\tabright.png" />
+    <Content Include="themes\v2\images\tabselectedback.png" />
+    <Content Include="themes\v2\images\tagEdit.png" />
+    <Content Include="themes\v2\images\themes20.png" />
+    <Content Include="themes\v2\images\toolbar_close.gif" />
+    <Content Include="themes\v2\images\window_titlebg.gif" />
+    <Content Include="themes\v2\images\wire_bg.gif" />
+    <Content Include="themes\v2\images\x.png" />
+    <Content Include="themes\v2\images\yafsmall.jpg" />
+    <Content Include="themes\v2\menus\AdminMenu.ascx" />
+    <Content Include="themes\v2\menus\HomeBodyMenu.ascx" />
+    <Content Include="themes\v2\menus\HomeMenu.ascx" />
+    <Content Include="themes\v2\menus\UserMenu.ascx" />
+    <Content Include="themes\v2\pages\Activate.aspx" />
+    <Content Include="themes\v2\pages\blogs.aspx" />
+    <Content Include="themes\v2\pages\caleditdemo.aspx" />
+    <Content Include="themes\v2\pages\calendar.aspx" />
+    <Content Include="themes\v2\pages\calgoogle.aspx" />
+    <Content Include="themes\v2\pages\content.aspx" />
+    <Content Include="themes\v2\pages\Default.aspx" />
+    <Content Include="themes\v2\pages\ForgotPassword.aspx" />
+    <Content Include="themes\v2\pages\ForgotUsername.aspx" />
+    <Content Include="themes\v2\pages\Login.aspx" />
+    <Content Include="themes\v2\pages\marketplace\Browse.aspx" />
+    <Content Include="themes\v2\pages\marketplace\CompletePurchase.aspx" />
+    <Content Include="themes\v2\pages\marketplace\Default.aspx" />
+    <Content Include="themes\v2\pages\marketplace\ShowProduct.aspx" />
+    <Content Include="themes\v2\pages\mediasets.aspx" />
+    <Content Include="themes\v2\pages\Message.aspx" />
+    <Content Include="themes\v2\pages\nuthercontent.aspx" />
+    <Content Include="themes\v2\pages\Register.aspx" />
+    <Content Include="themes\v2\pages\search.aspx" />
+    <Content Include="themes\v2\pages\Welcome.aspx" />
+    <Content Include="themes\v2\style\admin.css" />
+    <Content Include="themes\v2\style\aggregate.css" />
+    <Content Include="themes\v2\style\alternate.css" />
+    <Content Include="themes\v2\style\blogs.css" />
+    <Content Include="themes\v2\style\ceebox.css" />
+    <Content Include="themes\v2\style\classifieds.css" />
+    <Content Include="themes\v2\style\cms.css" />
+    <Content Include="themes\v2\style\contact.css" />
+    <Content Include="themes\v2\style\contenteditor.css" />
+    <Content Include="themes\v2\style\custom.css" />
+    <Content Include="themes\v2\style\datatables.css" />
+    <Content Include="themes\v2\style\forum.css" />
+    <Content Include="themes\v2\style\fullcalendar.css" />
+    <Content Include="themes\v2\style\groups.css" />
+    <Content Include="themes\v2\style\home.css" />
+    <Content Include="themes\v2\style\ie.css" />
+    <Content Include="themes\v2\style\impromptu.css" />
+    <Content Include="themes\v2\style\jquery-ui-1.7.2.custom.css" />
+    <Content Include="themes\v2\style\marketplace.css" />
+    <Content Include="themes\v2\style\media.css" />
+    <Content Include="themes\v2\style\modal.css" />
+    <Content Include="themes\v2\style\nosidebar.css" />
+    <Content Include="themes\v2\style\search.css" />
+    <Content Include="themes\v2\style\shared.css" />
+    <Content Include="themes\v2\style\SimpleDatePicker.css" />
+    <Content Include="themes\v2\style\sueetie.css" />
+    <Content Include="themes\v2\style\theme\Banner-Template\Title.png" />
+    <Content Include="themes\v2\style\theme\banner.jpg" />
+    <Content Include="themes\v2\style\theme\blog\books-brown.png" />
+    <Content Include="themes\v2\style\theme\blog\information-balloon.png" />
+    <Content Include="themes\v2\style\theme\blog\tick.png" />
+    <Content Include="themes\v2\style\theme\body.png" />
+    <Content Include="themes\v2\style\theme\bullet.png" />
+    <Content Include="themes\v2\style\theme\container-t.png" />
+    <Content Include="themes\v2\style\theme\container-tl.png" />
+    <Content Include="themes\v2\style\theme\container-tr.png" />
+    <Content Include="themes\v2\style\theme\content-heading.png" />
+    <Content Include="themes\v2\style\theme\forum\arrow.png" />
+    <Content Include="themes\v2\style\theme\forum\balloon.png" />
+    <Content Include="themes\v2\style\theme\forum\bin.png" />
+    <Content Include="themes\v2\style\theme\forum\bin_minus.png" />
+    <Content Include="themes\v2\style\theme\forum\chain.png" />
+    <Content Include="themes\v2\style\theme\forum\chain_plus.png" />
+    <Content Include="themes\v2\style\theme\forum\cross.png" />
+    <Content Include="themes\v2\style\theme\forum\document_small.png" />
+    <Content Include="themes\v2\style\theme\forum\DownArrow.png" />
+    <Content Include="themes\v2\style\theme\forum\home.png" />
+    <Content Include="themes\v2\style\theme\forum\icon_email.png" />
+    <Content Include="themes\v2\style\theme\forum\icon_fave.png" />
+    <Content Include="themes\v2\style\theme\forum\icon_pm.png" />
+    <Content Include="themes\v2\style\theme\forum\LeftArrow.png" />
+    <Content Include="themes\v2\style\theme\forum\lock-unlock.png" />
+    <Content Include="themes\v2\style\theme\forum\lock.png" />
+    <Content Include="themes\v2\style\theme\forum\paper-clip.png" />
+    <Content Include="themes\v2\style\theme\forum\pencil.png" />
+    <Content Include="themes\v2\style\theme\forum\quill-plus.png" />
+    <Content Include="themes\v2\style\theme\forum\quill.png" />
+    <Content Include="themes\v2\style\theme\forum\RightArrow.png" />
+    <Content Include="themes\v2\style\theme\forum\sticky-note--pencil.png" />
+    <Content Include="themes\v2\style\theme\forum\sticky-note.png" />
+    <Content Include="themes\v2\style\theme\forum\thumb-up.png" />
+    <Content Include="themes\v2\style\theme\forum\tick-grayed.png" />
+    <Content Include="themes\v2\style\theme\forum\tick.png" />
+    <Content Include="themes\v2\style\theme\forum\top.png" />
+    <Content Include="themes\v2\style\theme\forum\traffic-light.png" />
+    <Content Include="themes\v2\style\theme\forum\twitter.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-blog.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-contact.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-forum.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-home.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-wikis-sub.png" />
+    <Content Include="themes\v2\style\theme\nav-bak\nav-wikis.png" />
+    <Content Include="themes\v2\style\theme\nav-blog.png" />
+    <Content Include="themes\v2\style\theme\nav-bullet.png" />
+    <Content Include="themes\v2\style\theme\nav-contact.png" />
+    <Content Include="themes\v2\style\theme\nav-forum.png" />
+    <Content Include="themes\v2\style\theme\nav-galerie.png" />
+    <Content Include="themes\v2\style\theme\nav-home.png" />
+    <Content Include="themes\v2\style\theme\nav-model.png" />
+    <Content Include="themes\v2\style\theme\nav-parties-sub.png" />
+    <Content Include="themes\v2\style\theme\nav-parties.png" />
+    <Content Include="themes\v2\style\theme\nav-wikis-sub.png" />
+    <Content Include="themes\v2\style\theme\nav-wikis.png" />
+    <Content Include="themes\v2\style\theme\nav.png" />
+    <Content Include="themes\v2\style\theme\page.png" />
+    <Content Include="themes\v2\style\theme\parties-forum.png" />
+    <Content Include="themes\v2\style\theme\parties-wikis.png" />
+    <Content Include="themes\v2\style\theme\sidebar-arrow-i.png" />
+    <Content Include="themes\v2\style\theme\sidebar-arrow.png" />
+    <Content Include="themes\v2\style\theme\sidebar-disc-i.png" />
+    <Content Include="themes\v2\style\theme\sidebar-disc.png" />
+    <Content Include="themes\v2\style\theme\sidebar-star-i.png" />
+    <Content Include="themes\v2\style\theme\sidebar-star.png" />
+    <Content Include="themes\v2\style\theme\sidebar.png" />
+    <Content Include="themes\v2\style\theme\sueetie\blog.png" />
+    <Content Include="themes\v2\style\theme\sueetie\blogcomment.png" />
+    <Content Include="themes\v2\style\theme\sueetie\forum.png" />
+    <Content Include="themes\v2\style\theme\sueetie\forumreply.png" />
+    <Content Include="themes\v2\style\theme\sueetie\na.png" />
+    <Content Include="themes\v2\style\theme\sueetie\twitter.png" />
+    <Content Include="themes\v2\style\theme\sueetie\user.png" />
+    <Content Include="themes\v2\style\theme\sueetie\website.png" />
+    <Content Include="themes\v2\style\theme\sueetie\wiki.png" />
+    <Content Include="themes\v2\style\theme\sueetie\wikicomment.png" />
+    <Content Include="themes\v2\style\theme\userpanel.png" />
+    <Content Include="themes\v2\style\theme\wiki-aventures.png" />
+    <Content Include="themes\v2\style\theme\wiki-golarion.png" />
+    <Content Include="themes\v2\style\theme\wiki-informations.png" />
+    <Content Include="themes\v2\style\theme\wiki-pfrpg.png" />
+    <Content Include="themes\v2\style\theme\wiki-starfinder.png" />
+    <Content Include="themes\v2\style\theme\wiki\arrow-180-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\arrow-180.png" />
+    <Content Include="themes\v2\style\theme\wiki\balloon-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\balloon-plus-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\balloon-plus.png" />
+    <Content Include="themes\v2\style\theme\wiki\balloon.png" />
+    <Content Include="themes\v2\style\theme\wiki\clock-history-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\clock-history.png" />
+    <Content Include="themes\v2\style\theme\wiki\document-code.png" />
+    <Content Include="themes\v2\style\theme\wiki\edit-code-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\edit-code.png" />
+    <Content Include="themes\v2\style\theme\wiki\feed-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\feed.png" />
+    <Content Include="themes\v2\style\theme\wiki\mail-exclamation.png" />
+    <Content Include="themes\v2\style\theme\wiki\mail-minus-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\mail-minus.png" />
+    <Content Include="themes\v2\style\theme\wiki\mail-plus-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\mail-plus.png" />
+    <Content Include="themes\v2\style\theme\wiki\paper-clip-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\paper-clip.png" />
+    <Content Include="themes\v2\style\theme\wiki\pencil-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\pencil-small-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\pencil-small.png" />
+    <Content Include="themes\v2\style\theme\wiki\pencil.png" />
+    <Content Include="themes\v2\style\theme\wiki\printer-light.png" />
+    <Content Include="themes\v2\style\theme\wiki\printer.png" />
+    <Content Include="themes\v2\style\theme\wiki\script-code.png" />
+    <Content Include="themes\v2\style\theme\wrapper-fp.png" />
+    <Content Include="themes\v2\style\theme\wrapper-l.png" />
+    <Content Include="themes\v2\style\theme\wrapper-r.png" />
+    <Content Include="themes\v2\style\theme\wrapper.png" />
+    <Content Include="themes\v2\style\token-input-facebook.css" />
+    <Content Include="themes\v2\style\wiki.css" />
+    <Content Include="themes\v2\views\AggregateBlogPostView.ascx" />
+    <Content Include="themes\v2\views\AggregateBlogView.ascx" />
+    <Content Include="themes\v2\views\ContentPageSidebarView.ascx" />
+    <Content Include="themes\v2\views\RecentBlogCommentView.ascx" />
+    <Content Include="themes\v2\views\RecentBlogPostView.ascx" />
+    <Content Include="themes\v2\views\RecentForumTopicView.ascx" />
+    <Content Include="themes\v2\views\RecentPhotoView.ascx" />
+    <Content Include="themes\v2\views\RecentUserLogActivityHeader.ascx" />
+    <Content Include="themes\v2\views\RecentUserLogActivityView.ascx" />
+    <Content Include="themes\v2\views\RecentWikiPageView.ascx" />
+    <Content Include="themes\v2\views\RssBlogPostView.ascx" />
+    <Content Include="util\ips\import_CN.txt" />
+    <Content Include="util\ips\import_IN.txt" />
+    <Content Include="util\ips\import_ID.txt" />
+    <Content Include="util\ips\import_KP.txt" />
+    <Content Include="util\ips\import_KR.txt" />
+    <Content Include="util\ips\import_PK.txt" />
+    <Content Include="util\ips\import_PH.txt" />
+    <Content Include="util\ips\import_RO.txt" />
+    <Content Include="util\ips\import_RU.txt" />
+    <Content Include="util\ips\import_SG.txt" />
+    <Content Include="util\ips\import_TW.txt" />
+    <Content Include="util\ips\import_TH.txt" />
+    <Content Include="util\ips\import_UA.txt" />
+    <Content Include="util\ips\import_VN.txt" />
+    <Content Include="util\ips\import_NL.txt" />
+    <Content Include="util\languages\en-US\Analytics.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="util\languages\en-US\AddonPack.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="util\languages\en-US\Licensing.xml" />
+    <Content Include="util\languages\fr-FR\AddonPack.xml" />
+    <Content Include="util\languages\fr-FR\Analytics.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="util\languages\fr-FR\Blogs.xml" />
+    <Content Include="util\languages\fr-FR\DBVT.xml" />
+    <Content Include="util\languages\fr-FR\Forums.xml" />
+    <Content Include="util\languages\fr-FR\Licensing.xml" />
+    <Content Include="util\languages\fr-FR\Marketplace.xml" />
+    <Content Include="util\languages\fr-FR\MediaGallery.xml" />
+    <Content Include="util\languages\fr-FR\PageTitles.xml" />
+    <Content Include="util\languages\fr-FR\TimeZones.xml" />
+    <Content Include="util\languages\fr-FR\Wiki.xml" />
+    <Content Include="util\misc\adminerror.aspx" />
+    <Content Include="util\services\SueetieService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\FileSystem.pubxml" />
+    <None Include="themes\Lollipop\images\datatables\Sorting icons.psd" />
+    <Content Include="themes\Lollipop\masters\marketplace.master" />
+    <Content Include="themes\Lollipop\masters\product.master" />
+    <Content Include="util\marketplace\Web.Config" />
+    <Content Include="util\handlers\BlogView.ashx" />
+    <Content Include="util\handlers\TagHandler.ashx" />
+    <Content Include="util\handlers\PostImageHandler.ashx" />
+    <Content Include="themes\v2\config\footer.config" />
+    <Content Include="themes\v2\config\menu.config" />
+    <None Include="themes\v2\images\media\media_icons.pdn" />
+    <None Include="themes\v2\images\media\Thumbs.db" />
+    <None Include="themes\v2\images\media\zip.pdn" />
+    <None Include="themes\v2\images\soliddot.pdn" />
+    <Content Include="themes\v2\masters\admin.master" />
+    <Content Include="themes\v2\masters\Alternate.Master" />
+    <Content Include="themes\v2\masters\Blogs.Master" />
+    <Content Include="themes\v2\masters\Calendar.Master" />
+    <Content Include="themes\v2\masters\CMS.Master" />
+    <Content Include="themes\v2\masters\Groups.Master" />
+    <Content Include="themes\v2\masters\home.Master" />
+    <Content Include="themes\v2\masters\Search.Master" />
+    <Content Include="themes\v2\masters\Sueetie.Master" />
+    <Content Include="themes\v2\style\theme\Banner-Template\Banner-Template.zip" />
+    <Content Include="themes\v2\masters\marketplace.Master" />
+    <None Include="themes\v2\style\theme\Banner-Template\Template.psd" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\content\CalendarEdit.aspx.cs">
+      <DependentUpon>CalendarEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\CalendarEdit.aspx.designer.cs">
+      <DependentUpon>CalendarEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\CalendarScheduler.aspx.cs">
+      <DependentUpon>CalendarScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\CalendarScheduler.aspx.designer.cs">
+      <DependentUpon>CalendarScheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\SearchAddon.aspx.cs">
+      <DependentUpon>SearchAddon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\SearchAddon.aspx.designer.cs">
+      <DependentUpon>SearchAddon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\Applications.aspx.cs">
+      <DependentUpon>Applications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\Applications.aspx.designer.cs">
+      <DependentUpon>Applications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\BlogAdmin.aspx.cs">
+      <DependentUpon>BlogAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\BlogAdmin.aspx.designer.cs">
+      <DependentUpon>BlogAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\BlogEdit.aspx.cs">
+      <DependentUpon>BlogEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\BlogEdit.aspx.designer.cs">
+      <DependentUpon>BlogEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\MediaGalleries.aspx.cs">
+      <DependentUpon>MediaGalleries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\MediaGalleries.aspx.designer.cs">
+      <DependentUpon>MediaGalleries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\Media.aspx.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\Media.aspx.designer.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\MediaAlbums.aspx.cs">
+      <DependentUpon>MediaAlbums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\MediaAlbums.aspx.designer.cs">
+      <DependentUpon>MediaAlbums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\Wikis.aspx.cs">
+      <DependentUpon>Wikis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\Wikis.aspx.designer.cs">
+      <DependentUpon>Wikis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\applications\WikiUser.aspx.cs">
+      <DependentUpon>WikiUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applications\WikiUser.aspx.designer.cs">
+      <DependentUpon>WikiUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\ActivityLogging.aspx.cs">
+      <DependentUpon>ActivityLogging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\ActivityLogging.aspx.designer.cs">
+      <DependentUpon>ActivityLogging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\ContentGroups.aspx.cs">
+      <DependentUpon>ContentGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\ContentGroups.aspx.designer.cs">
+      <DependentUpon>ContentGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\ContentPages.aspx.cs">
+      <DependentUpon>ContentPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\ContentPages.aspx.designer.cs">
+      <DependentUpon>ContentPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\ContentParts.aspx.cs">
+      <DependentUpon>ContentParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\ContentParts.aspx.designer.cs">
+      <DependentUpon>ContentParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Migrate.ashx.cs">
+      <DependentUpon>Migrate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\Subscribers.aspx.cs">
+      <DependentUpon>Subscribers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\Subscribers.aspx.designer.cs">
+      <DependentUpon>Subscribers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\UserActivities.aspx.cs">
+      <DependentUpon>UserActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\UserActivities.aspx.designer.cs">
+      <DependentUpon>UserActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\content\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\json\TokenUsers.aspx.cs">
+      <DependentUpon>TokenUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\BackgroundTasks.aspx.cs">
+      <DependentUpon>BackgroundTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\BackgroundTasks.aspx.designer.cs">
+      <DependentUpon>BackgroundTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\DownloadDetails.aspx.cs">
+      <DependentUpon>DownloadDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\DownloadDetails.aspx.designer.cs">
+      <DependentUpon>DownloadDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reports\EventLogs.aspx.cs">
+      <DependentUpon>EventLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reports\EventLogs.aspx.designer.cs">
+      <DependentUpon>EventLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\RestartApp.aspx.cs">
+      <DependentUpon>RestartApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\RestartApp.aspx.designer.cs">
+      <DependentUpon>RestartApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\EmailSettings.aspx.cs">
+      <DependentUpon>EmailSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\EmailSettings.aspx.designer.cs">
+      <DependentUpon>EmailSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\GeneralSettings.aspx.cs">
+      <DependentUpon>GeneralSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\GeneralSettings.aspx.designer.cs">
+      <DependentUpon>GeneralSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\Seo.aspx.cs">
+      <DependentUpon>Seo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\Seo.aspx.designer.cs">
+      <DependentUpon>Seo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\site\Themes.aspx.cs">
+      <DependentUpon>Themes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\site\Themes.aspx.designer.cs">
+      <DependentUpon>Themes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\AddUsers.aspx.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\AddUsers.aspx.designer.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\ApproveUsers.aspx.cs">
+      <DependentUpon>ApproveUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\ApproveUsers.aspx.designer.cs">
+      <DependentUpon>ApproveUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\BannedIPs.aspx.cs">
+      <DependentUpon>BannedIPs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\BannedIPs.aspx.designer.cs">
+      <DependentUpon>BannedIPs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\NewUsers.aspx.cs">
+      <DependentUpon>NewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\NewUsers.aspx.designer.cs">
+      <DependentUpon>NewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\RegisteredUsers.aspx.cs">
+      <DependentUpon>RegisteredUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\RegisteredUsers.aspx.designer.cs">
+      <DependentUpon>RegisteredUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\InactiveUsers.aspx.cs">
+      <DependentUpon>InactiveUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\InactiveUsers.aspx.designer.cs">
+      <DependentUpon>InactiveUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\LockedoutUsers.aspx.cs">
+      <DependentUpon>LockedoutUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\LockedoutUsers.aspx.designer.cs">
+      <DependentUpon>LockedoutUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\OnlineUsers.aspx.cs">
+      <DependentUpon>OnlineUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\OnlineUsers.aspx.designer.cs">
+      <DependentUpon>OnlineUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\RoleAdmin.aspx.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\RoleAdmin.aspx.designer.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\SearchUsers.aspx.cs">
+      <DependentUpon>SearchUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\SearchUsers.aspx.designer.cs">
+      <DependentUpon>SearchUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users\UsersByRole.aspx.cs">
+      <DependentUpon>UsersByRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users\UsersByRole.aspx.designer.cs">
+      <DependentUpon>UsersByRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodeFiles\be1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>be.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeFiles\CountryNames.cs" />
+    <Compile Include="CodeFiles\pages\ForgotPasswordPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\ForgotUsernamePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieActivatePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieBlogsPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieCmsPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieDefaultPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieLoginPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieMessagePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieRegisterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieSearchPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\pages\SueetieWelcomePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeFiles\SueetieForm.cs" />
+    <Compile Include="CodeFiles\SueetieService.cs" />
+    <Compile Include="install\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="members\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="members\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="members\MyAccountInfo.aspx.cs">
+      <DependentUpon>MyAccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="members\MyAccountInfo.aspx.designer.cs">
+      <DependentUpon>MyAccountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="members\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="members\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="util\json\jsonEvents.aspx.cs">
+      <DependentUpon>jsonEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="util\json\jsonTags.aspx.cs">
+      <DependentUpon>jsonTags.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="util\rss\Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="util\rss\Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="util\rss\SiteActivity.aspx.cs">
+      <DependentUpon>SiteActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="util\rss\SiteActivity.aspx.designer.cs">
+      <DependentUpon>SiteActivity.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Saltie\Saltie.csproj">
+      <Project>{D4F4DE5E-23E1-4837-8368-7FB2DA3C07F5}</Project>
+      <Name>Saltie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Blog\Sueetie.Blog.csproj">
+      <Project>{707E1C77-7A17-4C3B-8BB1-BC0D9E02A25B}</Project>
+      <Name>Sueetie.Blog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Commerce\Sueetie.Commerce.csproj">
+      <Project>{7558f209-a387-4c62-acd1-d5ad546700f4}</Project>
+      <Name>Sueetie.Commerce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Controls\Sueetie.Controls.csproj">
+      <Project>{E502B308-F7C6-450B-83E0-A23951E08625}</Project>
+      <Name>Sueetie.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Core\Sueetie.Core.csproj">
+      <Project>{A839E4E2-D8E4-4381-9CF3-0D267053E957}</Project>
+      <Name>Sueetie.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Search\Sueetie.Search.csproj">
+      <Project>{5F605011-031B-49FA-84C3-B61D1E8891CF}</Project>
+      <Name>Sueetie.Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sueetie.Wiki\Sueetie.Wiki.csproj">
+      <Project>{CE43B562-74B5-46C9-811A-CF3802539FA3}</Project>
+      <Name>Sueetie.Wiki</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="util\config\app.config" />
+    <Content Include="util\config\connections.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="util\handlers\PhotoDisplay.ashx" />
+    <Content Include="util\config\Saltie.config" />
+    <Content Include="util\config\Search.config" />
+    <Content Include="util\config\Sueetie.config" />
+    <Content Include="util\config\Tasks.config" />
+    <Content Include="util\languages\en-US\Blogs.xml" />
+    <Content Include="util\languages\en-US\DBVT.xml" />
+    <Content Include="util\languages\en-US\Forums.xml" />
+    <Content Include="util\languages\en-US\Marketplace.xml" />
+    <Content Include="util\languages\en-US\MediaGallery.xml" />
+    <Content Include="util\languages\en-US\Sueetie.xml" />
+    <Content Include="util\languages\en-US\Wiki.xml" />
+    <Content Include="util\languages\fr-FR\Sueetie.xml" />
+    <Content Include="scripts\dark\next.gif" />
+    <Content Include="scripts\dark\next.png" />
+    <Content Include="scripts\dark\panel-nav-next.gif" />
+    <Content Include="scripts\dark\panel-nav-next.png" />
+    <Content Include="scripts\dark\panel-nav-prev.gif" />
+    <Content Include="scripts\dark\panel-nav-prev.png" />
+    <Content Include="scripts\dark\pointer-down.png" />
+    <Content Include="scripts\dark\pointer.png" />
+    <Content Include="scripts\dark\prev.gif" />
+    <Content Include="scripts\dark\prev.png" />
+    <Content Include="scripts\date.format.js" />
+    <Content Include="scripts\DateNet.js" />
+    <Content Include="scripts\jquery-1.3.2-vsdoc.js" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery-1.4.2.min.js" />
+    <Content Include="scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="scripts\jquery-utils.js" />
+    <Content Include="scripts\jquery.alerts.css" />
+    <Content Include="scripts\jquery.alerts.js" />
+    <Content Include="scripts\jquery.easing.1.3.js" />
+    <Content Include="scripts\jquery.galleryview-1.1-pack.js" />
+    <Content Include="scripts\jquery.galleryview-1.1.js" />
+    <Content Include="scripts\jquery.galleryview-2.0-pack.js" />
+    <Content Include="scripts\jquery.scrollto.js" />
+    <Content Include="scripts\jquery.simplemodal-1.3.4.min.js" />
+    <Content Include="scripts\jquery.timers-1.1.2.js" />
+    <Content Include="scripts\jquery.tokeninput.js" />
+    <Content Include="scripts\json2.js" />
+    <Content Include="scripts\light\next.gif" />
+    <Content Include="scripts\light\next.png" />
+    <Content Include="scripts\light\panel-nav-next.gif" />
+    <Content Include="scripts\light\panel-nav-next.png" />
+    <Content Include="scripts\light\panel-nav-prev.gif" />
+    <Content Include="scripts\light\panel-nav-prev.png" />
+    <Content Include="scripts\light\pointer-down.png" />
+    <Content Include="scripts\light\pointer.png" />
+    <Content Include="scripts\light\prev.gif" />
+    <Content Include="scripts\light\prev.png" />
+    <Content Include="scripts\nicEdit.js" />
+    <Content Include="scripts\pikachoose.js" />
+    <Content Include="scripts\sueetie.js" />
+    <Content Include="scripts\SueetieParts.js" />
+    <Content Include="scripts\ui.core.js" />
+    <Content Include="scripts\ui.draggable.js" />
+    <Content Include="scripts\ui.resizable.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\BlogPostList.ascx" />
+    <Content Include="controls\ForumTopicList.ascx" />
+    <Content Include="controls\RecentPhotoList.ascx" />
+    <Content Include="controls\WikiPageList.ascx" />
+    <Content Include="members\Login.aspx" />
+    <Content Include="util\editors\tiny_mce3\langs\en.js" />
+    <Content Include="util\editors\tiny_mce3\license.txt" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\css\advhr.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\js\rule.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advhr\rule.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\css\advimage.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\image.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\img\sample.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\js\image.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\css\advlink.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\js\advlink.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\advlink\link.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\autosave\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\bbcode\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\compat2x\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\compat2x\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\directionality\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\emotions.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\js\emotions.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\dialog.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\img\example.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\js\dialog.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\langs\en.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\example\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\css\fullpage.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\fullpage.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\js\fullpage.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\iespell\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\inlinepopups\template.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\layer\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\layer\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\css\content.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\css\media.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\flash.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\flv_player.swf" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\quicktime.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\realmedia.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\shockwave.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\trans.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\img\windowsmedia.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\js\embed.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\js\media.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\media\media.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\noneditable\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\pagebreak\css\content.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\pagebreak\img\trans.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\blank.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\css\blank.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\css\pasteword.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\js\pastetext.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\js\pasteword.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\pastetext.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\paste\pasteword.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\preview\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\preview\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\preview\example.html" />
+    <Content Include="util\editors\tiny_mce3\plugins\preview\jscripts\embed.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\preview\preview.html" />
+    <Content Include="util\editors\tiny_mce3\plugins\print\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\print\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\safari\blank.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\safari\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\safari\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\save\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\save\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\spellchecker\css\content.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\spellchecker\img\wline.gif" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\css\props.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\js\props.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\style\props.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\cell.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\css\cell.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\css\row.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\css\table.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\js\cell.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\js\merge_cells.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\js\row.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\js\table.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\merge_cells.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\row.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\table\table.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\blank.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\css\template.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\js\template.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\template\template.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\visualchars\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\del.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="util\editors\tiny_mce3\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\about.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\anchor.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\charmap.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\color_picker.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\editor_template.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\editor_template_src.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\image.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\img\icons.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\about.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\anchor.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\charmap.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\color_picker.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\image.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\link.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\js\source_editor.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\langs\en.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\langs\en_dlg.js" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\link.htm" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\content.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\dialog.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\default\ui.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="util\editors\tiny_mce3\themes\advanced\source_editor.htm" />
+    <Content Include="util\editors\tiny_mce3\tiny_mce.js" />
+    <Content Include="util\editors\tiny_mce3\tiny_mce_popup.js" />
+    <Content Include="util\editors\tiny_mce3\tiny_mce_src.js" />
+    <Content Include="util\editors\tiny_mce3\utils\editable_selects.js" />
+    <Content Include="util\editors\tiny_mce3\utils\form_utils.js" />
+    <Content Include="util\editors\tiny_mce3\utils\mctabs.js" />
+    <Content Include="util\editors\tiny_mce3\utils\validate.js" />
+    <Content Include="images\admin\a-zHover-bg.jpg" />
+    <Content Include="images\admin\about-bg-bottom.gif" />
+    <Content Include="images\admin\about-bg-top.gif" />
+    <Content Include="images\admin\about.jpg" />
+    <Content Include="images\admin\access-rules-icon-16x16.gif" />
+    <Content Include="images\admin\accordion-bg.png" />
+    <Content Include="images\admin\admin-footer-2-bg.jpg" />
+    <Content Include="images\admin\admin-footer-bg.jpg" />
+    <Content Include="images\admin\admin-header-2-bg.jpg" />
+    <Content Include="images\admin\admin-header-bg.jpg" />
+    <Content Include="images\admin\admin-title-2.jpg" />
+    <Content Include="images\admin\admin-title.jpg" />
+    <Content Include="images\admin\bg-orange-small.jpg" />
+    <Content Include="images\admin\body_bg.png" />
+    <Content Include="images\admin\Calendar_schedule.gif" />
+    <Content Include="images\admin\Calendar_schedule.png" />
+    <Content Include="images\admin\collapse-panel-1.jpg" />
+    <Content Include="images\admin\collapse-panel-2.jpg" />
+    <Content Include="images\admin\collapse.jpg" />
+    <Content Include="images\admin\connection-string-16x16.gif" />
+    <Content Include="images\admin\delete-1.gif" />
+    <Content Include="images\admin\delete-2.gif" />
+    <Content Include="images\admin\Delete.gif" />
+    <Content Include="images\admin\email-icon-16x16.gif" />
+    <Content Include="images\admin\expand.jpg" />
+    <Content Include="images\admin\folder-open.gif" />
+    <Content Include="images\admin\folder.gif" />
+    <Content Include="images\admin\grid-header-bg.jpg" />
+    <Content Include="images\admin\grid-header-black-bg.jpg" />
+    <Content Include="images\admin\grid-header-blue-bg.jpg" />
+    <Content Include="images\admin\grid-header-orange-bg.jpg" />
+    <Content Include="images\admin\grid-row-hover.jpg" />
+    <Content Include="images\admin\grid-sort-hover.jpg" />
+    <Content Include="images\admin\header-bullett.gif" />
+    <Content Include="images\admin\info.gif" />
+    <Content Include="images\admin\members.gif" />
+    <Content Include="images\admin\members.jpg" />
+    <Content Include="images\admin\nav-Expand.gif" />
+    <Content Include="images\admin\new-user-16x16.gif" />
+    <Content Include="images\admin\plus.gif" />
+    <Content Include="images\admin\roles-icon-16x16.gif" />
+    <Content Include="images\admin\search-icon-16x16.gif" />
+    <Content Include="images\admin\target.gif" />
+    <Content Include="images\admin\target1.gif" />
+    <Content Include="images\admin\user-categories-bg.gif" />
+    <Content Include="images\admin\users-icon-16x16.gif" />
+    <Content Include="images\admin\white-top-bottom.gif" />
+    <Content Include="images\shared\jalerts\help.gif" />
+    <Content Include="images\shared\jalerts\important.gif" />
+    <Content Include="images\shared\jalerts\info.gif" />
+    <Content Include="images\shared\jalerts\title.gif" />
+    <Content Include="images\shared\jqueryui\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="images\shared\jqueryui\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="images\shared\jqueryui\ui-icons_222222_256x240.png" />
+    <Content Include="images\shared\jqueryui\ui-icons_228ef1_256x240.png" />
+    <Content Include="images\shared\jqueryui\ui-icons_ef8c08_256x240.png" />
+    <Content Include="images\shared\jqueryui\ui-icons_ffd27a_256x240.png" />
+    <Content Include="images\shared\jqueryui\ui-icons_ffffff_256x240.png" />
+    <Content Include="images\shared\nicedit\cpmenuadmin.png" />
+    <Content Include="images\shared\nicedit\cpmenuclose.png" />
+    <Content Include="images\shared\nicedit\cpmenumax.png" />
+    <Content Include="images\shared\nicedit\cpmenumin.png" />
+    <Content Include="images\shared\nicedit\nicEditorIcons.gif" />
+    <Content Include="images\shared\sueetie\be.png" />
+    <Content Include="images\shared\sueetie\be1202a.jpg" />
+    <Content Include="images\shared\sueetie\be1202b.jpg" />
+    <Content Include="images\shared\sueetie\Delete.gif" />
+    <Content Include="images\shared\sueetie\false.png" />
+    <Content Include="images\shared\sueetie\footertagblack.png" />
+    <Content Include="images\shared\sueetie\footertagwhite.png" />
+    <Content Include="images\shared\sueetie\non-preview-photo.gif" />
+    <Content Include="images\shared\sueetie\preview-photo.gif" />
+    <Content Include="images\shared\sueetie\ThemeKeyExample.jpg" />
+    <Content Include="images\shared\sueetie\true.png" />
+    <Content Include="images\shared\sueetie\wiki0103a.jpg" />
+    <Content Include="images\shared\sueetie\yafsmall.jpg" />
+    <Content Include="controls\UserLogActivityList.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeFiles\be.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>be1.designer.cs</LastGenOutput>
+    </None>
+    <None Include="images\admin\Thumbs.db" />
+    <Content Include="admin\addonpack\default.aspx" />
+    <Content Include="admin\applications\Applications.aspx" />
+    <Content Include="admin\applications\BlogAdmin.aspx" />
+    <Content Include="admin\applications\BlogEdit.aspx" />
+    <Content Include="admin\applications\Blogs.aspx" />
+    <Content Include="admin\applications\default.aspx" />
+    <Content Include="admin\applications\Media.aspx" />
+    <Content Include="admin\applications\MediaAlbums.aspx" />
+    <Content Include="admin\applications\Wikis.aspx" />
+    <Content Include="admin\applications\WikiUser.aspx" />
+    <Content Include="admin\content\ActivityLogging.aspx" />
+    <Content Include="admin\content\ContentParts.aspx" />
+    <Content Include="admin\content\default.aspx" />
+    <Content Include="admin\controls\adminHomeNavLinks.ascx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\json\TokenUsers.aspx" />
+    <Content Include="admin\reports\default.aspx" />
+    <Content Include="admin\site\default.aspx" />
+    <Content Include="admin\site\EmailSettings.aspx" />
+    <Content Include="admin\site\GeneralSettings.aspx" />
+    <Content Include="admin\site\Seo.aspx" />
+    <Content Include="admin\site\Themes.aspx" />
+    <Content Include="admin\users\AddUsers.aspx" />
+    <Content Include="admin\users\ApproveUsers.aspx" />
+    <Content Include="admin\users\BannedIPs.aspx" />
+    <Content Include="admin\users\default.aspx" />
+    <Content Include="admin\users\InactiveUsers.aspx" />
+    <Content Include="admin\users\LockedoutUsers.aspx" />
+    <Content Include="admin\users\OnlineUsers.aspx" />
+    <Content Include="admin\users\RoleAdmin.aspx" />
+    <Content Include="admin\users\SearchUsers.aspx" />
+    <Content Include="admin\users\UserEdit.aspx" />
+    <Content Include="admin\users\UsersByRole.aspx" />
+    <Content Include="admin\users\RegisteredUsers.aspx" />
+    <Content Include="admin\controls\adminAddonPackNavLinks.ascx" />
+    <Content Include="admin\controls\adminApplicationNavLinks.ascx" />
+    <Content Include="admin\controls\adminBlogNavLinks.ascx" />
+    <Content Include="admin\controls\adminContentNavLinks.ascx" />
+    <Content Include="admin\controls\adminHeader.ascx" />
+    <Content Include="admin\controls\adminMediaNavLinks.ascx" />
+    <Content Include="admin\controls\adminReportsNavLinks.ascx" />
+    <Content Include="admin\controls\adminSideNavigation.ascx" />
+    <Content Include="admin\controls\adminSiteSettingsNavLinks.ascx" />
+    <Content Include="admin\controls\adminUserNavLinks.ascx" />
+    <Content Include="admin\controls\adminWikiNavLinks.ascx" />
+    <Content Include="controls\editors\adminEditor.ascx" />
+    <Content Include="controls\editors\htmlEditor.ascx" />
+    <Content Include="controls\editors\tinyMCE.ascx" />
+    <Content Include="members\ForgotPassword.aspx" />
+    <Content Include="members\MyAccountInfo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\content\CalendarEdit.aspx" />
+    <Content Include="admin\content\CalendarScheduler.aspx" />
+    <Content Include="admin\content\SearchAddon.aspx" />
+    <Content Include="admin\content\ContentGroups.aspx" />
+    <Content Include="admin\content\ContentPages.aspx" />
+    <Content Include="admin\reports\Subscribers.aspx" />
+    <Content Include="admin\reports\UserActivities.aspx" />
+    <Content Include="admin\reports\BackgroundTasks.aspx" />
+    <Content Include="admin\reports\DownloadDetails.aspx" />
+    <Content Include="admin\reports\Downloads.aspx" />
+    <Content Include="admin\reports\EventLogs.aspx" />
+    <Content Include="admin\users\NewUsers.aspx" />
+    <Content Include="admin\Web.Config" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="controls\AggregateBlogList.ascx" />
+    <Content Include="controls\AggregateBlogPostList.ascx" />
+    <Content Include="controls\BlogCommentList.ascx" />
+    <Content Include="controls\ContentPageList.ascx" />
+    <Content Include="controls\BlogRssPostList.ascx" />
+    <Content Include="images\shared\sueetie\logo.png" />
+    <Content Include="images\shared\sueetie\logowhitefont.png" />
+    <Content Include="images\shared\sueetie\themes20.png" />
+    <Content Include="members\Welcome.aspx" />
+    <Content Include="scripts\sueetie.1.0.js" />
+    <Content Include="scripts\fullcalendar.js" />
+    <Content Include="scripts\gcal.js" />
+    <Content Include="scripts\jquery-impromptu.3.1.min.js" />
+    <Content Include="scripts\jquery-ui-custom.js" />
+    <Content Include="scripts\jquery-ui-timepicker-addon-0.6.2.min.js" />
+    <Content Include="scripts\jquery.js">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="scripts\jquery.simplemodal-1.3.5.min.js" />
+    <Content Include="scripts\SimpleDatePicker.js" />
+    <Content Include="scripts\tags.js" />
+    <Content Include="SiteMap.aspx" />
+    <Content Include="themes\Chiclet\images\adminbodyback.png" />
+    <Content Include="themes\Chiclet\images\back_top.png" />
+    <Content Include="themes\Chiclet\images\be.png" />
+    <Content Include="themes\Chiclet\images\betran.png" />
+    <Content Include="themes\Chiclet\images\blogs\rsssleek.png" />
+    <Content Include="themes\Chiclet\images\blogs\rsstag.png" />
+    <Content Include="themes\Chiclet\images\candy.jpg" />
+    <Content Include="themes\Chiclet\images\Delete.gif" />
+    <Content Include="themes\Chiclet\images\dots.png" />
+    <Content Include="themes\Chiclet\images\fullbodyback.png" />
+    <Content Include="themes\Chiclet\images\greydotblock.png" />
+    <Content Include="themes\Chiclet\images\groupcandy.jpg" />
+    <Content Include="themes\Chiclet\images\gummybears.jpg" />
+    <Content Include="themes\Chiclet\images\HeadBack.png" />
+    <Content Include="themes\Chiclet\images\header_bg.png" />
+    <Content Include="themes\Chiclet\images\homebodyarea.png" />
+    <Content Include="themes\Chiclet\images\homebodyback.png" />
+    <Content Include="themes\Chiclet\images\homelogo.png" />
+    <Content Include="themes\Chiclet\images\homelogowhite.png" />
+    <Content Include="themes\Chiclet\images\icon_top.gif" />
+    <Content Include="themes\Chiclet\images\iPhoneArrow.png" />
+    <Content Include="themes\Chiclet\images\iPhoneBackButton.png" />
+    <Content Include="themes\Chiclet\images\iPhoneButton.png" />
+    <Content Include="themes\Chiclet\images\iPhoneGoButton.png" />
+    <Content Include="themes\Chiclet\images\loader.gif" />
+    <Content Include="themes\Chiclet\images\menuback.png" />
+    <Content Include="themes\Chiclet\images\noavatar.jpg" />
+    <Content Include="themes\Chiclet\images\pagetoplogo.png" />
+    <Content Include="themes\Chiclet\images\pagetoplogowhite.png" />
+    <Content Include="themes\Chiclet\images\rightarrow2.gif" />
+    <Content Include="themes\Chiclet\images\rssfeed.jpg" />
+    <Content Include="themes\Chiclet\images\search\album.png" />
+    <Content Include="themes\Chiclet\images\search\blog.png" />
+    <Content Include="themes\Chiclet\images\search\forum.png" />
+    <Content Include="themes\Chiclet\images\search\media.png" />
+    <Content Include="themes\Chiclet\images\search\wiki.png" />
+    <Content Include="themes\Chiclet\images\sidebarpanelback.png" />
+    <Content Include="themes\Chiclet\images\stripes.png" />
+    <Content Include="themes\Chiclet\images\subHeadBack.png" />
+    <Content Include="themes\Chiclet\images\tableft.png" />
+    <Content Include="themes\Chiclet\images\tabright.png" />
+    <Content Include="themes\Chiclet\images\titlelogoback.png" />
+    <Content Include="themes\Chiclet\images\topstripbottom.png" />
+    <Content Include="themes\Chiclet\images\topthinstripbottom.png" />
+    <Content Include="themes\Chiclet\images\wire_bg.gif" />
+    <Content Include="themes\Chiclet\images\wire_bg.jpg" />
+    <Content Include="themes\Chiclet\images\wire_bg.png" />
+    <Content Include="themes\Chiclet\menus\HomeBodyMenu.ascx" />
+    <Content Include="themes\Chiclet\menus\HomeMenu.ascx" />
+    <Content Include="themes\Chiclet\menus\UserMenu.ascx" />
+    <Content Include="themes\Chiclet\pages\Activate.aspx" />
+    <Content Include="themes\Chiclet\pages\blogs.aspx" />
+    <Content Include="themes\Chiclet\pages\Default.aspx" />
+    <Content Include="themes\Chiclet\pages\Login.aspx" />
+    <Content Include="themes\Chiclet\pages\Message.aspx" />
+    <Content Include="themes\Chiclet\pages\Register.aspx" />
+    <Content Include="themes\Chiclet\pages\Welcome.aspx" />
+    <Content Include="themes\Chiclet\style\admin.css" />
+    <Content Include="themes\Chiclet\style\aggregate.css" />
+    <Content Include="themes\Chiclet\style\alternate.css" />
+    <Content Include="themes\Chiclet\style\blogs.css" />
+    <Content Include="themes\Chiclet\style\classifieds.css" />
+    <Content Include="themes\Chiclet\style\contact.css" />
+    <Content Include="themes\Chiclet\style\groups.css" />
+    <Content Include="themes\Chiclet\style\home.css" />
+    <Content Include="themes\Chiclet\style\ie.css" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="themes\Chiclet\style\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="themes\Chiclet\style\images\ui-icons_222222_256x240.png" />
+    <Content Include="themes\Chiclet\style\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="themes\Chiclet\style\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="themes\Chiclet\style\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="themes\Chiclet\style\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="themes\Chiclet\style\jquery-ui-1.7.2.custom.css" />
+    <Content Include="themes\Chiclet\style\marketplace.css" />
+    <Content Include="themes\Chiclet\style\media.css" />
+    <Content Include="themes\Chiclet\style\modal.css" />
+    <Content Include="themes\Chiclet\style\presentations.css" />
+    <Content Include="themes\Chiclet\style\search.css" />
+    <Content Include="themes\Chiclet\style\shared.css" />
+    <Content Include="themes\Chiclet\style\sueetie.css" />
+    <Content Include="themes\Chiclet\style\token-input-facebook.css" />
+    <Content Include="themes\Chiclet\style\wiki.css" />
+    <Content Include="themes\Chiclet\views\AggregateBlogPostView.ascx" />
+    <Content Include="themes\Chiclet\views\AggregateBlogView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentBlogCommentView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentBlogPostView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentForumTopicView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentPhotoView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentUserLogActivityHeader.ascx" />
+    <Content Include="themes\Chiclet\views\RecentUserLogActivityView.ascx" />
+    <Content Include="themes\Chiclet\views\RecentWikiPageView.ascx" />
+    <Content Include="themes\Lollipop\images\adminbodyback.png" />
+    <Content Include="themes\Lollipop\images\Background.gif" />
+    <Content Include="themes\Lollipop\images\be.png" />
+    <Content Include="themes\Lollipop\images\blogs\rsssleek.png" />
+    <Content Include="themes\Lollipop\images\blogs\rsstag.png" />
+    <Content Include="themes\Lollipop\images\calendarEdit.png" />
+    <Content Include="themes\Lollipop\images\daveburke.jpg" />
+    <Content Include="themes\Lollipop\images\Delete.gif" />
+    <Content Include="themes\Lollipop\images\dots.png" />
+    <Content Include="themes\Lollipop\images\downred.gif" />
+    <Content Include="themes\Lollipop\images\greydotblock.png" />
+    <Content Include="themes\Lollipop\images\icecream.gif" />
+    <Content Include="themes\Lollipop\images\loader.gif" />
+    <Content Include="themes\Lollipop\images\lollitag.png" />
+    <Content Include="themes\Lollipop\images\media\folder.png" />
+    <Content Include="themes\Lollipop\images\media\pdf.png" />
+    <Content Include="themes\Lollipop\images\media\txt.png" />
+    <Content Include="themes\Lollipop\images\media\zip.png" />
+    <Content Include="themes\Lollipop\images\noavatar.jpg" />
+    <Content Include="themes\Lollipop\images\pencil.png" />
+    <Content Include="themes\Lollipop\images\rightarrow2.gif" />
+    <Content Include="themes\Lollipop\images\search\album.png" />
+    <Content Include="themes\Lollipop\images\search\blog.png" />
+    <Content Include="themes\Lollipop\images\search\cms.png" />
+    <Content Include="themes\Lollipop\images\search\forum.png" />
+    <Content Include="themes\Lollipop\images\search\media.png" />
+    <Content Include="themes\Lollipop\images\search\wiki.png" />
+    <Content Include="themes\Lollipop\images\sidebarpanelback.png" />
+    <Content Include="themes\Lollipop\images\soliddot.png" />
+    <Content Include="themes\Lollipop\images\spinner.gif" />
+    <Content Include="themes\Lollipop\images\tabback.png" />
+    <Content Include="themes\Lollipop\images\tableft.png" />
+    <Content Include="themes\Lollipop\images\tabright.png" />
+    <Content Include="themes\Lollipop\images\tabselectedback.png" />
+    <Content Include="themes\Lollipop\images\tagEdit.png" />
+    <Content Include="themes\Lollipop\images\toolbar_close.gif" />
+    <Content Include="themes\Lollipop\images\window_titlebg.gif" />
+    <Content Include="themes\Lollipop\images\wire_bg.gif" />
+    <Content Include="themes\Lollipop\images\x.png" />
+    <Content Include="themes\Lollipop\images\yafsmall.jpg" />
+    <Content Include="themes\Lollipop\menus\AdminMenu.ascx" />
+    <Content Include="themes\Lollipop\menus\HomeBodyMenu.ascx" />
+    <Content Include="themes\Lollipop\menus\HomeMenu.ascx" />
+    <Content Include="themes\Lollipop\menus\UserMenu.ascx" />
+    <Content Include="themes\Lollipop\pages\Activate.aspx" />
+    <Content Include="themes\Lollipop\pages\blogs.aspx" />
+    <Content Include="themes\Lollipop\pages\caleditdemo.aspx" />
+    <Content Include="themes\Lollipop\pages\calendar.aspx" />
+    <Content Include="themes\Lollipop\pages\calgoogle.aspx" />
+    <Content Include="themes\Lollipop\pages\content.aspx" />
+    <Content Include="themes\Lollipop\pages\search.aspx" />
+    <Content Include="themes\Lollipop\pages\Default.aspx" />
+    <Content Include="themes\Lollipop\pages\Login.aspx" />
+    <Content Include="themes\Lollipop\pages\Message.aspx" />
+    <Content Include="themes\Lollipop\pages\Register.aspx" />
+    <Content Include="themes\Lollipop\pages\Welcome.aspx" />
+    <Content Include="themes\Lollipop\style\admin.css" />
+    <Content Include="themes\Lollipop\style\aggregate.css" />
+    <Content Include="themes\Lollipop\style\alternate.css" />
+    <Content Include="themes\Lollipop\style\blogs.css" />
+    <Content Include="themes\Lollipop\style\classifieds.css" />
+    <Content Include="themes\Lollipop\style\contact.css" />
+    <Content Include="themes\Lollipop\style\forum.css" />
+    <Content Include="themes\Lollipop\style\fullcalendar.css" />
+    <Content Include="themes\Lollipop\style\groups.css" />
+    <Content Include="themes\Lollipop\style\home.css" />
+    <Content Include="themes\Lollipop\style\ie.css" />
+    <Content Include="themes\Lollipop\style\jquery-ui-1.7.2.custom.css" />
+    <Content Include="themes\Lollipop\style\marketplace.css" />
+    <Content Include="themes\Lollipop\style\media.css" />
+    <Content Include="themes\Lollipop\style\modal.css" />
+    <Content Include="themes\Lollipop\style\search.css" />
+    <Content Include="themes\Lollipop\style\shared.css" />
+    <Content Include="themes\Lollipop\style\impromptu.css" />
+    <Content Include="themes\Lollipop\style\SimpleDatePicker.css" />
+    <Content Include="themes\Lollipop\style\sueetie.css" />
+    <Content Include="themes\Lollipop\style\token-input-facebook.css" />
+    <Content Include="themes\Lollipop\style\wiki.css" />
+    <Content Include="themes\Lollipop\views\AggregateBlogPostView.ascx" />
+    <Content Include="themes\Lollipop\views\AggregateBlogView.ascx" />
+    <Content Include="themes\Lollipop\views\ContentPageSidebarView.ascx" />
+    <Content Include="themes\Lollipop\views\RssBlogPostView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentBlogCommentView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentBlogPostView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentForumTopicView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentPhotoView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentUserLogActivityHeader.ascx" />
+    <Content Include="themes\Lollipop\views\RecentUserLogActivityView.ascx" />
+    <Content Include="themes\Lollipop\views\RecentWikiPageView.ascx" />
+    <Content Include="util\editors\tiny_mce3\plugins\cleanup\editor_plugin.js" />
+    <Content Include="util\json\jsonEvents.aspx" />
+    <Content Include="util\json\jsonTags.aspx" />
+    <Content Include="util\languages\en-US\TimeZones.xml" />
+    <Content Include="install\Default.aspx" />
+    <Content Include="install\install.css" />
+    <Content Include="members\Activate.aspx" />
+    <Content Include="members\ForgotUsername.aspx" />
+    <Content Include="members\Logout.aspx" />
+    <Content Include="members\Message.aspx" />
+    <Content Include="members\Profile.aspx" />
+    <Content Include="members\Register.aspx" />
+    <Content Include="util\languages\en-US\PageTitles.xml" />
+    <Content Include="util\misc\error.aspx" />
+    <Content Include="util\rss\Blogs.aspx" />
+    <Content Include="util\rss\SiteActivity.aspx" />
+    <Content Include="util\email\PasswordRecovery.htm" />
+    <None Include="CodeFiles\be.dbml.layout">
+      <DependentUpon>be.dbml</DependentUpon>
+    </None>
+    <Content Include="themes\Chiclet\config\footer.config" />
+    <Content Include="themes\Chiclet\config\menu.config" />
+    <None Include="themes\Chiclet\images\betran.pdn" />
+    <Content Include="themes\Chiclet\masters\admin.master" />
+    <Content Include="themes\Chiclet\masters\Alternate.Master" />
+    <Content Include="themes\Chiclet\masters\Blogs.Master" />
+    <Content Include="themes\Chiclet\masters\Groups.Master" />
+    <Content Include="themes\Chiclet\masters\home.Master" />
+    <Content Include="themes\Chiclet\masters\Search.Master" />
+    <Content Include="themes\Chiclet\masters\Sueetie.Master" />
+    <Content Include="themes\Lollipop\masters\CMS.Master" />
+    <Content Include="themes\Lollipop\masters\Calendar.Master" />
+    <None Include="themes\Lollipop\images\media\media_icons.pdn" />
+    <None Include="themes\Lollipop\images\media\zip.pdn" />
+    <None Include="themes\Lollipop\images\soliddot.pdn" />
+    <Content Include="themes\Lollipop\masters\home.Master" />
+    <Content Include="util\config\NoLog.config" />
+    <Content Include="themes\Lollipop\masters\admin.master" />
+    <Content Include="themes\Lollipop\masters\Sueetie.Master" />
+    <Content Include="themes\Lollipop\masters\Search.Master" />
+    <Content Include="themes\Lollipop\masters\Groups.Master" />
+    <Content Include="themes\Lollipop\masters\Blogs.Master" />
+    <Content Include="themes\Lollipop\masters\Alternate.Master" />
+    <Content Include="themes\Lollipop\config\menu.config" />
+    <Content Include="themes\Lollipop\config\footer.config" />
+    <Content Include="util\handlers\Download.ashx" />
+    <Content Include="util\config\Commerce.config" />
+    <Content Include="util\config\urls.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="util\services\SueetieSharedService.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\products\" />
+    <Folder Include="images\slideshows\" />
+    <Folder Include="themes\Lollipop\images\activities\" />
+    <Folder Include="themes\v2\images\activities\" />
+    <Folder Include="util\index\" />
+    <Folder Include="util\marketplace\downloads\2011\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64263</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44336/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
